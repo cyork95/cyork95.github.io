@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark rounded background -->
+  <rect width="32" height="32" rx="7" fill="#0D1117"/>
+  <!-- "Y" letterform -->
+  <text x="7" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#E6EDF3">Y</text>
+  <!-- Teal accent dot — echoes the York.dev logo -->
+  <circle cx="25" cy="22" r="3.5" fill="#00D4AA"/>
+</svg>
