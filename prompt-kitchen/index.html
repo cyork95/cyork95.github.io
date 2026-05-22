@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Prompt Kitchen — York Develops</title>
+  <meta name="description" content="The Prompt Kitchen is a free, practical AI knowledge base for everyday people — no hype, no jargon, just techniques that work.">
+  <meta name="author" content="Cody York">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/">
+  <meta property="og:title" content="The Prompt Kitchen — York Develops">
+  <meta property="og:description" content="A free knowledge base about using AI practically — for everyday people who want results, not theory.">
+  <meta property="og:site_name" content="York Develops">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">York<span>.</span>dev</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9788;</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PK Hero -->
+    <div class="pk-hero">
+      <div class="container">
+        <div class="pk-hero__content">
+          <p class="pk-hero__eyebrow">&#x1F373; A sister site</p>
+          <h1 class="pk-hero__title">
+            The <span class="highlight">Prompt Kitchen</span>
+          </h1>
+          <p class="pk-hero__desc">
+            A free, practical knowledge base about getting real work done with AI tools — written for people who want techniques that work, not another explainer about how transformative everything is.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="btn btn--amber">
+              Visit thepromptkitchen.fyi &#x2197;
+            </a>
+            <a href="#why" class="btn btn--outline">Why I built it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- What it is -->
+      <section data-reveal>
+        <div class="section-header">
+          <p class="section-label" style="color: var(--amber);">What it is</p>
+          <h2 class="section-title">Practical AI. No hype.</h2>
+          <p class="section-desc">
+            The Prompt Kitchen is a collection of guides, techniques, and real examples for using AI tools effectively in everyday work and life.
+          </p>
+        </div>
+
+        <div class="pk-feature-grid">
+
+          <div class="pk-feature">
+            <div class="pk-feature__icon">&#x270F;&#xFE0F;</div>
+            <h3 class="pk-feature__title">Prompt writing</h3>
+            <p class="pk-feature__desc">How to write prompts that actually get what you want — with real before/after examples, not vague advice.</p>
+          </div>
+
+          <div class="pk-feature">
+            <div class="pk-feature__icon">&#x26A1;</div>
+            <h3 class="pk-feature__title">Practical workflows</h3>
+            <p class="pk-feature__desc">Step-by-step processes for common tasks: writing, research, summarizing, editing, and more.</p>
+          </div>
+
+          <div class="pk-feature">
+            <div class="pk-feature__icon">&#x1F4CB;</div>
+            <h3 class="pk-feature__title">Real use cases</h3>
+            <p class="pk-feature__desc">Examples grounded in actual tasks people do — not AI generating poetry or writing code from scratch.</p>
+          </div>
+
+          <div class="pk-feature">
+            <div class="pk-feature__icon">&#x1F6A7;</div>
+            <h3 class="pk-feature__title">Honest limitations</h3>
+            <p class="pk-feature__desc">What these tools can't do well, where they fail, and how to know when not to use them.</p>
+          </div>
+
+          <div class="pk-feature">
+            <div class="pk-feature__icon">&#x1F193;</div>
+            <h3 class="pk-feature__title">Always free</h3>
+            <p class="pk-feature__desc">No paywall, no newsletter gate, no "download this PDF for the real tips." Just open, readable content.</p>
+          </div>
+
+          <div class="pk-feature">
+            <div class="pk-feature__icon">&#x1F9E0;</div>
+            <h3 class="pk-feature__title">Written for people</h3>
+            <p class="pk-feature__desc">Not for developers, not for AI researchers. For people who have jobs and want to do them better.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- Why I built it -->
+      <section id="why" style="padding-top: 0;" data-reveal>
+        <div class="section-header">
+          <p class="section-label" style="color: var(--amber);">Origin</p>
+          <h2 class="section-title">Why I built it</h2>
+        </div>
+
+        <div style="max-width: 65ch;">
+          <p style="margin-bottom: 20px;">
+            The AI conversation has two speeds: breathless optimism from people who want you to believe it changes everything, and quiet frustration from people who tried it, found it annoying, and moved on. Neither of those groups is serving the people in the middle — people who sense there's something genuinely useful here but haven't found their way in yet.
+          </p>
+          <p style="margin-bottom: 20px;">
+            I kept running into the same pattern: someone would mention they'd tried ChatGPT and found it useless for what they were doing. I'd ask a few questions, realize they were using it in a way that was almost designed to fail, show them a different approach, and watch it suddenly click. That conversation happened enough times that I decided to write it down somewhere anyone could find it.
+          </p>
+          <p style="margin-bottom: 20px;">
+            The name comes from the idea that prompting is a skill — not a technical one, but a craft one, like cooking. You don't need to understand thermodynamics to make a good meal. You need to understand how the ingredients work together, what techniques produce what results, and when to trust your instincts versus the recipe. The Prompt Kitchen is where you learn those things.
+          </p>
+          <p>
+            It makes sense that I built it. I work with data systems that require clear, precise thinking about inputs and outputs. I care about making useful knowledge accessible. And I've spent enough time with these tools to have genuine opinions about what works and what doesn't — not as a researcher, but as someone who uses them to get things done.
+          </p>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- CTA -->
+      <section style="padding-top: 0; padding-bottom: 80px;" data-reveal>
+        <div class="pk-card" style="max-width: 600px;">
+          <p class="pk-card__eyebrow">&#x1F373; Live now</p>
+          <h3 class="pk-card__title">Ready to visit?</h3>
+          <p class="pk-card__desc">
+            The Prompt Kitchen lives at its own domain. Open it in a new tab — it's a separate site, built to stand on its own.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="btn btn--amber">
+              Open thepromptkitchen.fyi &#x2197;
+            </a>
+            <a href="/projects/" class="btn btn--outline">All projects</a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <p class="footer__brand">York<span>Develops</span>.com</p>
+        <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>
+        <a href="/">Home</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — York Develops</title>
+  <meta name="description" content="About Cody York — Cloud Data Engineer, GCP specialist, builder of The Prompt Kitchen. Background, values, tools I use, and more.">
+  <meta name="author" content="Cody York">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yorkdevelops.com/about/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yorkdevelops.com/about/">
+  <meta property="og:title" content="About — York Develops">
+  <meta property="og:description" content="Cloud Data Engineer, GCP specialist, builder of The Prompt Kitchen.">
+  <meta property="og:site_name" content="York Develops">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">York<span>.</span>dev</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9788;</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <p class="page-header__eyebrow">// about</p>
+          <h1 class="page-header__title">Who I am</h1>
+          <p class="page-header__desc">
+            The non-resume version — background, how I think about engineering, what I actually use, and what I care about beyond work.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+
+      <!-- Intro + Aside -->
+      <div class="about-intro">
+
+        <!-- Main text -->
+        <div>
+          <section style="padding-top: 0;" data-reveal>
+            <div class="section-header">
+              <p class="section-label">Background</p>
+              <h2 class="section-title">The engineer</h2>
+            </div>
+
+            <p style="margin-bottom: 20px;">
+              I'm a Cloud Data Engineer focused on Google Cloud Platform — building and operating the pipelines, infrastructure, and data systems that organizations depend on to make decisions. My day-to-day involves BigQuery, Dataflow, Pub/Sub, Cloud Composer, and the rest of the GCP data stack.
+            </p>
+            <p style="margin-bottom: 20px;">
+              I got into data engineering because I like the intersection of systems thinking and real-world impact. Pipelines are boring until they break, at which point they're the most important thing anyone cares about — I find that constraint clarifying. Building something reliable is harder and more satisfying than building something impressive.
+            </p>
+            <p style="margin-bottom: 20px;">
+              I care about correctness over cleverness, observable systems over opaque ones, and documentation that actually helps the next person instead of covering the author's tracks. I've worked on pipelines that process millions of events a day, and I've debugged ones that processed twelve. Both taught me something.
+            </p>
+            <p>
+              This site is personal and not affiliated with my employer. Everything here reflects my own views and work.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section style="padding-top: 0;" data-reveal>
+            <div class="section-header">
+              <p class="section-label">Values</p>
+              <h2 class="section-title">How I think about things</h2>
+            </div>
+
+            <p style="margin-bottom: 20px;">
+              <strong style="color: var(--text-primary);">Privacy by default.</strong> I use tools that respect it. I build things that don't require it to be sacrificed. This site has no analytics, no trackers, and no cookies — not because I couldn't add them, but because I don't want them.
+            </p>
+            <p style="margin-bottom: 20px;">
+              <strong style="color: var(--text-primary);">Open knowledge.</strong> I built The Prompt Kitchen because I kept seeing people struggle with AI tools in ways that had obvious solutions — solutions nobody had written down clearly. Good information should be findable, not gatekept behind paywalls or buried in YouTube comments.
+            </p>
+            <p style="margin-bottom: 20px;">
+              <strong style="color: var(--text-primary);">Practical over hype.</strong> I've watched a lot of technology arrive with enormous fanfare and leave having solved a much smaller problem than advertised. I try to stay curious without getting swept up. The question I always come back to: does this actually help someone do something?
+            </p>
+            <p>
+              <strong style="color: var(--text-primary);">Specificity.</strong> Vague is easy. Specific is hard and usually more useful. In writing, in engineering, in explaining something to someone who doesn't know what you know yet.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section style="padding-top: 0;" data-reveal>
+            <div class="section-header">
+              <p class="section-label">The Prompt Kitchen</p>
+              <h2 class="section-title">Why I built it</h2>
+            </div>
+
+            <p style="margin-bottom: 20px;">
+              <a href="/prompt-kitchen/">The Prompt Kitchen</a> is a free knowledge base about using AI practically — for everyday people, not just developers. It lives at <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener">thepromptkitchen.fyi</a>.
+            </p>
+            <p style="margin-bottom: 20px;">
+              I built it because the AI conversation has two speeds: "this will change everything" and "I tried it once and it didn't work." Neither is helpful. The people I wanted to reach are somewhere in the middle — they know these tools exist, they sense there's something useful there, and they just need someone to show them concretely how to get value out of them without a PhD in machine learning or a six-week course.
+            </p>
+            <p>
+              It makes sense given who I am: someone who thinks about data systems, has to communicate complex ideas clearly, and believes useful knowledge should be accessible. It's not a random side project — it's a logical extension of what I already care about.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section style="padding-top: 0;" data-reveal>
+            <div class="section-header">
+              <p class="section-label">Beyond work</p>
+              <h2 class="section-title">Other things</h2>
+            </div>
+
+            <p style="margin-bottom: 20px; color: var(--text-muted); font-style: italic; font-size: 0.875rem;">
+              // placeholder sections — fill in what feels right
+            </p>
+
+            <div class="grid-2" style="gap: 16px;">
+              <div class="card">
+                <h3 class="card__title">[ Interest ]</h3>
+                <p class="card__desc">Add something real here — a hobby, something you read, something you do outside of screens. Specificity makes this memorable.</p>
+              </div>
+              <div class="card">
+                <h3 class="card__title">[ Interest ]</h3>
+                <p class="card__desc">Another genuine interest. The goal is for someone reading this to feel like they're getting a real sense of who you are, not a LinkedIn summary.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Aside -->
+        <aside class="about-aside" aria-label="Quick facts">
+
+          <div class="aside-block">
+            <p class="aside-block__title">// focus</p>
+            <div class="aside-block__item">
+              <span class="aside-block__item-icon">&#x2601;</span>
+              <span>Cloud Data Engineering</span>
+            </div>
+            <div class="aside-block__item">
+              <span class="aside-block__item-icon">&#x25B6;</span>
+              <span>Google Cloud Platform</span>
+            </div>
+            <div class="aside-block__item">
+              <span class="aside-block__item-icon">&#x2248;</span>
+              <span>Data pipelines &amp; infrastructure</span>
+            </div>
+          </div>
+
+          <div class="aside-block">
+            <p class="aside-block__title">// values</p>
+            <div class="aside-block__item">
+              <span class="aside-block__item-icon">&#x1F512;</span>
+              <span>Privacy by default</span>
+            </div>
+            <div class="aside-block__item">
+              <span class="aside-block__item-icon">&#x1F4DA;</span>
+              <span>Open knowledge</span>
+            </div>
+            <div class="aside-block__item">
+              <span class="aside-block__item-icon">&#x2705;</span>
+              <span>Practical over hype</span>
+            </div>
+          </div>
+
+          <div class="aside-block">
+            <p class="aside-block__title">// also building</p>
+            <div class="aside-block__item" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+              <span style="color: var(--amber); font-weight: 600; font-size: 0.875rem;">The Prompt Kitchen</span>
+              <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">thepromptkitchen.fyi &#x2197;</a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+      <!-- Uses Section -->
+      <section data-reveal>
+        <div class="section-header">
+          <p class="section-label">Setup</p>
+          <h2 class="section-title">What I use</h2>
+          <p class="section-desc">Tools and services I actually rely on — not a sponsor list, just what works for me.</p>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group__title">Cloud &amp; Data</p>
+          <div class="uses-grid">
+            <div class="uses-item">
+              <p class="uses-item__name">Google Cloud Platform</p>
+              <p class="uses-item__desc">My primary cloud — BigQuery, Dataflow, Composer, Pub/Sub, GCS and more.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">BigQuery</p>
+              <p class="uses-item__desc">Serverless data warehouse. Fast, scalable, and surprisingly good at cost control when you're careful.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">dbt</p>
+              <p class="uses-item__desc">SQL-based transformations with version control and testing built in. Hard to go back once you've used it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group" style="margin-top: 32px;">
+          <p class="skill-group__title">Privacy &amp; Productivity</p>
+          <div class="uses-grid">
+            <div class="uses-item">
+              <p class="uses-item__name">Proton Mail</p>
+              <p class="uses-item__desc">End-to-end encrypted email. Privacy isn't an add-on, it's the product.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Proton Drive</p>
+              <p class="uses-item__desc">Encrypted cloud storage. Less convenient than Google Drive, worth it.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Standard Notes</p>
+              <p class="uses-item__desc">Encrypted, open-source notes. Plain text, synced everywhere, outlasts any trend.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group" style="margin-top: 32px;">
+          <p class="skill-group__title">Development</p>
+          <div class="uses-grid">
+            <div class="uses-item">
+              <p class="uses-item__name">VS Code</p>
+              <p class="uses-item__desc">Still the most practical editor for the range of things I work on day to day.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Python</p>
+              <p class="uses-item__desc">Primary language for data work, scripting, and pipeline logic. Readable by default.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Git / GitHub</p>
+              <p class="uses-item__desc">Version control for everything, not just code. Configuration, docs, side projects.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">[ Add your setup ]</p>
+              <p class="uses-item__desc">Hardware, terminal setup, shell, other tools worth mentioning — fill this in.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <p class="footer__brand">York<span>Develops</span>.com</p>
+        <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>
+        <a href="/">Home</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>York Develops — Cloud Data Engineer</title>
+  <meta name="description" content="Cody York is a Cloud Data Engineer working with GCP, data pipelines, and cloud infrastructure. Personal portfolio and hub site.">
+  <meta name="author" content="Cody York">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yorkdevelops.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yorkdevelops.com/">
+  <meta property="og:title" content="York Develops — Cloud Data Engineer">
+  <meta property="og:description" content="Cloud Data Engineer working with GCP, data pipelines, and cloud infrastructure. Also building The Prompt Kitchen — a practical AI knowledge base.">
+  <meta property="og:site_name" content="York Develops">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="York Develops — Cloud Data Engineer">
+  <meta name="twitter:description" content="Cloud Data Engineer working with GCP, data pipelines, and cloud infrastructure.">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">York<span>.</span>dev</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9788;</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Cloud Data Engineer</p>
+          <h1 class="hero__title">
+            <span class="name">Cody York</span>
+            <span class="role">I build data systems<br>that actually work.</span>
+          </h1>
+          <p class="hero__tagline">
+            I design and operate data pipelines, cloud infrastructure, and engineering systems on Google Cloud Platform — then write openly about making AI practical for everyone.
+          </p>
+          <div class="hero__cta">
+            <a href="/work/" class="btn btn--primary">See my work</a>
+            <a href="/projects/" class="btn btn--outline">Projects</a>
+            <a href="/about/" class="btn btn--outline">About me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currently -->
+    <div class="currently">
+      <div class="container">
+        <div class="currently__inner">
+          <p class="currently__label">// currently</p>
+          <div class="currently__items">
+            <div class="currently__item">
+              <span class="currently__item-icon">&#x25B8;</span>
+              <p class="currently__item-text">
+                <strong>Building:</strong> Expanding The Prompt Kitchen with more practical AI guides — real techniques for real tasks, no hype required.
+              </p>
+            </div>
+            <div class="currently__item">
+              <span class="currently__item-icon">&#x25B8;</span>
+              <p class="currently__item-text">
+                <strong>Thinking about:</strong> The gap between how AI tools are marketed and how people actually end up using them.
+              </p>
+            </div>
+            <div class="currently__item">
+              <span class="currently__item-icon">&#x25B8;</span>
+              <p class="currently__item-text">
+                <strong>On GCP:</strong> Data quality patterns, cost-efficient pipeline architectures, and the ongoing project of making BigQuery feel less like magic and more like engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Project: The Prompt Kitchen -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Featured project</p>
+          <h2 class="section-title">Something I built</h2>
+          <p class="section-desc">This is the side project that makes the most sense given everything else about me.</p>
+        </div>
+
+        <div class="pk-card" data-reveal>
+          <p class="pk-card__eyebrow">&#x2B50; Sister site &middot; Live</p>
+          <h3 class="pk-card__title">The Prompt Kitchen</h3>
+          <p class="pk-card__desc">
+            A free, no-nonsense knowledge base about using AI practically — written for people who want to actually get things done, not people who want to talk about AI getting things done. No jargon, no hype, no "the future is now" preamble. Just techniques that work.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+            <a href="/prompt-kitchen/" class="btn btn--amber">Learn more</a>
+            <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="btn btn--amber-outline">
+              Visit thepromptkitchen.fyi &#x2197;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick links section -->
+    <section style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Explore</p>
+          <h2 class="section-title">What's here</h2>
+        </div>
+
+        <div class="grid-2" style="gap: 16px;" data-reveal>
+
+          <a href="/about/" class="card" style="text-decoration: none;">
+            <div class="card__tag card__tag--accent">About</div>
+            <h3 class="card__title">Who I am</h3>
+            <p class="card__desc">Background, values, what I use, and interests outside of work. The non-resume version.</p>
+          </a>
+
+          <a href="/work/" class="card" style="text-decoration: none;">
+            <div class="card__tag card__tag--accent">Work &amp; Skills</div>
+            <h3 class="card__title">What I do</h3>
+            <p class="card__desc">Cloud Data Engineering on GCP — pipelines, BigQuery, Dataflow, Composer, and the rest of the stack.</p>
+          </a>
+
+          <a href="/projects/" class="card" style="text-decoration: none;">
+            <div class="card__tag card__tag--accent">Projects</div>
+            <h3 class="card__title">What I've built</h3>
+            <p class="card__desc">Personal and open-source projects. The Prompt Kitchen is the current headliner — more to come.</p>
+          </a>
+
+          <a href="/contact/" class="card" style="text-decoration: none;">
+            <div class="card__tag card__tag--accent">Contact</div>
+            <h3 class="card__title">Get in touch</h3>
+            <p class="card__desc">GitHub is the best place to find my work. Email works too if you have something worth saying.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <p class="footer__brand">York<span>Develops</span>.com</p>
+        <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
