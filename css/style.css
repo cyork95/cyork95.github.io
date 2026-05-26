@@ -337,6 +337,8 @@ section {
   align-items: center;
   gap: 56px;
   flex-wrap: nowrap;
+  position: relative;
+  z-index: 1;                     /* lifts entire hero content above the dot ::before overlay */
 }
 
 .hero__content {
