@@ -70,6 +70,30 @@
 
     <div class="container">
 
+      <!-- Stats strip -->
+      <div class="stats-strip" data-reveal>
+        <div class="stat">
+          <p class="stat__value">7+</p>
+          <p class="stat__label">years engineering</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value">F10</p>
+          <p class="stat__label">CVS Health</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value">5yr</p>
+          <p class="stat__label">Infosys lead role</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value">MS</p>
+          <p class="stat__label">Data Science, BSU</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value">2+</p>
+          <p class="stat__label">teams led</p>
+        </div>
+      </div>
+
       <!-- GCP Core Services -->
       <section style="padding-top: 0;" data-reveal>
         <div class="section-header">
@@ -324,14 +348,32 @@
 
       <hr class="divider">
 
-      <!-- CTA -->
+      <!-- Resume + CTA -->
       <section style="padding-top: 0; padding-bottom: 80px;" data-reveal>
-        <p class="section-label">Next</p>
-        <h2 class="section-title" style="margin-bottom: 8px;">See what I've built</h2>
-        <p style="margin-bottom: 28px; color: var(--text-secondary);">Personal projects and open work, including The Prompt Kitchen.</p>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="/projects/" class="btn btn--primary">View projects</a>
-          <a href="/contact/" class="btn btn--outline">Get in touch</a>
+        <div class="grid-2" style="gap: 24px; align-items: start;">
+
+          <div class="card">
+            <div class="card__tag card__tag--accent">Resume</div>
+            <h3 class="card__title">Download my resume</h3>
+            <p class="card__desc" style="margin-bottom: 20px;">Full work history, skills, education, and certifications in one place — for recruiters and hiring managers.</p>
+            <a href="/resume.pdf" download class="btn btn--primary">
+              &#x2913; Download PDF
+            </a>
+            <p style="margin-top: 12px; font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); max-width: none;">
+              // drop your resume.pdf in the site root to activate this link
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card__tag card__tag--accent">Let's talk</div>
+            <h3 class="card__title">Interested in working together?</h3>
+            <p class="card__desc" style="margin-bottom: 20px;">Whether it's a data engineering question, a project idea, or something you're building — I'm reachable. GitHub is the best place to find my work.</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="/contact/" class="btn btn--primary">Get in touch</a>
+              <a href="/projects/" class="btn btn--outline">See projects</a>
+            </div>
+          </div>
+
         </div>
       </section>
 
