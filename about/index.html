@@ -32,7 +32,6 @@
         <li><a href="/about/">About</a></li>
         <li><a href="/work/">Work</a></li>
         <li><a href="/projects/">Projects</a></li>
-        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
 
@@ -47,7 +46,6 @@
         <li><a href="/about/">About</a></li>
         <li><a href="/work/">Work</a></li>
         <li><a href="/projects/">Projects</a></li>
-        <li class="nav__pk-link"><a href="/prompt-kitchen/">The Prompt Kitchen</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
     </div>
@@ -148,19 +146,28 @@
               <h2 class="section-title">Other things</h2>
             </div>
 
-            <p style="margin-bottom: 20px; color: var(--text-muted); font-style: italic; font-size: 0.875rem;">
-              // placeholder sections — fill in what feels right
-            </p>
-
             <div class="grid-2" style="gap: 16px;">
+
               <div class="card">
-                <h3 class="card__title">[ Interest ]</h3>
-                <p class="card__desc">Add something real here — a hobby, something you read, something you do outside of screens. Specificity makes this memorable.</p>
+                <h3 class="card__title">Gardening</h3>
+                <p class="card__desc">I grow things — vegetables, herbs, whatever the season allows. There's something genuinely grounding about tending to a garden. It doesn't compile, it doesn't throw errors, and the feedback loop is mercifully slow.</p>
               </div>
+
               <div class="card">
-                <h3 class="card__title">[ Interest ]</h3>
-                <p class="card__desc">Another genuine interest. The goal is for someone reading this to feel like they're getting a real sense of who you are, not a LinkedIn summary.</p>
+                <h3 class="card__title">Video games</h3>
+                <p class="card__desc">I've been gaming most of my life and don't plan to stop. On YouTube, John Wolfe is my go-to for horror gaming and Asmongold for commentary that's as much about the industry as the games. On Twitch, CaseOh is appointment viewing — enough said.</p>
               </div>
+
+              <div class="card">
+                <h3 class="card__title">Weather</h3>
+                <p class="card__desc">I find severe weather genuinely fascinating — not in a casual way. Ryan Hall, Y'all is my go-to for storm coverage. The man makes a supercell outbreak feel like must-watch TV, because it is.</p>
+              </div>
+
+              <div class="card">
+                <h3 class="card__title">Tinkering with technology</h3>
+                <p class="card__desc">If something can be self-hosted, automated, or built from scratch for the sake of understanding it, I'll probably try. Half my GitHub is projects that started as "I wonder if I could..." — some of them even work.</p>
+              </div>
+
             </div>
           </section>
         </div>
@@ -228,15 +235,19 @@
           <div class="uses-grid">
             <div class="uses-item">
               <p class="uses-item__name">Google Cloud Platform</p>
-              <p class="uses-item__desc">My primary cloud — BigQuery, Dataflow, Composer, Pub/Sub, GCS and more.</p>
+              <p class="uses-item__desc">My primary cloud — BigQuery, Dataflow, Pub/Sub, GCS and more. Where most of my day-to-day work lives.</p>
             </div>
             <div class="uses-item">
               <p class="uses-item__name">BigQuery</p>
-              <p class="uses-item__desc">Serverless data warehouse. Fast, scalable, and surprisingly good at cost control when you're careful.</p>
+              <p class="uses-item__desc">Serverless data warehouse. Fast, scalable, and surprisingly good at cost control when you're careful about it.</p>
             </div>
             <div class="uses-item">
-              <p class="uses-item__name">dbt</p>
-              <p class="uses-item__desc">SQL-based transformations with version control and testing built in. Hard to go back once you've used it.</p>
+              <p class="uses-item__name">Cloud Composer</p>
+              <p class="uses-item__desc">Managed Airflow on GCP. Where my pipeline orchestration lives — DAGs, schedules, dependencies, the works.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Apache Airflow</p>
+              <p class="uses-item__desc">The orchestration layer under Composer. Writing good DAGs is a craft — bad ones are how you get Sunday morning pages.</p>
             </div>
           </div>
         </div>
@@ -256,15 +267,27 @@
               <p class="uses-item__name">Standard Notes</p>
               <p class="uses-item__desc">Encrypted, open-source notes. Plain text, synced everywhere, outlasts any trend.</p>
             </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Ente Photos</p>
+              <p class="uses-item__desc">End-to-end encrypted photo backup. Open source, privacy-first alternative to Google Photos. Does what it says.</p>
+            </div>
           </div>
         </div>
 
         <div class="skill-group" style="margin-top: 32px;">
-          <p class="skill-group__title">Development</p>
+          <p class="skill-group__title">Development &amp; Tools</p>
           <div class="uses-grid">
             <div class="uses-item">
               <p class="uses-item__name">VS Code</p>
               <p class="uses-item__desc">Still the most practical editor for the range of things I work on day to day.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Claude Desktop</p>
+              <p class="uses-item__desc">My primary AI tool. I use it for writing, reasoning through problems, and building side projects. It's where The Prompt Kitchen came from.</p>
+            </div>
+            <div class="uses-item">
+              <p class="uses-item__name">Vivaldi</p>
+              <p class="uses-item__desc">My browser of choice. Chromium-based but actually built for power users — tab management, built-in tools, and no data harvesting.</p>
             </div>
             <div class="uses-item">
               <p class="uses-item__name">Python</p>
@@ -272,11 +295,7 @@
             </div>
             <div class="uses-item">
               <p class="uses-item__name">Git / GitHub</p>
-              <p class="uses-item__desc">Version control for everything, not just code. Configuration, docs, side projects.</p>
-            </div>
-            <div class="uses-item">
-              <p class="uses-item__name">[ Add your setup ]</p>
-              <p class="uses-item__desc">Hardware, terminal setup, shell, other tools worth mentioning — fill this in.</p>
+              <p class="uses-item__desc">Version control for everything — code, config, docs, and the side projects that never quite get finished.</p>
             </div>
           </div>
         </div>
