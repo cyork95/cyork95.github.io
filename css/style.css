@@ -352,6 +352,8 @@ section {
   overflow: hidden;               /* clips the image to a circle */
   border: 3px solid var(--accent);
   box-shadow: 0 0 0 8px var(--accent-dim), var(--shadow-lg);
+  position: relative;
+  z-index: 2;                     /* sits above the dot pattern ::before */
 }
 
 .hero__photo {
@@ -370,7 +372,7 @@ section {
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-top: 48px;
-  margin-bottom: 72px;
+  margin-bottom: 80px;
 }
 
 .stat {
