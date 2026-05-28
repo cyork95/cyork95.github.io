@@ -1353,6 +1353,52 @@ section {
   font-family: var(--font-mono);
 }
 
+/* --- Badge grid (Credly) --- */
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 14px;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 18px 10px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  gap: 10px;
+  transition: border-color var(--transition), transform var(--transition);
+  text-decoration: none;
+}
+
+.badge-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.badge-item__img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+}
+
+.badge-item__name {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.35;
+  flex: 1;
+}
+
+.badge-item__date {
+  font-size: 0.66rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .hero__inner {
