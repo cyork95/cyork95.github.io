@@ -396,143 +396,33 @@
     </div>
   </main>
 
-  <!-- Network strip -->
-  <div class="network-strip">
-    <div class="network-strip__inner">
-      <span class="network-strip__label">// also by me</span>
-      <div class="network-strip__links">
-        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="network-strip__link network-strip__link--amber">&#x1F373; The Prompt Kitchen</a>
-        <a href="https://coyofroyo.pythonanywhere.com/" target="_blank" rel="noopener" class="network-strip__link">&#x2728; ShinyQuestFlask</a>
-        <a href="https://github.com/cyork95/arcane-frontiers" target="_blank" rel="noopener" class="network-strip__link">&#x2694;&#xFE0F; Arcane Frontiers</a>
-        <a href="/york-develops-blog/" class="network-strip__link">&#x1F4DD; Blog</a>
-        <a href="https://github.com/cyork95" target="_blank" rel="noopener" class="network-strip__link">GitHub &#x2197;</a>
-      </div>
-    </div>
-  </div>
-
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="footer__inner">
-      <div class="footer__left">
-        <p class="footer__brand">York<span>Develops</span>.com</p>
-        <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
+      <div class="footer__network">
+        <span class="footer__network-label">// also by me</span>
+        <div class="footer__network-links">
+          <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="pk">&#x1F373; The Prompt Kitchen</a>
+          <a href="https://coyofroyo.pythonanywhere.com/" target="_blank" rel="noopener">&#x2728; ShinyQuestFlask</a>
+          <a href="https://github.com/cyork95/arcane-frontiers" target="_blank" rel="noopener">&#x2694;&#xFE0F; Arcane Frontiers</a>
+          <a href="/lorerim5-journal/">&#x1F4D6; Lorerim Journal</a>
+          <a href="/york-develops-blog/">&#x1F4DD; Blog</a>
+        </div>
       </div>
-      <nav class="footer__links" aria-label="Footer navigation">
-        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>
-        <a href="/">Home</a>
-        <a href="/projects/">Projects</a>
-      </nav>
+      <div class="footer__main">
+        <div class="footer__left">
+          <p class="footer__brand">York<span>Develops</span>.com</p>
+          <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
+        </div>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
     </div>
   </footer>
-
-  <script>
-    const STORAGE_KEY = 'lorerim-journal-v1';
-
-    function load() {
-      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
-      catch { return {}; }
-    }
-
-    function save(data) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    }
-
-    // --- Character fields ---
-    const charFields = ['char-name','char-race','char-level','char-class','char-standing','char-faction','char-bio'];
-    const data = load();
-
-    charFields.forEach(id => {
-      const el = document.getElementById(id);
-      if (data.char && data.char[id] !== undefined) el.value = data.char[id];
-      el.addEventListener('input', saveChar);
-    });
-
-    function saveChar() {
-      const d = load();
-      d.char = {};
-      charFields.forEach(id => d.char[id] = document.getElementById(id).value);
-      save(d);
-      document.getElementById('char-save-indicator').textContent = '// saved ' + new Date().toLocaleTimeString();
-    }
-
-    // Level buttons
-    document.getElementById('levelUp').addEventListener('click', () => {
-      const el = document.getElementById('char-level');
-      el.value = Math.min(999, parseInt(el.value || 1) + 1);
-      saveChar();
-    });
-    document.getElementById('levelDown').addEventListener('click', () => {
-      const el = document.getElementById('char-level');
-      el.value = Math.max(1, parseInt(el.value || 1) - 1);
-      saveChar();
-    });
-
-    // --- Journal entries ---
-    function renderEntries() {
-      const d = load();
-      const entries = d.entries || [];
-      const list = document.getElementById('entryList');
-
-      if (entries.length === 0) {
-        list.innerHTML = '<div class="empty-state">// no entries yet — write your first chapter above</div>';
-        return;
-      }
-
-      list.innerHTML = entries.slice().reverse().map((e, ri) => {
-        const i = entries.length - 1 - ri;
-        return `<div class="entry">
-          <button class="entry__delete" onclick="deleteEntry(${i})" title="Delete entry">&#x2715; delete</button>
-          <div class="entry__header">
-            <p class="entry__title">${escHtml(e.title || 'Untitled entry')}</p>
-            <div class="entry__meta">
-              ${e.level ? `<span class="entry__level-badge">Lvl ${escHtml(e.level)}</span>` : ''}
-              ${e.location ? `<span class="entry__date">&#x1F4CD; ${escHtml(e.location)}</span>` : ''}
-              <span class="entry__date">${e.date}</span>
-            </div>
-          </div>
-          <p class="entry__body">${escHtml(e.body)}</p>
-        </div>`;
-      }).join('');
-    }
-
-    function escHtml(str) {
-      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
-
-    window.deleteEntry = function(i) {
-      if (!confirm('Delete this entry?')) return;
-      const d = load();
-      d.entries = d.entries || [];
-      d.entries.splice(i, 1);
-      save(d);
-      renderEntries();
-    };
-
-    document.getElementById('addEntry').addEventListener('click', () => {
-      const title = document.getElementById('entry-title').value.trim();
-      const body  = document.getElementById('entry-body').value.trim();
-      const loc   = document.getElementById('entry-location').value.trim();
-      const level = document.getElementById('char-level').value;
-
-      if (!body) { document.getElementById('entry-body').focus(); return; }
-
-      const d = load();
-      d.entries = d.entries || [];
-      d.entries.push({
-        title, body, location: loc, level,
-        date: new Date().toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' })
-      });
-      save(d);
-
-      document.getElementById('entry-title').value = '';
-      document.getElementById('entry-body').value = '';
-      document.getElementById('entry-location').value = '';
-      renderEntries();
-    });
-
-    renderEntries();
-  </script>
 
 </body>
 </html>
