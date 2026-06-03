@@ -1399,6 +1399,59 @@ section {
   font-family: var(--font-mono);
 }
 
+/* --- Network strip --- */
+.network-strip {
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  padding: 16px 0;
+}
+
+.network-strip__inner {
+  max-width: var(--wide-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.network-strip__label {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.network-strip__links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.network-strip__link {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+
+.network-strip__link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.network-strip__link--amber:hover {
+  color: var(--amber);
+  border-color: var(--amber);
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .hero__inner {
