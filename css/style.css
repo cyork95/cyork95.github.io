@@ -1162,7 +1162,6 @@ section {
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
