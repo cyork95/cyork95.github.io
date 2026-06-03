@@ -1162,61 +1162,6 @@ section {
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.footer__network {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.footer__network-brand {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.footer__network-brand span {
-  color: var(--accent);
-}
-
-.footer__network-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0;
-}
-
-.footer__network-links a {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-  transition: color var(--transition);
-  padding: 0 14px;
-}
-
-.footer__network-links a + a {
-  border-left: 1px solid var(--border);
-}
-
-.footer__network-links a:first-child {
-  padding-left: 0;
-}
-
-.footer__network-links a:hover { color: var(--accent); }
-.footer__network-links a.pk:hover { color: var(--amber); }
-
-.footer__main {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
