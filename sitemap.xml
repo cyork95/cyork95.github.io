@@ -26,6 +26,12 @@
   </url>
 
   <url>
+    <loc>https://yorkdevelops.com/projects/rhythm-rider/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://yorkdevelops.com/prompt-kitchen/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
