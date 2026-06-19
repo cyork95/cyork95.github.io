@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Tiles — York Develops</title>
+  <meta name="description" content="Neon Tiles is an interactive generative AI music keyboard/game built on Google Flow Music by Cody York.">
+  <meta name="author" content="Cody York">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yorkdevelops.com/projects/neon-tiles/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yorkdevelops.com/projects/neon-tiles/">
+  <meta property="og:title" content="Neon Tiles — York Develops">
+  <meta property="og:description" content="An interactive generative AI music keyboard where you vibe-code and trigger neon tiles to play scales and chords.">
+  <meta property="og:site_name" content="York Develops">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">York<span>.</span>dev</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9788;</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <p class="page-header__eyebrow">// projects / neon-tiles</p>
+          <h1 class="page-header__title">Neon Tiles</h1>
+          <p class="page-header__desc">
+            An interactive generative AI music keyboard built on Google Flow Music. Trigger synth layers, select scales, and watch custom neon visualizers react to your playing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+      <!-- Interactive Frame Section -->
+      <section style="padding-top: 0;" data-reveal>
+        <div class="game-embed">
+          <div class="embed-container">
+            <iframe 
+              src="https://www.flowmusic.app/space/22d1dd3c-0d9a-48bf-bd1f-8d92e0d9fa46" 
+              class="embed-frame"
+              allow="autoplay; encrypted-media; fullscreen"
+              loading="lazy"
+              title="Neon Tiles Keyboard Game on Google Flow Music"
+            ></iframe>
+            
+            <div class="embed-controls">
+              <div class="embed-meta">
+                <span class="embed-status">Live Space</span>
+                <span style="font-size: 0.85rem; color: var(--text-secondary);">Interactive Synth Keyboard</span>
+              </div>
+              <div style="display: flex; gap: 12px;">
+                <a href="https://www.flowmusic.app/space/22d1dd3c-0d9a-48bf-bd1f-8d92e0d9fa46" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="btn btn--outline btn--sm"
+                   style="padding: 6px 12px; font-size: 0.75rem;"
+                >
+                  Open in Flow Music &#x2197;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section style="padding-top: 20px; padding-bottom: 80px;" data-reveal>
+        <div class="grid-2" style="gap: 24px; align-items: start;">
+          <div>
+            <h2 style="font-size: 1.5rem; margin-bottom: 12px; color: var(--text-primary);">About Neon Tiles</h2>
+            <p style="margin-bottom: 16px;">
+              Neon Tiles is an interactive virtual synthesizer keyboard space. Built using AI vibe-coding models, it creates a visual interface mapping specific scales and chords onto beautiful, high-contrast neon pads.
+            </p>
+            <p>
+              By combining web-based synthesis, custom oscillators, and SVG canvas visualizations, this project explores the boundaries of fully functional, zero-install instruments built from natural language instructions.
+            </p>
+          </div>
+          
+          <div class="card" style="margin: 0; padding: 24px;">
+            <h3 style="margin-bottom: 12px; font-size: 1.1rem; color: var(--accent);">Instructions &amp; Tips</h3>
+            <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 8px;">
+              <li style="font-size: 0.9rem; color: var(--text-secondary); display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--accent);">&#x25B8;</span>
+                <span><strong>Audio Loading:</strong> Click or tap inside the visual board first to initialize the audio context so you can hear the synths.</span>
+              </li>
+              <li style="font-size: 0.9rem; color: var(--text-secondary); display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--accent);">&#x25B8;</span>
+                <span><strong>Playing:</strong> Click individual tiles or use your keyboard keys (if supported) to play chords and melodies. Dragging across tiles creates a glissando effect.</span>
+              </li>
+              <li style="font-size: 0.9rem; color: var(--text-secondary); display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--accent);">&#x25B8;</span>
+                <span><strong>Alternative:</strong> Use the "Open in Flow Music" link below the frame to play in a fullscreen window or save a copy of the synth.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <p class="footer__brand">York<span>Develops</span>.com</p>
+        <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://medium.com/@yorkc36" target="_blank" rel="noopener">Medium</a>
+        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>
+        <a href="/my-sites/">My Sites</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
