@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tornado Tracker — York Develops</title>
+  <meta name="description" content="Tornado Tracker is an interactive historical US tornado path explorer by Cody York. Filter and analyze storm tracks by year, state, and EF scale.">
+  <meta name="author" content="Cody York">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yorkdevelops.com/projects/tornado-tracker/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yorkdevelops.com/projects/tornado-tracker/">
+  <meta property="og:title" content="Tornado Tracker — York Develops">
+  <meta property="og:description" content="An interactive map of historical US tornado tracks with EF-scale rating, dual-range year filtering, and detailed storm data.">
+  <meta property="og:site_name" content="York Develops">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">York<span>.</span>dev</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9788;</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <p class="page-header__eyebrow">// projects / tornado-tracker</p>
+          <h1 class="page-header__title">Tornado Tracker</h1>
+          <p class="page-header__desc">
+            An interactive historical tornado path explorer. Filter and analyze US tornado tracks from past decades by year range, state, and EF-scale intensity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--wide">
+      
+      <!-- Interactive Frame Section -->
+      <section style="padding-top: 0;" data-reveal>
+        <div class="game-embed">
+          <div class="embed-container">
+            <iframe 
+              src="https://tornadotracker.yorkdevelops.com" 
+              class="embed-frame"
+              allow="fullscreen"
+              loading="lazy"
+              title="Tornado Tracker Map Application"
+            ></iframe>
+            
+            <div class="embed-controls">
+              <div class="embed-meta">
+                <span class="embed-status">Live App</span>
+                <span style="font-size: 0.85rem; color: var(--text-secondary);">Interactive GIS Storm Path Explorer</span>
+              </div>
+              <div style="display: flex; gap: 12px;">
+                <a href="https://tornadotracker.yorkdevelops.com" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="btn btn--outline btn--sm"
+                   style="padding: 6px 12px; font-size: 0.75rem;"
+                >
+                  Open in New Tab &#x2197;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section style="padding-top: 20px; padding-bottom: 80px;" data-reveal>
+        <div class="grid-2" style="gap: 24px; align-items: start;">
+          <div>
+            <h2 style="font-size: 1.5rem; margin-bottom: 12px; color: var(--text-primary);">About Tornado Tracker</h2>
+            <p style="margin-bottom: 16px;">
+              Tornado Tracker is a lightweight, responsive GIS mapping dashboard that leverages Leaflet.js to plot historical tornado tracks across the United States. Designed to handle large coordinate datasets efficiently, it lets researchers and weather enthusiasts query and visualize spatial patterns of major storms.
+            </p>
+            <p>
+              The application translates complex geographic datasets (including starting coordinates, endpoints, width, length, and storm impact parameters) into clean, color-coded vectors colored by their EF-scale rating.
+            </p>
+          </div>
+          
+          <div class="card" style="margin: 0; padding: 24px;">
+            <h3 style="margin-bottom: 12px; font-size: 1.1rem; color: var(--accent);">Instructions &amp; Tips</h3>
+            <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 8px;">
+              <li style="font-size: 0.9rem; color: var(--text-secondary); display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--accent);">&#x25B8;</span>
+                <span><strong>Interactive Filtering:</strong> Use the sidebar on the map to set a range of years, choose a state, or limit results to specific EF ratings (EF0 - EF5). Click "Apply Filters" to redraw paths.</span>
+              </li>
+              <li style="font-size: 0.9rem; color: var(--text-secondary); display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--accent);">&#x25B8;</span>
+                <span><strong>Detailed Popups:</strong> Click on any rendered tornado track on the map to see precise metrics such as date, time, length in miles, width, and any recorded injuries or fatalities.</span>
+              </li>
+              <li style="font-size: 0.9rem; color: var(--text-secondary); display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--accent);">&#x25B8;</span>
+                <span><strong>Map Fitting:</strong> When filtering for a specific state, click the "Fit Map to Tracks" button in the filter pane to automatically pan and zoom directly to the bounding box of the active storm paths.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <p class="footer__brand">York<span>Develops</span>.com</p>
+        <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://medium.com/@yorkc36" target="_blank" rel="noopener">Medium</a>
+        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>
+        <a href="/my-sites/">My Sites</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
