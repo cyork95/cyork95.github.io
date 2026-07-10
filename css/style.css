@@ -1755,3 +1755,317 @@ section {
     align-items: flex-start;
   }
 }
+
+/* --- Resume Page Layout --- */
+.resume-layout {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 40px;
+  margin-top: 48px;
+  margin-bottom: 80px;
+}
+
+.resume-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.resume-section {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+}
+
+.resume-section:last-of-type {
+  border-bottom: none;
+}
+
+.resume-section-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resume-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.resume-text a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.resume-text a:hover {
+  text-decoration: underline;
+}
+
+.resume-item {
+  margin-bottom: 24px;
+}
+
+.resume-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.resume-item-role {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.resume-item-company {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.resume-item-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.resume-item-location {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.resume-item-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.resume-bullets {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.resume-bullets li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.resume-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.resume-education-item {
+  margin-bottom: 16px;
+}
+
+.resume-education-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Resume Sidebar */
+.resume-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.resume-sidebar-block {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.resume-sidebar-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.resume-sidebar-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.resume-sidebar-text a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.resume-sidebar-text a:hover {
+  text-decoration: underline;
+}
+
+.resume-sidebar-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.resume-sidebar-list {
+  padding-left: 16px;
+}
+
+.resume-sidebar-list li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.resume-sidebar-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Printing Utilities */
+.print-only {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+
+  .no-print-margin {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .resume-layout {
+    display: block !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .resume-main {
+    gap: 20px !important;
+  }
+
+  .resume-section {
+    border-bottom: 1px solid #ccc !important;
+    padding-bottom: 16px !important;
+    page-break-inside: avoid;
+  }
+
+  .resume-section-title {
+    font-size: 1.25rem !important;
+    color: #000 !important;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    margin-bottom: 12px !important;
+  }
+
+  .resume-text,
+  .resume-bullets li,
+  .resume-item-desc {
+    color: #222 !important;
+    font-size: 0.85rem !important;
+  }
+
+  .resume-item-role {
+    font-size: 1.05rem !important;
+    color: #000 !important;
+  }
+
+  .resume-item-company {
+    color: #333 !important;
+  }
+
+  .resume-item-date {
+    color: #555 !important;
+  }
+
+  /* Render sidebar content below main content when printing */
+  .resume-sidebar {
+    margin-top: 30px;
+    page-break-inside: avoid;
+  }
+
+  .resume-sidebar-block {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .resume-sidebar-title {
+    font-size: 1.1rem !important;
+    color: #000 !important;
+    border-bottom: 1px solid #000 !important;
+  }
+
+  .resume-sidebar-text,
+  .resume-sidebar-list li {
+    color: #222 !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Printable Header */
+  .resume-print-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 12px;
+  }
+
+  .resume-print-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #000;
+  }
+
+  .resume-print-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 8px 0;
+    color: #333;
+  }
+
+  .resume-print-contact {
+    font-size: 0.85rem;
+    color: #555;
+  }
+}
+
+/* Responsive details for resume page layout */
+@media (max-width: 992px) {
+  .resume-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
