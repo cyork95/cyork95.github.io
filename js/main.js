@@ -80,7 +80,10 @@
       if (href === '/' || href === '../' || href === '../../' || href === 'index.html') {
         isActive = segment === '';
       } else {
-        const hrefSegment = href.replace(/^\//, '').replace(/\/$/, '').split('/')[0];
+        const start = href.startsWith('/') ? 1 : 0;
+        let end = href.indexOf('/', start);
+        if (end === -1) end = href.length;
+        const hrefSegment = href.slice(start, end);
         isActive = segment === hrefSegment;
       }
 
