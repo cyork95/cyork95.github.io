@@ -95,82 +95,6 @@ a:hover { color: var(--accent-hover); }
   padding: 0 1.5rem;
 }
 
-/* ─── Header ────────────────────────────────────────────────── */
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  height: var(--nav-height);
-  background-color: var(--bg-primary);
-  border-bottom: 1px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: background-color var(--transition), border-color var(--transition);
-}
-
-.site-header .container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-name {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--text-primary);
-  letter-spacing: -0.02em;
-}
-.site-name:hover { color: var(--accent); }
-
-.site-name span {
-  color: var(--accent);
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.nav-link {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  padding: 0.375rem 0.625rem;
-  border-radius: var(--radius-sm);
-  transition: color var(--transition), background-color var(--transition);
-}
-.nav-link:hover {
-  color: var(--text-primary);
-  background-color: var(--bg-card);
-}
-.nav-link.active {
-  color: var(--accent);
-}
-
-.theme-toggle {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text-secondary);
-  cursor: pointer;
-  font-size: 0.9rem;
-  line-height: 1;
-  padding: 0.35rem 0.5rem;
-  margin-left: 0.5rem;
-  transition: color var(--transition), border-color var(--transition), background-color var(--transition);
-}
-.theme-toggle:hover {
-  color: var(--text-primary);
-  border-color: var(--text-secondary);
-  background-color: var(--bg-card);
-}
-
 /* ─── Main ──────────────────────────────────────────────────── */
 
 main {
@@ -179,11 +103,11 @@ main {
 
 /* ─── Hero ──────────────────────────────────────────────────── */
 
-.hero {
+.blog-hero {
   margin-bottom: 3rem;
 }
 
-.hero-label {
+.blog-hero-label {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--accent);
@@ -192,7 +116,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.hero-title {
+.blog-hero-title {
   font-family: var(--font-heading);
   font-size: 1.75rem;
   font-weight: 700;
@@ -201,7 +125,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.hero-tagline {
+.blog-hero-tagline {
   color: var(--text-secondary);
   font-size: 1rem;
   max-width: 520px;
@@ -629,38 +553,6 @@ main {
 }
 .prose tr:hover td { background-color: var(--bg-card); }
 
-/* ─── Footer ────────────────────────────────────────────────── */
-
-.site-footer {
-  border-top: 1px solid var(--border-subtle);
-  padding: 1.75rem 0;
-}
-
-.site-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.footer-copy {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.footer-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.footer-links a {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  transition: color var(--transition);
-}
-.footer-links a:hover { color: var(--accent); }
-
 /* ─── Loading State ─────────────────────────────────────────── */
 
 .loading {
@@ -675,7 +567,7 @@ main {
 @media (max-width: 640px) {
   :root { --nav-height: 56px; }
 
-  .hero-title { font-size: 1.4rem; }
+  .blog-hero-title { font-size: 1.4rem; }
 
   .post-row {
     grid-template-columns: 1fr;
@@ -683,5 +575,4 @@ main {
   }
   .post-date { padding-top: 0; }
 
-  .site-footer .container { flex-direction: column; align-items: flex-start; }
 }

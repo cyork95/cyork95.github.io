@@ -10,36 +10,13 @@
   <link rel="canonical" href="https://yorkdevelops.com/my-sites/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/site-chrome.js"></script>
   <script src="/js/main.js"></script>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="nav" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="/" class="nav__logo">York<span>.</span>dev</a>
-      <ul class="nav__links" role="list">
-        <li><a href="/about/">About</a></li>
-        <li><a href="/work/">Work</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/creations/">Creations</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav__actions">
-        <button class="nav__theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9788;</button>
-        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
-      </div>
-    </div>
-    <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
-      <ul class="nav__mobile-links" role="list">
-        <li><a href="/about/">About</a></li>
-        <li><a href="/work/">Work</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/creations/">Creations</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="site-nav"></div>
 
   <main>
 
@@ -285,21 +262,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer__inner">
-      <div class="footer__left">
-        <p class="footer__brand">York<span>Develops</span>.com</p>
-        <p class="footer__privacy">No analytics &middot; No tracking &middot; No cookies</p>
-      </div>
-      <nav class="footer__links" aria-label="Footer navigation">
-        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://medium.com/@yorkc36" target="_blank" rel="noopener">Medium</a>
-        <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>
-        <a href="/">Home</a>
-        <a href="/contact/">Contact</a>
-      </nav>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
 </body>
 </html>

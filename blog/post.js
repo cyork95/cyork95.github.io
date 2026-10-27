@@ -1,27 +1,3 @@
-/* ─── Theme ──────────────────────────────────────────────────── */
-
-(function () {
-  const saved = localStorage.getItem('theme') || 'dark';
-  document.documentElement.dataset.theme = saved;
-})();
-
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('theme-toggle');
-  if (!toggle) return;
-
-  const updateIcon = () => {
-    toggle.textContent = document.documentElement.dataset.theme === 'dark' ? '☼' : '☾';
-  };
-  updateIcon();
-
-  toggle.addEventListener('click', () => {
-    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem('theme', next);
-    updateIcon();
-  });
-});
-
 /* ─── Front-matter Parser ────────────────────────────────────── */
 
 function parseFrontMatter(raw) {

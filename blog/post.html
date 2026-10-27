@@ -10,25 +10,17 @@
   <meta property="og:site_name" content="York Develops" />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="styles.css" />
   <!-- KaTeX for LaTeX math rendering -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
 </head>
 <body>
 
   <!-- ─── Header ─────────────────────────────────────────────── -->
-  <header class="site-header">
-    <div class="container">
-      <a href="https://cyork95.github.io" class="site-name">
-        York<span>Develops</span>
-      </a>
-      <nav class="nav" aria-label="Site navigation">
-        <a href="https://cyork95.github.io" class="nav-link">Portfolio ↗</a>
-        <a href="index.html" class="nav-link active">Blog</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">☼</button>
-      </nav>
-    </div>
-  </header>
+  <div id="site-nav"></div>
 
   <!-- ─── Main ───────────────────────────────────────────────── -->
   <main>
@@ -50,15 +42,7 @@
   </main>
 
   <!-- ─── Footer ─────────────────────────────────────────────── -->
-  <footer class="site-footer">
-    <div class="container">
-      <span class="footer-copy">© 2026 Cody York · No analytics · No tracking · No cookies</span>
-      <div class="footer-links">
-        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://cyork95.github.io" target="_blank" rel="noopener">Portfolio ↗</a>
-      </div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
   <!-- marked.js for markdown rendering -->
   <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
