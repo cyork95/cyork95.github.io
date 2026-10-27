@@ -117,3 +117,14 @@ Quick find-and-replace in VS Code: `Ctrl+Shift+H` (Windows) or `Cmd+Shift+H` (Ma
 ## License
 
 Content is personal and not licensed for reuse. Code structure is fair game — if the CSS or JS is useful to you, take it.
+
+---
+
+## Consolidation — 2026-10-27
+
+The links page and the blog now live in this repo and are served from here:
+
+- `links/` → https://yorkdevelops.com/links/ (copied byte-for-byte from cyork95/links)
+- `blog/` → https://yorkdevelops.com/blog/ (copied byte-for-byte from cyork95/york-develops-blog, 57 posts)
+
+The old `cyork95/links` and `cyork95/york-develops-blog` repos are retained as read-only history. URLs under `/york-develops-blog/` redirect via the stubs in `york-develops-blog/`.
