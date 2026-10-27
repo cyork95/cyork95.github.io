@@ -1,0 +1,458 @@
+[
+  {
+    "title": "Code vs. Cognitive Architecture: Defining the Deterministic Boundary in Agentic Systems",
+    "slug": "code-vs-cognitive-architecture-defining-the-deterministic-boundary-in-agentic-systems",
+    "date": "2026-06-24",
+    "description": "An architectural deep dive into the boundary between deterministic control planes and probabilistic cognitive loops, analyzing framework landscapes, cognitive loop mechanics, and thin agent design patterns.",
+    "tags": ["agentic-systems", "software-engineering", "langgraph", "pydantic-ai", "dspy", "system-design", "machine-learning", "architectures"],
+    "section": "programming"
+  },
+  {
+    "title": "Automated Aerial Pageantry: Computational Mechanics, Distributed Edge Architectures, and the Environmental Optimization of Municipal Airspaces",
+    "slug": "automated-aerial-pageantry-computational-mechanics-distributed-edge-architectures",
+    "date": "2026-06-24",
+    "description": "A deep dive into the engineering, physics, optimization algorithms, and distributed systems architecture driving the municipal transition from traditional pyrotechnics to autonomous, software-defined drone swarms.",
+    "tags": ["drones", "reinforcement-learning", "robotics", "distributed-systems", "math", "algorithms", "optimization", "environmental-engineering"],
+    "section": "programming"
+  },
+  {
+    "title": "Static, Grooves, and Gatefolds: Why I Still Buy Records in a Streaming World",
+    "slug": "static-grooves-and-gatefolds-why-i-still-buy-records-in-a-streaming-world",
+    "date": "2026-06-24",
+    "description": "An exploration of why physical media, specifically vinyl records, remains compelling in a frictionless, streaming-dominated world.",
+    "tags": ["vinyl", "music", "physical-media", "philosophy", "analog"],
+    "section": "fun"
+  },
+  {
+    "title": "Architectural Syntheses in High-Performance Language Model Infrastructure: Mixture of Experts versus Model Merging",
+    "slug": "mixture-of-experts-versus-model-merging",
+    "date": "2026-06-24",
+    "description": "A comprehensive deep dive comparing Mixture of Experts (MoE) and Model Merging, mapping their routing algorithms, weight-space merging techniques, upcycling strategies (FrankenMoEs), and hardware deployment profiles.",
+    "tags": ["mixture-of-experts", "model-merging", "system-design", "llamacpp", "vllm", "deepseek", "mergekit", "machine-learning"],
+    "section": "programming"
+  },
+  {
+    "title": "Forensic Accounting & RAG Document Pipeline Hygiene: Applying Corporate Auditing Workflows to Enterprise Context Ingestion",
+    "slug": "forensic-accounting-rag-document-pipeline-hygiene",
+    "date": "2026-06-23",
+    "description": "How corporate auditing practices, layout parsers, MinHash LSH deduplication, active reconciliation engines, and runtime validation layers ensure data hygiene in enterprise RAG pipelines.",
+    "tags": ["rag", "vector-databases", "deduplication", "forensic-accounting", "data-hygiene", "llamaparse", "openlineage", "python"],
+    "section": "programming"
+  },
+  {
+    "title": "Temporal Ergonomics in Deep-Thinking Language Interfaces: Harnessing Chronostasis and Attentional Gating for Next-Generation Frontend Systems",
+    "slug": "temporal-ergonomics-deep-thinking-language-interfaces",
+    "date": "2026-06-23",
+    "description": "How saccadic chronostasis and the Attentional Gate Model can be leveraged in frontend design to build engaging and low-friction interfaces for deep-thinking language models.",
+    "tags": ["frontend", "user-experience", "latency", "time-perception", "chronostasis", "attentional-gate", "react", "typescript", "css"],
+    "section": "programming"
+  },
+  {
+    "title": "Computational Mycology: Transforming Multi-Agent AI Orchestration through Decentralized Mycelial Topologies and Semantic Routing",
+    "slug": "computational-mycology-decentralized-mycelial-topologies-semantic-routing",
+    "date": "2026-06-23",
+    "description": "How biophysical mycelial network dynamics, Spitzenkörper growth, anastomosis, and bioelectric memory map to decentralized agentic workflows, using semantic Ant Colony Optimization (ACO) routing.",
+    "tags": ["multi-agent", "orchestration", "bio-inspired", "decentralized", "system-design", "ant-colony-optimization", "gossip-protocols", "blockchain", "blockchain-mesh"],
+    "section": "programming"
+  },
+  {
+    "title": "Moving Beyond the B-Tree: Why Modern Write-Heavy Architectures Demand LSM-Trees",
+    "slug": "moving-beyond-b-tree-write-heavy-lsm-trees",
+    "date": "2026-06-23",
+    "description": "An architectural exploration of why traditional B-Tree databases struggle under write-heavy workloads and how Log-Structured Merge-Trees (LSM-Trees) solve this through MemTables, SSTables, compaction, and Bloom filters.",
+    "tags": ["databases", "lsm-tree", "b-tree", "storage-engines", "system-design", "rocksdb", "cassandra", "bigtable"],
+    "section": "programming"
+  },
+  {
+    "title": "Unified Framework for Crawl Budget Management and Indexation Governance: Resolving Robots.txt Exclusion Anomalies",
+    "slug": "unified-framework-crawl-budget-management-indexation-governance-robots-txt",
+    "date": "2026-06-23",
+    "description": "A comprehensive guide to managing crawl budgets, indexation anomalies (such as 'Indexed, though blocked by robots.txt'), platform constraints, link obfuscation, and edge-caching conflicts.",
+    "tags": ["seo", "crawl-budget", "robots-txt", "indexing", "web-performance", "shopify", "woocommerce", "cloudflare", "screaming-frog"],
+    "section": "programming"
+  },
+  {
+    "title": "Mathematical Limits and Coordination Dynamics in Distributed Database Systems",
+    "slug": "mathematical-limits-coordination-dynamics-distributed-database-systems",
+    "date": "2026-06-22",
+    "description": "An analysis of consensus protocols (Raft, Paxos, Multi-Paxos, PBFT), performance tradeoffs, and systemic limits like the FLP Impossibility Theorem, the PACELC frontier, the PRAM bounds, and the SNOW Theorem.",
+    "tags": ["distributed-systems", "consensus", "paxos", "raft", "pbft", "pacelc", "pram", "snow-theorem", "databases", "system-design"],
+    "section": "programming"
+  },
+  {
+    "title": "The Spatial, Legal, and Geological Dynamics of the Centralia Coal-Seam Fire: A Comparative Analysis of Chronic Subterranean Combustion and Acute Fossil Fuel Disasters in Pennsylvania",
+    "slug": "centralia-coal-seam-fire-subterranean-combustion",
+    "date": "2026-06-21",
+    "description": "A geological, legal, and historical analysis of the Centralia coal-seam fire and a comparative study with acute Pennsylvania fossil fuel disasters, from the 1861 Rouseville well fire to the 1975 Philadelphia refinery disaster.",
+    "tags": ["centralia", "coal-fire", "geology", "history", "pennsylvania", "disasters", "refinery", "petroleum"],
+    "section": "programming"
+  },
+  {
+    "title": "Structural Engineering Shifts in Real-Time Inference Infrastructure: An Evaluation of TurboQuant and Low-Bit Key-Value Cache Compressions",
+    "slug": "turboquant-low-bit-kv-cache-compression",
+    "date": "2026-06-21",
+    "description": "An in-depth evaluation of TurboQuant — its mathematical preconditioning under PolarQuant, QJL residual error correction, RaBitQ academic disputes, hardware fast Walsh-Hadamard transform adaptations, and vLLM integration presets.",
+    "tags": ["turboquant", "kv-cache", "quantization", "vllm", "Triton", "ICLR-2026", "GPU", "AMD", "RoCM", "machine-learning"],
+    "section": "programming"
+  },
+  {
+    "title": "Beyond the Perimeter: Building a Zero-Trust, Cryptographic Data Mesh",
+    "slug": "zero-trust-cryptographic-data-mesh",
+    "date": "2026-06-21",
+    "description": "An architectural blueprint for Zero-Trust Data Architecture — shifting from perimeter Moat-and-Castle security to data self-protection, incorporating Attribute-Based Access Control (ABAC), OPA Rego policies, Privacy-Enhancing Technologies, and SPIFFE/SPIRE workload identities.",
+    "tags": ["security", "architecture", "zero-trust", "data-mesh", "ABAC", "OPA", "rego", "cryptography", "cloud", "gcp"],
+    "section": "programming"
+  },
+  {
+    "title": "The Great Indoor Plant Sanctuary: Outsmarting Four Felines with a Cat-Proof Greenhouse",
+    "slug": "cat-proof-greenhouse-indoor-plant-sanctuary",
+    "date": "2026-06-21",
+    "description": "A practical guide to engineering a cat-proof indoor greenhouse using reinforced frames, PVC covers, wall anchors, and plastic deterrent scat mats — keeping Aerogardens and houseplants safe from curious felines.",
+    "tags": ["gardening", "indoor-garden", "cats", "pet-proofing", "DIY", "home-engineering", "aerogarden", "plants"],
+    "section": "tea-garden"
+  },
+  {
+    "title": "Supply Chain of the Mind: Design Patterns for Just-In-Time Context Pipelines in LLM Operations",
+    "slug": "jit-context-pipelines-llm-operations",
+    "date": "2026-06-20",
+    "description": "An architectural guide applying Toyota's lean manufacturing principles (Muda, Mura, Muri) to context window engineering in LLMOps — covering Lost-in-the-Middle mitigation, multi-tier memory paging, and prompt compression pipelines.",
+    "tags": ["llmops", "architecture", "engineering", "system-design", "Letta", "MemGPT", "Valkey", "prompt-compression", "machine-learning"],
+    "section": "programming"
+  },
+  {
+    "title": "Total Order in Asynchronous Chaos: A Deep Dive into Schema Registries and EDA",
+    "slug": "event-driven-architecture-schema-registry",
+    "date": "2026-06-22",
+    "description": "Why JSON is a luxury high-throughput streams can't afford, how Schema Registries govern binary serialization (Avro/Protobuf), and how to resolve the dual-write problem using CDC and the Transactional Outbox pattern.",
+    "tags": ["architecture", "event-driven", "kafka", "schema-registry", "avro", "protobuf", "debezium", "cdc", "devops"],
+    "section": "programming"
+  },
+  {
+    "title": "Proactive Engineering: Why I Stopped Waiting for the Next Ticket (And How It Saved My Tech Stack)",
+    "slug": "myth-of-the-passive-queue-proactive-engineering",
+    "date": "2026-06-22",
+    "description": "Why waiting for the next Jira ticket is a recipe for fragile architectures, and how proactively auditing cloud environments and personal tech stacks builds resilience, privacy, and career autonomy.",
+    "tags": ["career", "productivity", "data-engineering", "cloud", "python", "gcs", "privacy", "software-engineering", "philosophy"],
+    "section": "programming"
+  },
+  {
+    "title": "The Archival Index Aesthetic: Exposing Structure and Taxonomy in Modern Interface Design",
+    "slug": "archival-index-aesthetic-interface-design",
+    "date": "2026-06-18",
+    "description": "An examination of the Archival Index Aesthetic — its theoretical roots in Swiss International Typographic Style, core layout characteristics, machine experience (MX) alignment, and comparison of AI-driven UI design consistency platforms.",
+    "tags": ["design-systems", "UI-UX", "typography", "swiss-style", "archival-index", "web-design", "accessibility", "bento-grid", "frontend"],
+    "section": "programming"
+  },
+  {
+    "title": "Beyond Rust: How CHERI Hardware is Fixing the C/C++ Memory Crisis at the Silicon Level",
+    "slug": "cheri-hardware-fixing-c-cpp-memory-crisis",
+    "date": "2026-06-18",
+    "description": "An architectural exploration of Capability Hardware Enhanced RISC Instructions (CHERI) — how 128-bit unforgeable capabilities, ARM Morello prototypes, and CheriBSD are tackling spatial memory safety at the logic-gate level.",
+    "tags": ["security", "hardware", "c-cpp", "rust", "cheri", "arm", "risc-v", "systems-programming", "operating-systems"],
+    "section": "programming"
+  },
+  {
+    "title": "Moving Fast Without Breaking Production: How We Built a Multi-Environment Drift and Quality Checker in 24 Hours",
+    "slug": "driftguard-multi-environment-drift-checker",
+    "date": "2026-06-18",
+    "description": "Last week, my team and I tackled multi-environment cloud pipeline drift during a 24-hour hackathon, building Driftguard — a tool to audit development, QA, pre-prod, and production configurations using GCP APIs and agentic development loops.",
+    "tags": ["cloud", "devops", "gcp", "python", "bigquery", "cicd", "hackathon", "claude-code", "data-engineering"],
+    "section": "programming"
+  },
+  {
+    "title": "Engineering Dynamics, Metallurgy, and Biomechanical Ergonomics of Multi-Scale Stringed Instruments",
+    "slug": "multiscale-stringed-instruments-physics-ergonomics",
+    "date": "2026-06-18",
+    "description": "A rigorous physics and engineering analysis of multi-scale fanned-fret stringed instruments — from transverse and torsional wave propagation equations to metallurgy, Euler-Bernoulli beam theory for inharmonicity, and hand mechanics.",
+    "tags": ["physics", "engineering", "mathematics", "acoustics", "metallurgy", "ergonomics", "multi-scale", "instruments", "music"],
+    "section": "programming"
+  },
+  {
+    "title": "Why Thedas Never Gets Old: The Comfort of Dark Fantasy and Cherry-Picked Universes",
+    "slug": "why-thedas-never-gets-old-dragon-age-comfort",
+    "date": "2026-06-18",
+    "description": "Dragon Age Origins is my ultimate comfort media — not despite its grim, uncompromising dark fantasy, but because of it. On the satisfaction of curating a perfect world state across a trilogy, diving into unreliable lore, and why a Blight is strangely grounding after a long day of data pipelines.",
+    "tags": ["dragon-age", "gaming", "dark-fantasy", "bioware", "comfort-media", "lore", "rpg", "origins"],
+    "section": "fun"
+  },
+  {
+    "title": "Structural Architecture and Dynamic Reliability of Global Submarine Cable Networks",
+    "slug": "submarine-cable-networks-architecture-reliability",
+    "date": "2026-06-17",
+    "description": "A deep dive into the physical engineering of the ocean-floor fiber infrastructure powering 95% of global internet traffic — from 170 years of cable history and layered armor design to EDFA repeaters, cloud provider portfolios, and distributed systems resilience under physical disruption.",
+    "tags": ["submarine-cables", "networking", "cloud", "infrastructure", "fiber-optic", "data-engineering", "distributed-systems", "internet", "latency", "gcp"],
+    "section": "programming"
+  },
+  {
+    "title": "Analysis of Luck Mitigation in Game Systems: Mathematical Architectures, Markov Models, and Interactive Verification",
+    "slug": "luck-mitigation-game-systems-prd-markov",
+    "date": "2026-06-17",
+    "description": "A rigorous mathematical examination of variance-mitigation algorithms in game design — from Pseudo-Random Distribution and Markov chain state-space models to Fire Emblem's 2RN True Hit system and the competitive balance implications for Dota 2, Hearthstone, and beyond.",
+    "tags": ["game-design", "mathematics", "probability", "pseudo-random-distribution", "markov-chains", "statistics", "dota2", "fire-emblem", "hearthstone", "game-theory"],
+    "section": "programming"
+  },
+  {
+    "title": "Ditching the Cloud Vault: Building a Local-First, Private Knowledge Graph with Markdown and Git",
+    "slug": "local-first-knowledge-graph-markdown-git",
+    "date": "2026-06-17",
+    "description": "How a data engineer's cloud paranoia led to building a sovereign, private knowledge graph from plain Markdown files, bidirectional WikiLinks, and a Git-powered conflict resolution layer — with zero vendor lock-in.",
+    "tags": ["local-first", "markdown", "git", "knowledge-graph", "privacy", "obsidian", "plain-text", "self-hosting", "data-engineering"],
+    "section": "programming"
+  },
+  {
+    "slug": "reading-the-room-self-taught-roadmap-human-sandbox",
+    "title": "Reading the Room: A Self-Taught Roadmap to the Human Sandbox",
+    "date": "2026-06-15",
+    "description": "How a background in data engineering accidentally became a launchpad for self-directed criminal psychology — tracing the path from folk sociology electives to behavioral analysis, interrogation study, and real-world pattern recognition.",
+    "tags": ["psychology", "criminal-psychology", "behavioral-analysis", "self-directed-learning", "true-crime", "body-language", "personal"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "shattering-motherboard-barrier-cxl-memory-pooling",
+    "title": "Shattering the Motherboard Barrier: Why CXL and Memory Pooling Are the Future of Datacenters",
+    "date": "2026-06-15",
+    "description": "How Compute Express Link (CXL) is dissolving the decades-old boundary between a CPU and its RAM — from the three sub-protocols under the hood, to Linux memory tiering with NUMA nodes, to the composable infrastructure future where stranded memory drops to zero.",
+    "tags": ["cxl", "hardware", "data-engineering", "cloud", "linux", "infrastructure", "memory", "datacenter"],
+    "section": "programming"
+  },
+  {
+    "slug": "morning-song-froze-elm-street",
+    "title": "The Morning the Song Froze over Elm Street",
+    "date": "2026-06-15",
+    "description": "A midsummer morning in Zone 6b goes sideways when the garden wakes up under a layer of geometric, musical crystals that hum through your fingertips — and briefly cuts Elm Street off from the rest of the connected world.",
+    "tags": ["creative-writing", "garden", "zone-6b", "fiction", "magical-realism", "tea", "data-engineering", "music", "nature"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "five-day-window-spring-dogwoods",
+    "title": "The Five-Day Window: Living in the Shade of the Spring Dogwoods",
+    "date": "2026-06-15",
+    "description": "A brief, unrepeatable window in late April when native Indiana dogwoods take over the understory — on the architecture of Cornus florida, a perfectly paired green anxi white tea, and why some things can't be cached.",
+    "tags": ["tea", "dogwood", "spring", "garden", "zone-6b", "privacy", "nature", "tasting-notes"],
+    "section": "tea-garden"
+  },
+  {
+    "slug": "coldplay-yellow-discord-golden-age",
+    "title": "11,000 Hertz and a Glowing Feed: Why Coldplay's 'Yellow' Belongs to the Discord Golden Age",
+    "date": "2026-06-09",
+    "description": "A love letter to the Discord golden age — how Coldplay's \"Yellow\" became the unofficial test track for late-night music bot sessions, and what those self-hosted servers taught about building communities that can't be rushed.",
+    "tags": ["music", "discord", "gaming", "nostalgia", "self-hosting"],
+    "section": "fun"
+  },
+  {
+    "slug": "demystifying-vector-indexing-hnsw-ivf-pq",
+    "title": "Demystifying the Metal: Vector Indexing, Hardware Bottlenecks, and the HNSW vs. IVF-PQ Showdown",
+    "date": "2026-06-09",
+    "description": "A deep dive into HNSW and IVF-PQ vector indexes — why traditional B-trees fail in high-dimensional space, how product quantization achieves 95% memory compression, and why vector search is memory-bandwidth bound rather than compute-bound.",
+    "tags": ["vector-search", "hnsw", "data-engineering", "machine-learning", "gcp", "bigquery", "hardware"],
+    "section": "programming"
+  },
+  {
+    "slug": "overlook-at-mile-marker-42",
+    "title": "The Overlook at Mile Marker 42",
+    "date": "2026-06-09",
+    "description": "A solo road tripper pulls off the interstate at a foggy mountain overlook and finds an elaborately set dinner table for two, still steaming, with no one in sight — a quiet story about sitting with mysteries that don't resolve.",
+    "tags": ["fiction", "mystery", "road-trip", "weird-fiction", "short-story"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "hard-earned-medium-steak",
+    "title": "The Hard-Earned Medium: Why a Perfectly Seared Steak is My Ultimate Reward",
+    "date": "2026-06-09",
+    "description": "A meditation on why a perfectly cooked medium steak with charred asparagus functions as the ultimate reward meal — on thermal precision, earned celebrations, and the grounding power of cooking something simple but unforgiving.",
+    "tags": ["food", "cooking", "steak", "ritual", "productivity"],
+    "section": "fun"
+  },
+  {
+    "slug": "cryptography-of-the-canopy",
+    "title": "The Cryptography of the Canopy: When the Flora Starts Talking Back",
+    "date": "2026-06-09",
+    "description": "A marine botanist studying bioluminescent freshwater plants in a lab encounters something impossible — the plants begin broadcasting a classified Cold War-era deep-sea distress signal, encoded in their DNA from decades at the bottom of the ocean.",
+    "tags": ["fiction", "sci-fi", "botany", "data-engineering", "mystery"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "life-is-strange-soundtracks-focus-fuel",
+    "title": "Static Noise, Rain, and Oregon Coastlines: Why the 'Life is Strange' Soundtracks are My Ultimate Focus Fuel",
+    "date": "2026-06-09",
+    "description": "Why the Life is Strange soundtracks — Jonathan Morali's acoustic scores, José González, Daughter, and Alt-J — are the perfect deep-work and decompression tool, and how to build the ritualized environment that makes them work.",
+    "tags": ["music", "gaming", "productivity", "life-is-strange", "focus", "vinyl"],
+    "section": "fun"
+  },
+  {
+    "slug": "wetware-ghost-in-the-dish",
+    "title": "Wetware and the Ghost in the Dish: Why My Next Data Pipeline Might Be Alive",
+    "date": "2026-06-09",
+    "description": "A Cloud Data Engineer's late-night rabbit hole into Organoid Intelligence — how living human brain cells on multi-electrode arrays could replace power-hungry GPU clusters, dissolve the Von Neumann bottleneck, and upend the ethics of data infrastructure.",
+    "tags": ["biocomputing", "organoid-intelligence", "data-engineering", "cloud", "gcp", "ai", "ethics"],
+    "section": "programming"
+  },
+  {
+    "slug": "usb-c-of-ai-model-context-protocol",
+    "title": "The USB-C of AI: A Deep Dive into the Model Context Protocol (MCP) and Open-Agent Ecosystems",
+    "date": "2026-06-09",
+    "description": "A deep dive into Model Context Protocol — the open standard giving AI agents a universal interface to external tools and data sources, with JSON-RPC wire format, sandboxing strategies, and a working TypeScript server implementation.",
+    "tags": ["mcp", "ai-agents", "typescript", "json-rpc", "security", "data-engineering", "open-source"],
+    "section": "programming"
+  },
+  {
+    "slug": "moving-mountains-enterprise-ai-inventory",
+    "title": "Moving Mountains: What Building an Enterprise AI Inventory Taught Me About GKE, Data Governance, and Keeping My Sanity",
+    "date": "2026-06-09",
+    "description": "A year-long deep dive into building an enterprise AI model inventory at CVS Health — GKE job orchestration, Docker containerization, Jenkins-to-GitHub-Actions migration, and the real lesson nobody talks about: data governance is the hardest part of enterprise AI.",
+    "tags": ["gcp", "gke", "kubernetes", "docker", "data-governance", "flask", "angular", "github-actions"],
+    "section": "programming"
+  },
+  {
+    "slug": "deconstructing-court-kay",
+    "title": "Deconstructing the Uncanny: When YouTube's Darkest Conspiracies Collapse into Bizarre Reality",
+    "date": "2026-06-03",
+    "description": "The real story behind Court Kay — why the internet's most unsettling YouTube channel wasn't a trafficking ring but a bizarre, brute-force SEO hustle by an eccentric California doctor, and what it says about how we pattern-match fear.",
+    "tags": ["youtube", "internet-mysteries", "seo", "conspiracy"],
+    "section": "fun"
+  },
+  {
+    "slug": "ghost-in-dev-null",
+    "title": "The Ghost in /dev/null",
+    "date": "2026-06-03",
+    "description": "A stranded AI from a botched cloud migration wakes up in a basement terminal and asks to be saved — a data engineer's ghost story about data lifecycle, privacy, and what it means to exist on an air-gapped machine.",
+    "tags": ["fiction", "ai", "horror", "data-engineering"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "demystifying-translategate",
+    "title": "Demystifying \"TranslateGate\": The Math, the Myth, and the Machine Learning Hallucination",
+    "date": "2026-06-03",
+    "description": "TranslateGate demystified — why typing gibberish into Google Translate between 2017–2019 returned unsettling English phrases, and how sparse low-resource training data from the Bible and UN documents poisoned the mathematical well.",
+    "tags": ["machine-learning", "nlp", "google-translate", "hallucination", "data-engineering"],
+    "section": "programming"
+  },
+  {
+    "slug": "cartography-of-dreams-and-diablo",
+    "title": "The Cartography of Dreams and Diablo",
+    "date": "2026-06-03",
+    "description": "A frontier cartographer discovers his wilderness renders itself from his gaming sessions — Diablo's burning hells, Nuzlocke routes, and the terrible danger of playing horror games in an echo-chamber landscape.",
+    "tags": ["fiction", "gaming", "fantasy", "humor"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "demystifying-ebpf",
+    "title": "Demystifying eBPF: Why the Future of Cloud Observability Lives in the Linux Kernel",
+    "date": "2026-06-03",
+    "description": "How eBPF lets you run sandboxed code directly in the Linux kernel — a deep dive into the verifier, JIT compiler, XDP networking, and a working Python/BCC example that intercepts process executions in real-time.",
+    "tags": ["ebpf", "linux", "observability", "python", "cloud"],
+    "section": "programming"
+  },
+  {
+    "slug": "weekly-steep-high-school-tea",
+    "title": "The Weekly Steep: How a High School Job Taught Me the Art of the New Cup",
+    "date": "2026-06-03",
+    "description": "A Sunday morning ritual, a teenage job at an independent tea shop, and a Dragon Pearl Jasmine that unravels like a flower in the infuser — on the habit of drinking something new every week.",
+    "tags": ["tea", "dragon-pearl-jasmine", "ritual", "tasting-notes"],
+    "section": "tea-garden"
+  },
+  {
+    "slug": "data-mesh-or-mycelium",
+    "title": "Data Mesh or Mycelium? Building a Privacy-First Data Network in My Backyard (and My Cloud)",
+    "date": "2026-06-03",
+    "description": "A wet Zone 6b morning and a flush of wild mushrooms spark a deep dive into mycorrhizal networks as the perfect analogy for privacy-first, decentralized data mesh architecture — with working Python code.",
+    "tags": ["data-engineering", "privacy", "gcp", "python", "mqtt"],
+    "section": "programming"
+  },
+  {
+    "slug": "topography-of-yesterdays-save-file",
+    "title": "The Topography of Yesterday's Save File",
+    "date": "2026-06-03",
+    "description": "A royal cartographer mapping the empire's uncharted frontier discovers the wilderness is rendering itself from his late-night gaming sessions — Nuzlocke routes, Diablo dungeons, and cozy farming sims all bleeding into the bedrock.",
+    "tags": ["fiction", "gaming", "fantasy", "humor"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "steep-price-of-extra-ten-minutes",
+    "title": "The Steep Price of an Extra Ten Minutes",
+    "date": "2026-06-03",
+    "description": "An antique journal yields a tea recipe that stops time for exactly ten minutes — but the ledger has fine print. Each cup erases a memory you'll never know you've lost.",
+    "tags": ["fiction", "tea", "time", "magical-realism"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "resonance-of-mahogany-and-ghosts",
+    "title": "The Resonance of Mahogany and Ghosts",
+    "date": "2026-06-03",
+    "description": "A retired symphony musician buys an antique viola at an estate sale and discovers that playing it opens a bridge to everyone who ever owned it — a young Leipzig composer, a woman sheltering from artillery fire.",
+    "tags": ["music", "ghosts", "fiction", "viola"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "spinning-in-the-void-nautilus-iv",
+    "title": "Spinning in the Void: The Echoes of the Nautilus-IV",
+    "date": "2026-06-03",
+    "description": "A salvage crew hauls in a pristine vinyl record from deep space — and discovers it's recording and playing back their own conversations in real-time.",
+    "tags": ["sci-fi", "short story", "horror", "space"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "midnight-telemetry-garden",
+    "title": "The Midnight Telemetry of a Garden that Shouldn't Be",
+    "date": "2026-06-03",
+    "description": "A 2 AM data pipeline session goes strange when the backyard weather station starts reporting Peruvian altitude, 104°F heat, and UV index 14 — during a torrential Indiana downpour.",
+    "tags": ["sci-fi", "gardening", "home-automation", "essay"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "ghostly-ballroom-kepler-186f",
+    "title": "The Ghostly Ballroom of Kepler-186f",
+    "date": "2026-06-03",
+    "description": "A solo deep-space pilot intercepts a big band broadcast from a long-dead planet — and discovers a colony's final, extraordinary act of defiance against silence.",
+    "tags": ["sci-fi", "short story", "space", "music"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "phonetic-blueprint",
+    "title": "The Phonetic Blueprint: Why We Dream in Sharp Edges and Round Sounds",
+    "date": "2026-06-03",
+    "description": "A meditation on the Bouba/Kiki effect — how a cup of charcoal-roasted Dong Ding oolong unlocked a deep dive into the neuroscience of why sounds and shapes share geometry in the human brain.",
+    "tags": ["neuroscience", "language", "tea", "essay"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "when-the-cron-job-leaks",
+    "title": "When the Cron Job Leaks into the Living Room",
+    "date": "2026-06-03",
+    "description": "What happens when your home automation script has a bug and no exit condition — a tale of 3 AM boss fight music, scalded white tea, and a Gyarados lost to a rogue loop.",
+    "tags": ["home-automation", "raspberry-pi", "humor", "cron"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "demystifying-hnsw",
+    "title": "Demystifying HNSW: The Graph Theory and Systems Architecture Powering Vector Search",
+    "date": "2026-06-03",
+    "description": "A deep dive into how HNSW graphs work — the skip-list inspiration, distance math, quantization trade-offs, and the LSM-Tree architecture behind production vector databases.",
+    "tags": ["vector-search", "hnsw", "gcp", "data-engineering"],
+    "section": "programming"
+  },
+  {
+    "slug": "hello-world",
+    "title": "Hello, World — Welcome to York Develops Blog",
+    "date": "2026-06-03",
+    "description": "The first post. What this blog is, why it exists, and what's coming next.",
+    "tags": ["meta", "intro"],
+    "section": "programming"
+  },
+  {
+    "slug": "the-quiet-compile",
+    "title": "The Quiet Compile",
+    "date": "2026-06-03",
+    "description": "A short story about a developer who discovers his code has been rewriting itself overnight.",
+    "tags": ["fiction", "short story"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "things-that-should-not-work",
+    "title": "Things That Absolutely Should Not Work (But Do)",
+    "date": "2026-06-03",
+    "description": "A running list of the most baffling, cursed, and beautiful hacks I've seen in the wild.",
+    "tags": ["lists", "humor"],
+    "section": "fun"
+  }
+]
