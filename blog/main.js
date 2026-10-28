@@ -240,6 +240,20 @@ function initTabs(posts) {
   startBackgroundIndexing(posts);
 }
 
+/* ─── Sorting (T11: newest first, stable) ─────────────────────── */
+
+function sortPostsByDateDesc(posts) {
+  // ISO YYYY-MM-DD dates compare lexicographically; sort is stable,
+  // so same-date posts keep their curated registry order.
+  posts.sort((a, b) => {
+    const da = a.date || '';
+    const db = b.date || '';
+    if (db < da) return -1;
+    if (db > da) return 1;
+    return 0;
+  });
+}
+
 /* ─── Boot ───────────────────────────────────────────────────── */
 
 fetch('posts/registry.json')
@@ -247,7 +261,10 @@ fetch('posts/registry.json')
     if (!res.ok) throw new Error(`Failed to load registry: ${res.status}`);
     return res.json();
   })
-  .then(initTabs)
+  .then((posts) => {
+    sortPostsByDateDesc(posts);
+    initTabs(posts);
+  })
   .catch((err) => {
     const container = document.getElementById('post-list');
     if (container) {
