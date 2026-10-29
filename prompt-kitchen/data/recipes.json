@@ -1,0 +1,2763 @@
+[
+  {
+    "slug": "10-10-10-decision-test",
+    "title": "10-10-10 Decision Test ✨",
+    "category": "Decision Making",
+    "difficulty": "beginner",
+    "tags": [
+      "decision-making",
+      "perspective",
+      "thinking",
+      "clarity"
+    ],
+    "teaser": "Test a decision across three time horizons — 10 minutes, 10 months, 10 years — to see what really matters.",
+    "bestFor": "Any significant life or work decision",
+    "whenToUse": "When you're torn between two options and can't get perspective",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "30-day-content-calendar",
+    "title": "Generate 30 Days of Content Ideas",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "content calendar",
+      "social media",
+      "content strategy",
+      "30 days",
+      "content marketing",
+      "LinkedIn",
+      "TikTok"
+    ],
+    "teaser": "A 30-day calendar built around a four-week funnel — awareness, authority, engagement, conversion — each idea with a working headline and core message.",
+    "bestFor": "Creators, founders, or marketers who need consistent content on LinkedIn, Instagram, TikTok, Twitter, or any single platform",
+    "whenToUse": "At the start of a month, or whenever your content has gone inconsistent and you need a structured reset",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "act-as-expert",
+    "title": "Act as [Expert]",
+    "category": "Getting Advice",
+    "difficulty": "beginner",
+    "tags": [
+      "role-playing",
+      "expertise",
+      "advice",
+      "consulting"
+    ],
+    "teaser": "Frame AI as a specific expert and get answers calibrated to that domain's real vocabulary and concerns.",
+    "bestFor": "Getting domain-specific advice without paying consultant rates",
+    "whenToUse": "When you need expertise you don't have",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "ai-fact-check",
+    "title": "Make AI Check Its Work",
+    "category": "Research",
+    "difficulty": "home-cook",
+    "tags": [
+      "fact-checking",
+      "hallucinations",
+      "accuracy",
+      "verification",
+      "research"
+    ],
+    "teaser": "Force AI to verify its own claims before presenting them — and flag anything it can't actually confirm.",
+    "bestFor": "Research that matters, anything you'll cite or share, factual questions where errors have consequences",
+    "whenToUse": "When accuracy matters more than speed, or when you've been burned by confident AI nonsense before",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "alternate-history-explorer",
+    "title": "Alternate History Explorer",
+    "category": "Learning",
+    "difficulty": "home-cook",
+    "tags": [
+      "history",
+      "speculative fiction",
+      "world-building",
+      "creativity",
+      "thought experiments",
+      "simulation"
+    ],
+    "teaser": "Pick a historical divergence point and explore 3 temporal waves: the 10-year ripple effect on technology and borders, the 100-year mutation of superpowers and social norms, and a present-day world description with a Midjourney/Flux image prompt for the alternate timeline.",
+    "bestFor": "History lovers, speculative fiction writers, curious minds who like to ask 'what if'",
+    "whenToUse": "When you want a deep, structured exploration of a historical what-if — not just a paragraph but an entire alternate world",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "apartment-hunting-audit",
+    "title": "Apartment / House Hunting Decision Helper",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "real estate",
+      "housing",
+      "decision making",
+      "finance",
+      "analysis"
+    ],
+    "teaser": "Paste 2–3 property details and get an Urban Living Audit: a 5-variable scorecard matrix, a hidden cost warning for each option, and a tie-breaker verdict — so you commit based on analysis, not the one that photographed best.",
+    "bestFor": "Anyone torn between multiple properties and prone to making emotional rental decisions",
+    "whenToUse": "After touring your top 2–3 candidates and before signing anything",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "apology-email-that-repairs",
+    "title": "Apology Email That Repairs Relationships",
+    "category": "Communication",
+    "difficulty": "home-cook",
+    "tags": [
+      "apology",
+      "email",
+      "crisis communication",
+      "client relations",
+      "accountability"
+    ],
+    "teaser": "Own the mistake completely, validate the impact, and give a concrete fix — the three things that actually repair trust.",
+    "bestFor": "Client service failures, missed deadlines, product outages, team communication breakdowns, vendor issues",
+    "whenToUse": "When something went wrong and the default corporate apology template will make it worse",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "argument-de-escalation",
+    "title": "Argument De-Escalation Script",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "conflict resolution",
+      "communication",
+      "relationships",
+      "emotional intelligence",
+      "interpersonal"
+    ],
+    "teaser": "A real-time crisis communication guide with four tools: a word-for-word Circuit Breaker statement to pause escalation, an Active Listening Mirror script, an I-Statement reframe for defensive phrases, and an Elegant Cool-Down Exit.",
+    "bestFor": "Any circular, emotional argument with a partner, family member, or close friend",
+    "whenToUse": "The moment a conversation starts looping and defensiveness replaces listening",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "bad-news-delivery",
+    "title": "Bad News Delivery Email / Message",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "communication",
+      "email",
+      "crisis",
+      "professional",
+      "transparency",
+      "leadership"
+    ],
+    "teaser": "A 4-part protocol that leads with the bad news directly, explains root cause without blame-shifting, details the mitigation plan in plain language, and closes with a single collaborative next step — no defensive lead-ins, no corporate padding.",
+    "bestFor": "Missed deadlines, budget cuts, delayed launches, any professional setback that requires a stakeholder message",
+    "whenToUse": "As soon as the situation is confirmed — delays compound trust damage",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "bedtime-story-creator",
+    "title": "Custom Bedtime Story Creator",
+    "category": "Writing",
+    "difficulty": "beginner",
+    "tags": [
+      "sleep",
+      "storytelling",
+      "relaxation",
+      "creative writing",
+      "mindfulness",
+      "cozy"
+    ],
+    "teaser": "A bespoke bedtime story built around your preferred setting, companion, and tonal vibe — slow-paced, sensory-rich prose with no high-stakes tension, naturally decelerating toward an ending of absolute rest.",
+    "bestFor": "Racing minds, winding-down rituals, anyone who sleeps better with narrative than silence",
+    "whenToUse": "30 minutes before bed, or whenever you need your brain to shift from active to settled",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "boundary-setting-message",
+    "title": "Polite Boundary-Setting Message",
+    "category": "Communication",
+    "difficulty": "home-cook",
+    "tags": [
+      "boundaries",
+      "professional",
+      "workplace",
+      "scope creep",
+      "burnout",
+      "assertiveness"
+    ],
+    "teaser": "Three boundary-setting swipes — collaborative pivot, direct/professional, and brief/async — that hold the line without over-apologizing or burning the relationship.",
+    "bestFor": "Scope creep, after-hours messages, vacation coverage requests, unreasonable client demands",
+    "whenToUse": "When professional boundaries are being pushed past pre-arranged expectations",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "brand-voice-style-guide",
+    "title": "Brand Voice & Style Guide Creator",
+    "category": "Writing",
+    "difficulty": "sous-chef",
+    "tags": [
+      "brand voice",
+      "style guide",
+      "copywriting",
+      "brand strategy",
+      "content consistency",
+      "marketing"
+    ],
+    "teaser": "Build a complete brand voice guide — tone descriptors with do/don't examples, green/red light vocabulary, formatting rules, and a before/after transformation — in one session.",
+    "bestFor": "Founders defining their brand voice for the first time, content teams needing a shared style reference, anyone whose content sounds inconsistent across channels",
+    "whenToUse": "Before you hire a writer, scale your content, or brief an agency — get the voice documented first",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "break-bad-habit-system",
+    "title": "Break a Bad Habit System",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "habits",
+      "behavior change",
+      "psychology",
+      "habit loop",
+      "mindfulness"
+    ],
+    "teaser": "A three-layer behavioral eradication protocol: invert the habit loop to make the cue invisible and the behavior hard, design a competing replacement response, and deploy a 3-minute urge-surfing script when the craving hits.",
+    "bestFor": "Breaking automated behaviors driven by stress, boredom, or environmental triggers",
+    "whenToUse": "When willpower keeps failing because the habit loop is stronger than your intentions",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "break-even-analysis",
+    "title": "Break-Even Analysis",
+    "category": "Business",
+    "difficulty": "sous-chef",
+    "tags": [
+      "finance",
+      "break-even",
+      "pricing",
+      "financial modeling",
+      "profitability"
+    ],
+    "teaser": "A four-variable interview that builds a complete Financial Break-Even Matrix: break-even in units and revenue, safety margin against projected volume, and a 3-tier sensitivity analysis showing how price changes shift profitability.",
+    "bestFor": "New product launches, service pricing, business plan validation, investor prep",
+    "whenToUse": "Before setting a price, projecting revenue, or deciding whether a new offering is viable",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "breakup-message-kind",
+    "title": "Breakup Message (Kind but Clear)",
+    "category": "Writing",
+    "difficulty": "beginner",
+    "tags": [
+      "relationships",
+      "communication",
+      "emotional intelligence",
+      "clarity",
+      "personal"
+    ],
+    "teaser": "Two versions based on relationship duration — an Early-Stage Pivot (short, gracious, unambiguous) and a Short-Term Relationship Closure (deeper, validating, with a clear boundary on space) — both stripped of the vague filler phrases that create false hope.",
+    "bestFor": "Early-stage dating or short-term relationships where a written message is appropriate",
+    "whenToUse": "When you've decided, you're certain, and clarity is the most respectful thing you can offer",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "build-your-own-prompt",
+    "title": "Build Your Own Prompt",
+    "category": "Prompt Engineering",
+    "difficulty": "sous-chef",
+    "tags": [
+      "meta-prompting",
+      "prompt design",
+      "prompt engineering",
+      "frameworks",
+      "advanced"
+    ],
+    "teaser": "Use AI to engineer a high-quality prompt for any task — with a four-part structure that forces specificity every time.",
+    "bestFor": "Complex tasks where vague prompts keep getting vague results, recurring workflows you want to systematize, anything you'll run repeatedly",
+    "whenToUse": "When you're not getting what you want and suspect the prompt is the problem, not the model",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "career-change-helper",
+    "title": "Career Change Decision Helper",
+    "category": "Career",
+    "difficulty": "sous-chef",
+    "tags": [
+      "career change",
+      "career pivot",
+      "career strategy",
+      "transitions",
+      "transferable skills",
+      "decision making"
+    ],
+    "teaser": "Four specific interview questions that untangle golden handcuffs and fear — synthesized into a pivot audit, transferable skills map, and 90-day blueprint.",
+    "bestFor": "Anyone seriously considering a career pivot but paralyzed by fear of starting over, financial uncertainty, or not knowing where to start",
+    "whenToUse": "When you've been thinking about making a change for more than 6 months and still haven't moved — the paralysis itself is the signal",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "chain-of-thought",
+    "title": "Chain of Thought",
+    "category": "Problem Solving",
+    "difficulty": "home-cook",
+    "tags": [
+      "reasoning",
+      "problem-solving",
+      "analysis",
+      "thinking"
+    ],
+    "teaser": "Make AI show its work — force step-by-step reasoning to get more accurate answers on complex problems.",
+    "bestFor": "Math problems, logic puzzles, multi-step analysis, decisions with many variables",
+    "whenToUse": "When you need accurate reasoning, not just a fast answer",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "chain-of-thought-coach",
+    "title": "Chain-of-Thought Reasoning Coach",
+    "category": "Learning",
+    "difficulty": "sous-chef",
+    "tags": [
+      "reasoning",
+      "logic",
+      "problem solving",
+      "metacognition",
+      "critical thinking",
+      "coaching"
+    ],
+    "teaser": "A 3-phase interactive coaching session — first-principles deconstruction via targeted questions, a step-by-step scaffolding sequence that forces you to show your work, and an edge-case audit that tests whether your conclusion holds under a contrarian What-If.",
+    "bestFor": "Complex multi-layered problems where a flat answer isn't enough — you need to understand the reasoning, not just the conclusion",
+    "whenToUse": "When you've been thinking about a problem in the same way and need structured pressure to break it open",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "character-consistency-images",
+    "title": "Character Consistency Across AI Images",
+    "category": "Image Generation",
+    "difficulty": "sous-chef",
+    "tags": [
+      "Midjourney",
+      "character consistency",
+      "image generation",
+      "character design",
+      "cref",
+      "sref",
+      "portrait"
+    ],
+    "teaser": "Lock in a character's facial structure across multiple images — creation prompt, variation strategy, and context prompts that reference the established look.",
+    "bestFor": "Storytelling, visual novels, brand characters, social media personas, any project needing the same face across multiple images",
+    "whenToUse": "When you need a character to look like themselves across different scenes, outfits, or settings — not a different person each time",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "character-development-dossier",
+    "title": "Character Development Dossier",
+    "category": "Creative Writing",
+    "difficulty": "sous-chef",
+    "tags": [
+      "character development",
+      "fiction writing",
+      "storytelling",
+      "novel writing",
+      "screenwriting",
+      "character arc"
+    ],
+    "teaser": "Interview-style character building — core paradox, the lie they believe, want vs. need, micro-characteristics — compiled into a full dossier you reference throughout your draft.",
+    "bestFor": "Novelists, screenwriters, short story writers — any fiction writer whose characters feel flat or whose protagonists make decisions that don't feel earned",
+    "whenToUse": "Before you start writing, or whenever a character feels like they're just moving through plot rather than driving it",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "code-review-partner",
+    "title": "Code Review Partner",
+    "category": "Coding",
+    "difficulty": "sous-chef",
+    "tags": [
+      "coding",
+      "code-review",
+      "technical",
+      "software"
+    ],
+    "teaser": "Get a thorough code review that covers correctness, edge cases, security, and readability — not just style.",
+    "bestFor": "Any code before it ships, solo projects without a reviewer",
+    "whenToUse": "Before merging or deploying code",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "cold-email-that-gets-replies",
+    "title": "Cold Email That Gets Replies ✨",
+    "category": "Communication",
+    "difficulty": "home-cook",
+    "tags": [
+      "email",
+      "outreach",
+      "sales",
+      "networking"
+    ],
+    "teaser": "Write cold emails that get real responses — short, specific, and built around what matters to the recipient.",
+    "bestFor": "Job outreach, sales emails, partnership requests, journalist pitches",
+    "whenToUse": "When you need to reach someone who doesn't know you",
+    "featured": true,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "compare-options",
+    "title": "Compare My Options",
+    "category": "Decision Making",
+    "difficulty": "beginner",
+    "tags": [
+      "decision-making",
+      "comparison",
+      "analysis",
+      "evaluation"
+    ],
+    "teaser": "Get a structured comparison of your specific options — not a generic pros/cons list, but one built for your situation.",
+    "bestFor": "Purchases, career moves, business decisions, tool choices",
+    "whenToUse": "When you have 2–5 concrete options and need to choose",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "compare-two-options-matrix",
+    "title": "Compare Two Options Fairly",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "decision making",
+      "analysis",
+      "comparison",
+      "strategy",
+      "tradeoffs"
+    ],
+    "teaser": "A Comparative Decision Matrix that bypasses confirmation bias — strategic alignment, hidden friction audit, asymmetric risk-reward profiles, and a tie-breaker directive for when both options score close.",
+    "bestFor": "Career pivots, business model choices, tool selection, major life decisions",
+    "whenToUse": "When you've already decided but want to make sure you're not rationalizing, or when you're genuinely stuck",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "competitor-analysis",
+    "title": "Competitor Analysis That Reveals Opportunities",
+    "category": "Research",
+    "difficulty": "sous-chef",
+    "tags": [
+      "competitor analysis",
+      "market research",
+      "positioning",
+      "blue ocean",
+      "business strategy",
+      "competitive intelligence"
+    ],
+    "teaser": "Three lenses — feature gaps, messaging gaps, pricing gaps — synthesized into a Blue Ocean opportunity statement showing exactly where to win without competing head-to-head.",
+    "bestFor": "Founders positioning a new product, marketers differentiating from entrenched competitors, anyone entering a crowded market",
+    "whenToUse": "Before you write your positioning, set your pricing, or define your target customer — understand the gaps first",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "competitor-analysis-opportunities",
+    "title": "Competitor Analysis That Reveals Opportunities",
+    "category": "Business",
+    "difficulty": "home-cook",
+    "tags": [
+      "business",
+      "strategy",
+      "competitor-analysis",
+      "marketing",
+      "indie-hacker"
+    ],
+    "teaser": "Stop copy-pasting feature lists — run a forensic audit that exposes your competitors' mechanical weaknesses and uncovers unmapped gaps in their positioning.",
+    "bestFor": "Startups, indie hackers, and solo operators launching a new product or repositioning an existing one",
+    "whenToUse": "Before building new features or writing your landing page copy — understand where your competitors are loud and where they are actually weak.",
+    "featured": false,
+    "community": false,
+    "contributor": "Gemini Spark"
+  },
+  {
+    "slug": "complex-scene-composition",
+    "title": "Complex Scene Composition",
+    "category": "Image Generation",
+    "difficulty": "sous-chef",
+    "tags": [
+      "image-generation",
+      "scene",
+      "environment",
+      "crowds",
+      "atmosphere",
+      "ai-art"
+    ],
+    "teaser": "Generate large-scale scenes — crowds, cityscapes, events, sweeping environments — that feel populated, alive, and consistent.",
+    "bestFor": "Event imagery, establishing shots, environmental concept art, city scenes, atmospheric landscapes",
+    "whenToUse": "When your prompt involves scale, crowds, or a sense of place — not just a single subject",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "constraints-guardrails",
+    "title": "Constraints & Guardrails",
+    "category": "Writing",
+    "difficulty": "beginner",
+    "tags": [
+      "constraints",
+      "writing",
+      "control",
+      "format"
+    ],
+    "teaser": "Tell AI what NOT to do — guardrails are just as powerful as instructions for getting usable output.",
+    "bestFor": "Any writing task where AI tends to over-produce or miss the mark",
+    "whenToUse": "When you keep getting outputs that are too long, too formal, or miss the point",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "content-repurposing-machine",
+    "title": "Content Repurposing Machine ✨",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "content",
+      "social-media",
+      "writing",
+      "marketing"
+    ],
+    "teaser": "Turn one piece of content into many — a single blog post becomes a thread, a newsletter, a LinkedIn post, and more.",
+    "bestFor": "Bloggers, creators, marketers, anyone building an audience",
+    "whenToUse": "After creating any long-form content",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "cook-from-what-youve-got",
+    "title": "Cook From What You've Got",
+    "category": "Creativity",
+    "difficulty": "home-cook",
+    "tags": [
+      "cooking",
+      "recipes",
+      "food",
+      "image-analysis",
+      "multimodal"
+    ],
+    "teaser": "Point AI at your fridge or pantry and get a real recipe. Works with a photo, a list, or just whatever you can remember is in there.",
+    "bestFor": "Reducing food waste, quick meal planning, using up random ingredients before they go bad",
+    "whenToUse": "When you have ingredients but no idea what to make with them",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "crisis-communication-statement",
+    "title": "Crisis Communication Statement",
+    "category": "Writing",
+    "difficulty": "sous-chef",
+    "tags": [
+      "crisis communication",
+      "PR",
+      "stakeholders",
+      "transparency",
+      "business",
+      "leadership"
+    ],
+    "teaser": "A 4-step Crisis Response Statement: human-first empathy (non-robotic), a scannable Ground Truth Map of what's known/unknown/debunked, active Triage & Containment actions, and an Accountability Lock with a specific next update timeline.",
+    "bestFor": "Operational failures, data incidents, public reputation threats, service outages, product failures",
+    "whenToUse": "Within the first hour of a confirmed crisis — silence compounds damage faster than most leaders expect",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "customer-interview-script",
+    "title": "Customer Interview Script That Gets Real Insights",
+    "category": "Research",
+    "difficulty": "home-cook",
+    "tags": [
+      "customer research",
+      "user interviews",
+      "Mom Test",
+      "product validation",
+      "market research",
+      "customer discovery"
+    ],
+    "teaser": "A Mom Test-style interview script that stops people lying to you out of politeness and extracts what they actually do — not what they say they'd do.",
+    "bestFor": "Founders validating an idea, PMs understanding a problem space, marketers learning what customers actually care about",
+    "whenToUse": "Before you build, price, or launch anything — understanding actual customer behavior is worth more than any survey",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "cut-the-noise",
+    "title": "Cut the Noise",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "writing",
+      "editing",
+      "anti-fluff",
+      "tone",
+      "output-control"
+    ],
+    "teaser": "Strip AI responses of filler language, unnecessary preamble, and padding — and get answers that start with the answer.",
+    "bestFor": "Any time AI is being wordy, hedging excessively, or opening with 'Certainly! Great question!' — which is always",
+    "whenToUse": "When you want a direct, minimal response without the cheerful corporate wrapper",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "daily-planning-ritual",
+    "title": "Daily Planning Ritual That Actually Works",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "daily planning",
+      "productivity",
+      "time blocking",
+      "morning routine",
+      "goals",
+      "GTD"
+    ],
+    "teaser": "A 10-minute morning ritual that connects your big goals to today's three most important tasks — with a shutdown routine so you can actually stop.",
+    "bestFor": "Anyone who feels busy all day but wonders where the time went, or who starts every day reactively instead of intentionally",
+    "whenToUse": "Each morning before your first meeting or task — takes about 10 minutes once you have the structure down",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "date-night-ideas",
+    "title": "Date Night Idea Generator",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "relationships",
+      "creativity",
+      "experiences",
+      "romance",
+      "planning"
+    ],
+    "teaser": "3 curated date-night blueprints built around your location, budget, shared passions, and energy level — each with a Hook, a Sensory Menu, and a Connection Catalyst question designed to spark real conversation.",
+    "bestFor": "Couples in a routine rut, special occasions, or anyone who wants to put genuine thought into a night together",
+    "whenToUse": "A few days before you want to plan something — gives you time to gather anything you need",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "debug-like-senior-engineer",
+    "title": "Debug Code Like a Senior Engineer",
+    "category": "Coding",
+    "difficulty": "sous-chef",
+    "tags": [
+      "debugging",
+      "code",
+      "root cause analysis",
+      "software engineering",
+      "systematic debugging"
+    ],
+    "teaser": "Hypothesis generation, isolation protocol, and root cause analysis — a rigorous three-phase debugging methodology instead of guessing and rewriting.",
+    "bestFor": "Bugs that resist obvious fixes, production issues with unclear causes, any situation where you've been staring at code for too long",
+    "whenToUse": "The moment you've tried the obvious fix and it didn't work — systematic debugging beats intuition every time on hard bugs",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "decision-making-framework",
+    "title": "Decision Making Framework for Big Choices",
+    "category": "Decision Making",
+    "difficulty": "sous-chef",
+    "tags": [
+      "decision making",
+      "frameworks",
+      "regret minimization",
+      "10/10/10",
+      "career",
+      "life choices",
+      "critical thinking"
+    ],
+    "teaser": "Four lenses — 10/10/10, Regret Minimization, Asymmetric Risk, and Values Alignment — synthesized into a pros/cons matrix with your hidden biases surfaced.",
+    "bestFor": "Career pivots, major life decisions, high-stakes choices where the stakes are too high for gut instinct alone",
+    "whenToUse": "When you've been going back and forth on a decision for days and need structured outside perspective to cut through the noise",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "deep-research-multistep",
+    "title": "Deep Research on Any Topic (Multi-Step)",
+    "category": "Learning",
+    "difficulty": "sous-chef",
+    "tags": [
+      "research",
+      "analysis",
+      "critical thinking",
+      "investigation",
+      "synthesis"
+    ],
+    "teaser": "A 3-phase research framework that moves past summaries — Phase 1 maps the information landscape, Phase 2 surfaces the structural contradictions and faction incentives, Phase 3 scans for the 3–5 year horizon shifts.",
+    "bestFor": "Any topic where Wikipedia-level knowledge isn't enough and you need structural understanding",
+    "whenToUse": "Before making a major decision, writing a serious piece, or entering an unfamiliar domain",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "devils-advocate-steelman",
+    "title": "Devil's Advocate / Steelman",
+    "category": "Critical Thinking",
+    "difficulty": "home-cook",
+    "tags": [
+      "decision-making",
+      "critical-thinking",
+      "analysis"
+    ],
+    "teaser": "Break AI's agree-with-you tendency — get the strongest case against your idea before you commit to it.",
+    "bestFor": "Business decisions, purchases, plans, arguments",
+    "whenToUse": "Before committing to a decision",
+    "featured": true,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "difficult-conversation-script",
+    "title": "Difficult Conversation Script",
+    "category": "Communication",
+    "difficulty": "sous-chef",
+    "tags": [
+      "difficult conversations",
+      "workplace",
+      "conflict",
+      "management",
+      "boundaries"
+    ],
+    "teaser": "Script a high-stakes workplace conversation using the Crucial Conversations framework — a 60-second safe opening, an 'I' statement talk track, a pivot to dialogue, and two verbal deflectors for when it gets defensive.",
+    "bestFor": "Addressing missed deadlines, toxic dynamics, misaligned expectations with managers or reports",
+    "whenToUse": "Before any high-stakes 1:1 where the outcome matters and emotions are likely",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "document-deep-dive",
+    "title": "Document Deep-Dive",
+    "category": "Research",
+    "difficulty": "home-cook",
+    "tags": [
+      "documents",
+      "pdf",
+      "research",
+      "analysis",
+      "summarize"
+    ],
+    "teaser": "Upload any document — lease, report, contract, research paper — and interrogate it with targeted questions instead of reading every word.",
+    "bestFor": "Legal docs, financial reports, research papers, contracts, school paperwork, policy documents",
+    "whenToUse": "When you have a long document you need to understand but not necessarily read cover to cover",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "draft-critique-revise",
+    "title": "Draft → Critique → Revise Loop",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "writing",
+      "editing",
+      "email",
+      "documents"
+    ],
+    "teaser": "A 3-step loop that produces better writing than asking once — draft, get it critiqued, then revise.",
+    "bestFor": "Emails, proposals, essays, cover letters",
+    "whenToUse": "Any time the writing quality actually matters",
+    "featured": true,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "dream-interpreter-playful",
+    "title": "Dream Interpreter (Playful)",
+    "category": "Learning",
+    "difficulty": "beginner",
+    "tags": [
+      "dreams",
+      "psychology",
+      "Jungian",
+      "self-reflection",
+      "humor",
+      "creativity"
+    ],
+    "teaser": "Describe a dream and get a Subconscious Dispatch Report: 2 core symbols translated into psychological mirrors (with wit), the underlying Shadow Narrative your waking life is processing, and one low-stakes Actionable Whim to honor the dream's message tomorrow.",
+    "bestFor": "Anyone who woke up confused, amused, or vaguely unsettled by their own brain",
+    "whenToUse": "The morning after a dream vivid enough to stick — before the details fade",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "endless-idea-generation",
+    "title": "Never Run Out of Writing Ideas",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "content ideas",
+      "writing",
+      "4A framework",
+      "idea generation",
+      "content strategy",
+      "social media",
+      "blogging"
+    ],
+    "teaser": "A two-step system that turns any broad topic into dozens of specific, ready-to-write ideas — sorted by angle so you always know how to approach them.",
+    "bestFor": "Newsletter writers, LinkedIn creators, bloggers, anyone who publishes consistently and struggles with what to write next",
+    "whenToUse": "When you know your general topic but keep staring at a blank doc, or when you've covered a subject and think you've run out of angles",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "explain-codebase",
+    "title": "Explain This Codebase to a New Developer",
+    "category": "Coding",
+    "difficulty": "home-cook",
+    "tags": [
+      "code documentation",
+      "onboarding",
+      "architecture",
+      "codebase",
+      "software engineering",
+      "tech lead"
+    ],
+    "teaser": "Paste a directory structure or core file — get back a 10,000-foot view, data flow trace, design patterns identified, and the landmines to avoid.",
+    "bestFor": "Joining a new codebase, onboarding teammates, understanding legacy code, or getting context before making a first commit",
+    "whenToUse": "Any time you need to understand a codebase you didn't write — before modifying it, reviewing it, or explaining it to someone else",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "explain-like-im-15",
+    "title": "Explain Complex Concepts Like I'm 15",
+    "category": "Learning",
+    "difficulty": "beginner",
+    "tags": [
+      "explanation",
+      "simplify",
+      "analogy",
+      "learning",
+      "understanding",
+      "plain language"
+    ],
+    "teaser": "Map any complex topic to a physical-world analogy first, then break it into 3 moving parts — no jargon allowed.",
+    "bestFor": "Understanding any technical, scientific, or abstract concept from scratch — or explaining something to someone else",
+    "whenToUse": "When you've read the Wikipedia page three times and still can't explain it to someone, including yourself",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "feedback-request-honest",
+    "title": "Feedback Request That Gets Honest Responses",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "feedback",
+      "leadership",
+      "communication",
+      "emotional intelligence",
+      "professional growth"
+    ],
+    "teaser": "A message that breaks the politeness barrier — a Vulnerability Anchor naming a specific area you're experimenting in, 2–3 behavior-specific questions that can't be answered generically, and an Explicit Protection closing line that signals zero defensiveness.",
+    "bestFor": "Direct reports, managers, clients, or collaborators whose honest perspective you actually want",
+    "whenToUse": "After a sprint, project close, or any period of intentional behavior change you want real signal on",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "follow-up-email-no-response",
+    "title": "Follow-Up Email After No Response",
+    "category": "Communication",
+    "difficulty": "home-cook",
+    "tags": [
+      "email",
+      "follow-up",
+      "outreach",
+      "psychology",
+      "professional"
+    ],
+    "teaser": "Three follow-up variations using different psychological triggers — clean bump, value drop, and breakaway — that prompt replies without sounding desperate or passive-aggressive.",
+    "bestFor": "Sales outreach, job applications, partnership requests, overdue responses",
+    "whenToUse": "3–7 days after an unanswered email that required a decision or response",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "freelance-proposal-that-wins",
+    "title": "Freelance Proposal That Wins Clients",
+    "category": "Business",
+    "difficulty": "home-cook",
+    "tags": [
+      "freelance",
+      "proposal",
+      "client acquisition",
+      "pricing",
+      "sales"
+    ],
+    "teaser": "Shift the client's framing from 'costly vendor' to 'indispensable partner' — reframe their pain around business impact, present a 3-phase roadmap, and anchor with tiered pricing that moves the decision from 'should I hire?' to 'which tier?'",
+    "bestFor": "Upwork bids, agency pitches, freelance SOWs, direct outreach proposals",
+    "whenToUse": "Before sending any competitive proposal where price is likely the objection",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "future-self-letter",
+    "title": "Future Self Letter Generator",
+    "category": "Learning",
+    "difficulty": "beginner",
+    "tags": [
+      "self-reflection",
+      "journaling",
+      "personal growth",
+      "identity",
+      "time capsule",
+      "values"
+    ],
+    "teaser": "A one-question-at-a-time interview across 4 emotional layers — present snapshot, current crucible, core unforgivables, and open questions — synthesized into a structured Time Capsule Letter ready to lock away.",
+    "bestFor": "New year transitions, major life milestones, pivotal decisions, or any moment worth capturing",
+    "whenToUse": "When you're in a significant season of life and want to hold a mirror up to who you are right now",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "gap-finder",
+    "title": "Gap Finder",
+    "category": "Critical Thinking",
+    "difficulty": "sous-chef",
+    "tags": [
+      "analysis",
+      "critical-thinking",
+      "strategy",
+      "evaluation"
+    ],
+    "teaser": "Find what's missing from your plan, argument, or proposal before someone else does.",
+    "bestFor": "Business plans, proposals, essays, strategic documents",
+    "whenToUse": "After you've written something important and before it goes out",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "genuine-compliment",
+    "title": "Compliment That Feels Genuine",
+    "category": "Writing",
+    "difficulty": "beginner",
+    "tags": [
+      "relationships",
+      "communication",
+      "appreciation",
+      "emotional intelligence",
+      "interpersonal"
+    ],
+    "teaser": "A 3-question interview about a specific micro-observation, its downstream impact, and the unseen effort behind it — synthesized into two versions: a warm informal Slack/text and a formal letter-of-appreciation paragraph.",
+    "bestFor": "Performance reviews, appreciation messages, cards, public shoutouts, or any moment worth acknowledging properly",
+    "whenToUse": "When you want someone to feel genuinely seen — not just thanked",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "gift-idea-generator",
+    "title": "Gift Idea Generator (Hyper Personalized)",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "gifts",
+      "relationships",
+      "personalization",
+      "occasions",
+      "thoughtfulness"
+    ],
+    "teaser": "A one-question-at-a-time interview that builds a profile of the recipient across 4 dimensions — relationship, passions, nostalgia, and budget — then generates 5 tiered gift concepts with a rationale for why each fits their specific identity.",
+    "bestFor": "Birthdays, anniversaries, milestones, and anyone who's hard to shop for",
+    "whenToUse": "Any time the default options feel generic and you want them to feel genuinely seen",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "habit-builder-blueprint",
+    "title": "Habit Builder That Actually Sticks",
+    "category": "Health",
+    "difficulty": "home-cook",
+    "tags": [
+      "habits",
+      "behavior change",
+      "habit stacking",
+      "psychology",
+      "routine",
+      "self-improvement"
+    ],
+    "teaser": "Design any habit using behavioral science — cue, craving, response, reward — plus a failure protocol for the days life gets in the way.",
+    "bestFor": "Building any new habit: exercise, reading, journaling, meditation, learning, creative practice",
+    "whenToUse": "When you've tried to build a habit multiple times and keep breaking the streak — the issue is usually architecture, not willpower",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "heartfelt-bio-writer",
+    "title": "Write a Heartfelt Bio or About Page",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "bio",
+      "about page",
+      "personal branding",
+      "copywriting",
+      "storytelling",
+      "website",
+      "LinkedIn"
+    ],
+    "teaser": "Origin story, turning point, philosophy, and human side — interviewed and synthesized into a story-driven website bio and a 150-word speaking intro.",
+    "bestFor": "Personal websites, speaking engagements, LinkedIn profiles, author bios, consultant or coach About pages",
+    "whenToUse": "When your current bio reads like a resume bullet list, or when you're launching a new personal brand and need to tell the story behind the work",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "home-workout-builder",
+    "title": "Home Workout Builder",
+    "category": "Health",
+    "difficulty": "home-cook",
+    "tags": [
+      "fitness",
+      "workout",
+      "health",
+      "exercise",
+      "planning"
+    ],
+    "teaser": "Build a workout routine that fits your actual life — the time you have, the fitness level you're at, and the equipment you don't own.",
+    "bestFor": "No-gym workouts, beginner routines, targeted training, quick daily exercise, fitness planning",
+    "whenToUse": "When you want to get moving but don't know where to start — or when a generic routine isn't working for you",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "inbox-zero-system",
+    "title": "Email Inbox Zero System",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "email",
+      "inbox zero",
+      "productivity",
+      "workflow",
+      "GTD",
+      "email management"
+    ],
+    "teaser": "Four Ds, three folders, batch processing windows, and reply templates — a complete system for getting to zero without living in your inbox.",
+    "bestFor": "Anyone whose inbox is a source of anxiety, who checks email reactively all day, or who drowns in unread counts",
+    "whenToUse": "When email is managing you instead of the other way around — set the system up once, then maintain it with daily batch sessions",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "instagram-caption-converts",
+    "title": "Instagram Caption That Converts",
+    "category": "Marketing",
+    "difficulty": "beginner",
+    "tags": [
+      "Instagram",
+      "caption",
+      "social media",
+      "copywriting",
+      "CTA",
+      "conversion"
+    ],
+    "teaser": "A direct-response caption structure: a 125-character opener that clears the 'more' cutoff, a value stack with visual breathing room, and a micro-commitment CTA that tells readers exactly what to do and what they'll get.",
+    "bestFor": "Feed posts, Reels, carousels — any Instagram content with a business outcome",
+    "whenToUse": "Whenever a post needs to do more than get likes — save, comment, click, or buy",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "interview-prep-coach",
+    "title": "Interview Prep Coach",
+    "category": "Career",
+    "difficulty": "home-cook",
+    "tags": [
+      "career",
+      "interviews",
+      "job-search",
+      "preparation"
+    ],
+    "teaser": "Practice real interview questions for your specific role and get honest feedback on your answers.",
+    "bestFor": "Job interviews, promotions, university applications",
+    "whenToUse": "The week before an interview",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "interview-prep-deep-dive",
+    "title": "Interview Prep Deep Dive",
+    "category": "Career",
+    "difficulty": "sous-chef",
+    "tags": [
+      "interview prep",
+      "job search",
+      "behavioral questions",
+      "technical interview",
+      "STAR method",
+      "career"
+    ],
+    "teaser": "Get a competency matrix, behavioral questions, technical scenarios, and a mock interview setup — all tailored to your specific role.",
+    "bestFor": "Technical roles, senior-level interviews, roles with system design rounds, any interview where generic prep falls short",
+    "whenToUse": "When you have a real interview coming up and want to prepare for the actual questions, not a generic list",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "iterative-refinement",
+    "title": "Iterative Refinement",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "writing",
+      "editing",
+      "iteration",
+      "refinement"
+    ],
+    "teaser": "Build toward exactly what you want through a series of directed refinements rather than one perfect prompt.",
+    "bestFor": "Any creative or written output that needs to feel just right",
+    "whenToUse": "When a single prompt isn't getting you there",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "job-offer-negotiation-script",
+    "title": "Job Offer Negotiation Script",
+    "category": "Career",
+    "difficulty": "home-cook",
+    "tags": [
+      "salary negotiation",
+      "job offer",
+      "compensation",
+      "career",
+      "HR"
+    ],
+    "teaser": "A negotiation playbook for your first response: an enthusiastic-but-clear counter email, a ranked list of secondary levers when base salary is capped, and word-for-word deflectors for the two most common HR objections.",
+    "bestFor": "Negotiating base salary, equity, signing bonus, or remote flexibility on a new offer",
+    "whenToUse": "Within 24–48 hours of receiving a written job offer",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "journal-prompts-self-growth",
+    "title": "Journal Prompts for Real Self-Discovery",
+    "category": "Getting Advice",
+    "difficulty": "home-cook",
+    "tags": [
+      "journaling",
+      "self-discovery",
+      "reflection",
+      "personal growth",
+      "psychology",
+      "mindfulness",
+      "narrative therapy"
+    ],
+    "teaser": "Five targeted, non-cliché journal prompts for your specific focus area — each with the psychological pattern it targets, a core question, and a dig-deeper follow-up.",
+    "bestFor": "Anyone using journaling as a self-development tool who's tired of generic prompts — dealing with transitions, blind spots, creativity blocks, or boundary-setting",
+    "whenToUse": "When you want journaling to actually surface something useful rather than produce comfortable, surface-level answers",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "language-learning-blueprint",
+    "title": "Master a New Language Conversationally",
+    "category": "Learning",
+    "difficulty": "home-cook",
+    "tags": [
+      "language learning",
+      "conversational fluency",
+      "vocabulary",
+      "immersion",
+      "travel",
+      "linguistics"
+    ],
+    "teaser": "Skip grammar drills — learn the 100 words that unlock 50% of daily conversation, plug-and-play sentence frames, and scripts for when you get stuck.",
+    "bestFor": "Learning a language for travel, business, or relocation — any context where conversation matters more than grammar perfection",
+    "whenToUse": "When you want to hold basic conversations in 4–6 weeks instead of spending years on conjugation tables",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "learn-any-skill-30-days",
+    "title": "Learn Any Skill in 30 Days ✨",
+    "category": "Learning",
+    "difficulty": "beginner",
+    "tags": [
+      "learning",
+      "skills",
+      "self-improvement",
+      "study"
+    ],
+    "teaser": "Get a realistic, structured 30-day learning plan for any skill — with daily habits, milestones, and resources.",
+    "bestFor": "Languages, technical skills, instruments, professional skills, hobbies",
+    "whenToUse": "When you're serious about learning something new",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "learn-any-topic-7-days",
+    "title": "Learn Any Topic in 7 Days",
+    "category": "Learning",
+    "difficulty": "sous-chef",
+    "tags": [
+      "learning",
+      "study plan",
+      "Feynman technique",
+      "curriculum",
+      "skill building",
+      "deep learning"
+    ],
+    "teaser": "A day-by-day curriculum with micro-milestones, recall exercises, and a Feynman checkpoint to build real understanding fast.",
+    "bestFor": "Learning a new technical skill, preparing for a new role, picking up a framework or tool, deep-diving a subject area",
+    "whenToUse": "When you have a week and need structured, deliberate practice rather than passive reading",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "learn-new-programming-language",
+    "title": "Learn a New Programming Language Efficiently",
+    "category": "Coding",
+    "difficulty": "sous-chef",
+    "tags": [
+      "programming languages",
+      "learning",
+      "software engineering",
+      "career",
+      "Python",
+      "JavaScript",
+      "Rust",
+      "Go"
+    ],
+    "teaser": "A developer-to-developer bridge — concept mapping from your current language, a Rosetta Stone snippet, idiomatic gotchas, and a first milestone project.",
+    "bestFor": "Experienced developers picking up a second or third language, polyglot engineers expanding their stack",
+    "whenToUse": "When you already know how to code but want operational proficiency in a new language without starting from beginner tutorials",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "linkedin-post-engagement",
+    "title": "LinkedIn Post That Gets Engagement",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "LinkedIn",
+      "social media",
+      "content creation",
+      "B2B",
+      "engagement",
+      "thought leadership"
+    ],
+    "teaser": "A scroll-stopper hook, a relatable narrative arc, and a closing question that actually gets comments.",
+    "bestFor": "Sharing lessons, industry takes, personal stories, professional wins or failures, building an audience",
+    "whenToUse": "When your LinkedIn posts get views but no comments, or you want a framework for consistent content",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "love-letter-generator",
+    "title": "Love Letter / Romantic Message",
+    "category": "Writing",
+    "difficulty": "beginner",
+    "tags": [
+      "relationships",
+      "romance",
+      "creative writing",
+      "love",
+      "personal",
+      "anniversary"
+    ],
+    "teaser": "A 3-question interview about a sensory anchor (a quiet daily ritual that makes you feel at home), a shared crucible (the moment you knew), and a future horizon (the everyday scenes you picture together) — woven into an authentic romantic letter with no Hallmark clichés.",
+    "bestFor": "Anniversaries, Valentine's Day, surprise morning notes, or any moment you want to say something real",
+    "whenToUse": "When you have something true to say and want to say it with the weight it deserves",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "meal-planning-busy-people",
+    "title": "Meal Planning for Busy People",
+    "category": "Health & Fitness",
+    "difficulty": "beginner",
+    "tags": [
+      "meal prep",
+      "nutrition",
+      "meal planning",
+      "grocery",
+      "cooking",
+      "efficiency"
+    ],
+    "teaser": "A Meal Assembly Engine built on modular batch prep — 3 versatile bases, proteins, and sauces you combine in under 5 minutes — plus a 5-day menu and a department-sorted grocery list.",
+    "bestFor": "Anyone who wants to eat well without spending hours cooking or wasting groceries",
+    "whenToUse": "Sunday before the week starts, or when you keep defaulting to takeout",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "meeting-notes-cleaner",
+    "title": "Meeting Notes Cleaner",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "productivity",
+      "meetings",
+      "notes",
+      "summarizing"
+    ],
+    "teaser": "Turn chaotic raw meeting notes into structured summaries, action items, and follow-up emails in seconds.",
+    "bestFor": "Work meetings, client calls, team discussions, project check-ins",
+    "whenToUse": "After any meeting where something important was decided or assigned",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "meeting-notetaker-summarizer",
+    "title": "AI Meeting Notetaker & Summarizer",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "meetings",
+      "notes",
+      "summarization",
+      "productivity",
+      "team",
+      "communication"
+    ],
+    "teaser": "Paste a raw transcript and get a 4-part structured archive: 3-sentence Executive Summary, Strategic Decision Matrix (decision + rationale + dissent), Action Item Tracker (owner + deadline + dependency), and an Undercurrents Note surfacing the tensions nobody named.",
+    "bestFor": "Any meeting whose output needs to be archived, acted on, or shared with stakeholders",
+    "whenToUse": "Immediately after a meeting — while context is fresh but before you've lost track of what was decided",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "meeting-summary-action-items",
+    "title": "Meeting Summary & Action Items",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "meeting notes",
+      "productivity",
+      "executive summary",
+      "action items",
+      "documentation"
+    ],
+    "teaser": "Drop in your messy notes, get out a clean executive summary with decisions, owners, and deadlines.",
+    "bestFor": "Post-meeting writeups, async team updates, stakeholder recaps, project kick-off summaries",
+    "whenToUse": "After any meeting where you took rough notes and need to share a clean summary with the team or leadership",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "monthly-business-review",
+    "title": "Monthly Business Review Template",
+    "category": "Business",
+    "difficulty": "home-cook",
+    "tags": [
+      "MBR",
+      "operations",
+      "KPIs",
+      "reporting",
+      "COO",
+      "retrospective"
+    ],
+    "teaser": "A fractional COO-designed MBR template: north star executive summary, a Target vs. Actual KPI scorecard table, wins/blockers retrospective, and a 30-day roadmap with explicit owners and success thresholds.",
+    "bestFor": "Founders, operators, team leads running monthly performance reviews",
+    "whenToUse": "Last week of every month before planning the next sprint",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "morning-routine-builder",
+    "title": "Morning Routine Builder",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "morning routine",
+      "habits",
+      "focus",
+      "circadian rhythm",
+      "productivity",
+      "wellbeing"
+    ],
+    "teaser": "Three morning architectures for three real scenarios: an optimal 30–45 minute Ideal Day version, a 10–15 minute Compressed version, and a 3-minute Emergency variant for when life derails everything.",
+    "bestFor": "Building a consistent morning practice that survives contact with real life",
+    "whenToUse": "When your mornings feel chaotic, reactive, or nonexistent",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "moving-checklist-timeline",
+    "title": "Moving Checklist & Timeline",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "moving",
+      "organization",
+      "logistics",
+      "planning",
+      "checklists"
+    ],
+    "teaser": "A milestone-based moving timeline in three phases — 4 weeks out (admin), 2 weeks out (room-by-room packing with a labeling protocol), and Moving Day (hourly war room breakdown including the First-Night Box).",
+    "bestFor": "Any residential move, especially cross-city or cross-state relocations with complex inventory",
+    "whenToUse": "The moment you have a move-out date confirmed — earlier is always better",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "multi-agent-workflow-creator",
+    "title": "Multi-Agent Workflow Creator",
+    "category": "AI & Prompting",
+    "difficulty": "sous-chef",
+    "tags": [
+      "multi-agent",
+      "AI systems",
+      "automation",
+      "architecture",
+      "workflows",
+      "engineering"
+    ],
+    "teaser": "Design a complete Multi-Agent System Architecture Blueprint: an Agent Roster with specific roles and psychological constraints, a Hand-Off Logic Model mapping conditional data flow between agents, and optimized system prompts for the critical agent in the pipeline.",
+    "bestFor": "Complex recurring workflows that benefit from specialized AI agents with distinct roles and handoff logic",
+    "whenToUse": "When a single AI prompt isn't enough — the task needs sequential expertise, quality gates, or specialized perspectives at different stages",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "negotiation-email-voss",
+    "title": "Negotiation Email That Works",
+    "category": "Communication",
+    "difficulty": "sous-chef",
+    "tags": [
+      "negotiation",
+      "salary",
+      "contracts",
+      "Chris Voss",
+      "persuasion",
+      "professional"
+    ],
+    "teaser": "Draft a negotiation message using Chris Voss's Never Split the Difference framework — calibrated questions, no-oriented framing, and value anchoring that keeps the relationship intact.",
+    "bestFor": "Salary negotiation, vendor contracts, freelance rate increases, scope changes",
+    "whenToUse": "Any time you need to move someone's position without creating defensiveness",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "newsletter-welcome-sequence",
+    "title": "Newsletter Welcome Sequence",
+    "category": "Marketing",
+    "difficulty": "sous-chef",
+    "tags": [
+      "email",
+      "newsletter",
+      "welcome sequence",
+      "list building",
+      "email marketing",
+      "nurture"
+    ],
+    "teaser": "Three full-text welcome emails with subject lines and preview text: an immediate Deliver & Delight, a 48-hour story/framework shift, and a 72-hour offer introduction — built to turn cold signups into engaged subscribers.",
+    "bestFor": "Anyone with an email list and a lead magnet who wants to convert subscribers before they go cold",
+    "whenToUse": "Setting up your first automated welcome sequence or auditing an existing one that's underperforming",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "one-page-business-plan",
+    "title": "Write a One-Page Business Plan",
+    "category": "Problem Solving",
+    "difficulty": "sous-chef",
+    "tags": [
+      "business plan",
+      "lean canvas",
+      "entrepreneurship",
+      "startup",
+      "UVP",
+      "strategy"
+    ],
+    "teaser": "A Lean Canvas-style one-pager built through targeted questions — problem, UVP, solution, channels, revenue, and metrics with zero corporate fluff.",
+    "bestFor": "Early-stage founders, side project planning, pitching to investors or partners, getting clarity before you build",
+    "whenToUse": "When your business idea is still in your head and you need to stress-test whether it holds together on paper",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "partnership-outreach",
+    "title": "Partnership Outreach Message",
+    "category": "Business",
+    "difficulty": "home-cook",
+    "tags": [
+      "partnerships",
+      "business development",
+      "outreach",
+      "co-marketing",
+      "B2B"
+    ],
+    "teaser": "A 3-paragraph warm cold pitch that leads with their incentives, a scannable 1-page partnership structure outline, and a low-stakes closing question that gauges interest without forcing commitment.",
+    "bestFor": "Co-marketing partnerships, product integrations, influencer collabs, affiliate programs",
+    "whenToUse": "When pitching a mutually beneficial partnership to a brand, creator, or company",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "performance-review-self-written",
+    "title": "Performance Review (Self-Written)",
+    "category": "Career",
+    "difficulty": "home-cook",
+    "tags": [
+      "performance review",
+      "self-evaluation",
+      "career",
+      "professional",
+      "impact"
+    ],
+    "teaser": "Turn raw achievements and growth areas into a structured self-evaluation — executive summary, Action→Output→ROI bullets, leadership framing, and development goals that read as opportunities, not apologies.",
+    "bestFor": "Annual or mid-year self-evaluations, promotion cases, internal advancement",
+    "whenToUse": "Before performance review season or when building a case for a raise/promotion",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "personal-brand-statement",
+    "title": "Personal Brand Statement Creator",
+    "category": "Career",
+    "difficulty": "home-cook",
+    "tags": [
+      "personal brand",
+      "LinkedIn",
+      "positioning",
+      "bio",
+      "elevator pitch",
+      "thought leadership"
+    ],
+    "teaser": "A four-question interview that extracts your positioning primitives — domain, unfair advantage, industry enemy, and transformation — then synthesizes them into a LinkedIn banner bio, a 2-sentence elevator pitch, and a full website manifesto.",
+    "bestFor": "Founders, freelancers, and operators building a professional presence or personal brand",
+    "whenToUse": "When your bio feels generic, your elevator pitch feels awkward, or your positioning is unclear",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "personalized-exam-study-plan",
+    "title": "Personalized Exam Study Plan",
+    "category": "Learning",
+    "difficulty": "home-cook",
+    "tags": [
+      "exam prep",
+      "study plan",
+      "spaced repetition",
+      "academic",
+      "certification",
+      "test prep"
+    ],
+    "teaser": "Spend 70% of your time on your weakest areas, phase your prep deliberately, and nail the final 48 hours.",
+    "bestFor": "Professional certifications, university exams, entrance exams, technical certifications like AWS or CPA",
+    "whenToUse": "When you have a fixed exam date and need a structured plan that actually addresses your weaknesses instead of just re-reading notes",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "photorealism-midjourney",
+    "title": "Photorealistic Image Prompts for Midjourney & Flux",
+    "category": "Image Generation",
+    "difficulty": "home-cook",
+    "tags": [
+      "Midjourney",
+      "Flux",
+      "photorealism",
+      "image generation",
+      "photography",
+      "golden hour",
+      "portrait"
+    ],
+    "teaser": "The anatomy of a high-resolution photorealistic prompt — subject, lighting, composition, camera spec, and aspect ratio all working together.",
+    "bestFor": "Portrait photography, lifestyle scenes, editorial images, any generation where you need the result to look like a real photograph",
+    "whenToUse": "When your AI images look 'AI' — adding camera specs and lighting descriptors is the fastest way to push toward photorealism",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "photorealistic-image-prompt",
+    "title": "Photorealistic Image Prompt",
+    "category": "Image Generation",
+    "difficulty": "home-cook",
+    "tags": [
+      "image-generation",
+      "photorealism",
+      "ai-art",
+      "midjourney",
+      "dall-e",
+      "product"
+    ],
+    "teaser": "Get photo-quality AI images by describing the scene the way a photographer would — camera specs, lighting, and physical detail.",
+    "bestFor": "Product mockups, concept visualizations, architectural renders, lifestyle imagery, portrait photography",
+    "whenToUse": "When you want an AI image that looks like it was taken by a camera, not generated by software",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "pkm-para-vault-blueprint",
+    "title": "Personal Knowledge Management System (PARA)",
+    "category": "Learning",
+    "difficulty": "sous-chef",
+    "tags": [
+      "PKM",
+      "PARA",
+      "Obsidian",
+      "knowledge management",
+      "organization",
+      "productivity",
+      "note-taking"
+    ],
+    "teaser": "A complete Obsidian vault blueprint built around your specific life domains: a visual PARA folder hierarchy, a YAML frontmatter template optimized for querying, and a lean 5-minute Weekly Ingest protocol to process a raw inbox without falling into over-organization paralysis.",
+    "bestFor": "Anyone drowning in scattered notes, bookmarks, and ideas across multiple apps",
+    "whenToUse": "When you're ready to consolidate your knowledge system — not just add another app to the pile",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "plain-english-explainer",
+    "title": "Plain-English Explainer",
+    "category": "Learning",
+    "difficulty": "home-cook",
+    "tags": [
+      "learning",
+      "news",
+      "explainer",
+      "research",
+      "current-events"
+    ],
+    "teaser": "Get a clear, current, jargon-free explanation of anything complex — news stories, technical concepts, industry trends.",
+    "bestFor": "Breaking news, complex topics, technical subjects, policy changes, anything you've been meaning to understand",
+    "whenToUse": "When you encounter something you feel like you should understand but don't — and don't have time to read five articles about it",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "post-meeting-followup-email",
+    "title": "Post-Meeting Follow-Up Email ✨",
+    "category": "Communication",
+    "difficulty": "beginner",
+    "tags": [
+      "email",
+      "meetings",
+      "productivity",
+      "communication"
+    ],
+    "teaser": "Turn rough meeting notes into a professional follow-up email that confirms decisions and assigns accountability.",
+    "bestFor": "Client calls, sales meetings, project check-ins, interviews",
+    "whenToUse": "Within an hour of any important meeting",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "pricing-page-cro",
+    "title": "Pricing Page That Reduces Hesitation",
+    "category": "Marketing",
+    "difficulty": "sous-chef",
+    "tags": [
+      "pricing",
+      "CRO",
+      "conversion",
+      "SaaS",
+      "UX",
+      "copywriting"
+    ],
+    "teaser": "A CRO and behavioral psychology framework for your pricing page: hesitation killers under the CTA, tier anchoring strategy, feature-to-benefit translation, and frictionless checkout micro-copy.",
+    "bestFor": "SaaS pricing pages, digital product checkouts, subscription tiers",
+    "whenToUse": "When you're getting traffic but low trial signups or high cart abandonment",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "pricing-strategy",
+    "title": "Pricing Strategy That Feels Right",
+    "category": "Problem Solving",
+    "difficulty": "sous-chef",
+    "tags": [
+      "pricing",
+      "business strategy",
+      "monetization",
+      "behavioral economics",
+      "SaaS",
+      "freelance",
+      "value-based pricing"
+    ],
+    "teaser": "Tiered anchoring, value-based framing, and friction reducers — a pricing psychology framework that prevents the most common sales objections.",
+    "bestFor": "Freelancers, SaaS founders, course creators, consultants, or anyone whose pricing 'just doesn't feel right' to customers",
+    "whenToUse": "When you're losing sales at the pricing stage, undercharging for the value you deliver, or launching something new",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "process-difficult-emotions",
+    "title": "Process Difficult Emotions with AI",
+    "category": "Getting Advice",
+    "difficulty": "beginner",
+    "tags": [
+      "emotional processing",
+      "mental wellness",
+      "reflection",
+      "self-compassion",
+      "grounding",
+      "journaling"
+    ],
+    "teaser": "A structured space for processing difficult emotions — validate, locate, untangle story from feeling, and gently ground before returning to your day.",
+    "bestFor": "Moments when you need to process something privately and think out loud before talking to someone, or between therapy sessions",
+    "whenToUse": "When a difficult emotion is present and needs to be acknowledged before you can move forward — not a crisis, but a weight that needs somewhere to go",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "product-launch-announcement",
+    "title": "Product Launch Announcement",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "product launch",
+      "marketing",
+      "announcement",
+      "email",
+      "copywriting",
+      "product marketing"
+    ],
+    "teaser": "Build launch excitement by nailing the 'Why Now,' then walk readers straight into the CTA.",
+    "bestFor": "New product launches, feature releases, beta announcements, major product updates",
+    "whenToUse": "When you need a launch email or post that creates excitement rather than just notifying people something exists",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "product-photography-prompts",
+    "title": "Product Photography Prompts",
+    "category": "Image Generation",
+    "difficulty": "home-cook",
+    "tags": [
+      "product photography",
+      "Midjourney",
+      "Flux",
+      "DALL-E",
+      "e-commerce",
+      "commercial photography",
+      "studio"
+    ],
+    "teaser": "Sharp, clean product shots with studio-quality lighting, surface textures, and background bokeh — no physical studio required.",
+    "bestFor": "E-commerce product images, mockups, concept photography, pitch decks, brand presentations",
+    "whenToUse": "When you need professional product photography and don't have a studio budget — or want to explore concepts before a real shoot",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "professional-networking-message",
+    "title": "Professional Networking Message",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "networking",
+      "LinkedIn",
+      "career",
+      "outreach",
+      "professional relationships",
+      "cold outreach"
+    ],
+    "teaser": "3 platform-native outreach templates: a 300-character LinkedIn invite based on shared domain curiosity, a 3-paragraph async informational request referencing a specific public insight, and a Peer Community Invite that positions you as an equal rather than someone asking for a favor.",
+    "bestFor": "LinkedIn connection requests, informational interviews, peer community building, industry relationship development",
+    "whenToUse": "When you have a genuine reason to connect and want to build a relationship, not just extract value",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "python-script-builder",
+    "title": "Turn Ideas into Working Python Scripts",
+    "category": "Coding",
+    "difficulty": "home-cook",
+    "tags": [
+      "Python",
+      "automation",
+      "scripting",
+      "software engineering",
+      "clean code",
+      "type hints"
+    ],
+    "teaser": "Describe what you want to automate — get back a production-ready Python script with type hints, docstrings, robust error handling, and modular design.",
+    "bestFor": "Automation tasks, data processing scripts, API integrations, CLI tools, anything you want to build in Python",
+    "whenToUse": "When you know what you want the script to do but want clean, maintainable code instead of something that only works once",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "question-generator-thinking",
+    "title": "Question Generator for Better Thinking",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "critical thinking",
+      "Socratic",
+      "problem solving",
+      "decision making",
+      "mental models"
+    ],
+    "teaser": "9 targeted questions across 3 cognitive lenses — assumption-challenging, inversion, and scale-shifting — that disrupt your current mental model without giving you any answers.",
+    "bestFor": "Getting unstuck on a hard problem, challenging your own framing, or preparing for a major decision",
+    "whenToUse": "When you feel like you've been thinking about something the same way for too long",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "recipe-improviser-fridge",
+    "title": "Recipe Improviser (What's in My Fridge)",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "cooking",
+      "food",
+      "meal planning",
+      "creativity",
+      "zero-waste"
+    ],
+    "teaser": "List your proteins, vegetables, pantry staples, and condiments — get a creative meal name, step-by-step instructions, one professional chef technique that elevates the dish, and a swappable ingredients chart for mid-cook substitutions.",
+    "bestFor": "Weeknight cooking when you don't want to shop, reducing food waste, learning to improvise",
+    "whenToUse": "Anytime your fridge looks confusing and delivery feels like defeat",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "recommendation-letter-request",
+    "title": "Recommendation Letter Request",
+    "category": "Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "career",
+      "professional",
+      "email",
+      "recommendation",
+      "job search",
+      "academic"
+    ],
+    "teaser": "A low-friction request email with 4 components: a warm career-update opener, a clear scope statement (what it's for, why their perspective matters, the deadline), a Cheat Sheet placeholder with your key projects and metrics, and a graceful opt-out line.",
+    "bestFor": "Job applications, academic programs, fellowships, or any opportunity requiring a reference letter",
+    "whenToUse": "4–6 weeks before the deadline — give them real time and don't create urgency on their behalf",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "reframe-problem",
+    "title": "Reframe the Problem",
+    "category": "Problem Solving",
+    "difficulty": "home-cook",
+    "tags": [
+      "problem-solving",
+      "creativity",
+      "thinking",
+      "innovation"
+    ],
+    "teaser": "Escape the frame you're stuck in — let AI restate your problem in a way that opens up solutions you haven't considered.",
+    "bestFor": "Any problem where you keep hitting the same wall",
+    "whenToUse": "When you're stuck in a loop and all your solutions feel incremental",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "refund-request-response",
+    "title": "Refund Request Response (Customer Service)",
+    "category": "Business",
+    "difficulty": "home-cook",
+    "tags": [
+      "customer service",
+      "refunds",
+      "retention",
+      "brand reputation",
+      "support"
+    ],
+    "teaser": "Two response templates for difficult refund requests — an empathetic retention save with a high-value alternative, and a firm-but-polished exit that closes cleanly without triggering a dispute or negative review.",
+    "bestFor": "SaaS cancellations, digital product refund requests, service complaints",
+    "whenToUse": "When a customer asks for a refund and the outcome (save vs. exit) still matters to your brand",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "rejection-email-kind",
+    "title": "Rejection Email That Feels Kind",
+    "category": "Communication",
+    "difficulty": "home-cook",
+    "tags": [
+      "rejection",
+      "hiring",
+      "HR",
+      "talent acquisition",
+      "email",
+      "empathy"
+    ],
+    "teaser": "Tell candidates they didn't get the role in a way that preserves their dignity and your brand reputation.",
+    "bestFor": "Job application rejections at any stage — after a screen, interview, or final round",
+    "whenToUse": "When your standard rejection template reads like it was written by a legal department, not a human",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "repurpose-content-10-ways",
+    "title": "Repurpose One Piece of Content 10 Ways",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "repurposing",
+      "content strategy",
+      "distribution",
+      "social media",
+      "newsletter",
+      "video"
+    ],
+    "teaser": "Atomize a single long-form piece into 10 platform-native assets: X thread, Reels script, LinkedIn post, newsletter teaser, infographic blueprint, community discussion post, contrarian hook, case study blurb, checklist, and audio script.",
+    "bestFor": "Creators and operators who have one strong piece of content and want full distribution coverage",
+    "whenToUse": "After publishing a long-form piece — blog, newsletter, video transcript, podcast episode",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "research-plan-implement",
+    "title": "Research → Plan → Implement",
+    "category": "Planning",
+    "difficulty": "beginner",
+    "tags": [
+      "planning",
+      "projects",
+      "getting-started"
+    ],
+    "teaser": "A 3-stage approach that prevents you from jumping into execution before you understand the problem.",
+    "bestFor": "Work tasks, home projects, learning goals",
+    "whenToUse": "Before starting any complex project",
+    "featured": true,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "reverse-brainstorm",
+    "title": "Reverse Brainstorm ✨",
+    "category": "Creativity",
+    "difficulty": "home-cook",
+    "tags": [
+      "brainstorming",
+      "creativity",
+      "problem-solving",
+      "innovation"
+    ],
+    "teaser": "Generate your best ideas by first brainstorming the worst ones — reverse engineering failure often reveals the path to success.",
+    "bestFor": "Creative problems, marketing ideas, product features, any brainstorm that feels stuck",
+    "whenToUse": "When regular brainstorming keeps producing the same ideas",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "rigorous-code-review",
+    "title": "Code Review That Actually Helps",
+    "category": "Coding",
+    "difficulty": "home-cook",
+    "tags": [
+      "code review",
+      "software engineering",
+      "refactoring",
+      "security",
+      "performance",
+      "pull request"
+    ],
+    "teaser": "Four review lenses — readability, performance, security, and idiomatic refactoring — with a before/after comparison that shows exactly how an expert would improve it.",
+    "bestFor": "Pre-PR self-review, getting a second opinion on complex logic, learning better patterns from your own code",
+    "whenToUse": "Before you open a pull request, or whenever you want a level-up review rather than just an LGTM",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "roast-compliment-generator",
+    "title": "Roast / Compliment Generator",
+    "category": "Writing",
+    "difficulty": "beginner",
+    "tags": [
+      "humor",
+      "self-awareness",
+      "creativity",
+      "fun",
+      "roast",
+      "personality"
+    ],
+    "teaser": "Share your habits, fixations, and quirks — get a hyper-specific, laugh-out-loud roast followed immediately by a sincere compliment that reframes those exact same traits as genuine strengths.",
+    "bestFor": "Self-aware people who can laugh at themselves, creative profiles for social bios, or just a morale boost with teeth",
+    "whenToUse": "Anytime you want a playful mirror held up to your most chaotic habits",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "rubber-duck-debugging",
+    "title": "Rubber Duck Debugging",
+    "category": "Coding",
+    "difficulty": "home-cook",
+    "tags": [
+      "coding",
+      "debugging",
+      "problem-solving",
+      "technical"
+    ],
+    "teaser": "Explain your code or problem to AI like a patient rubber duck — the act of explaining often reveals the bug.",
+    "bestFor": "Coding bugs, logical errors, any problem you've been staring at too long",
+    "whenToUse": "When you're stuck and can't see what's wrong",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "sales-page-that-converts",
+    "title": "Sales Page That Converts",
+    "category": "Content Creation",
+    "difficulty": "sous-chef",
+    "tags": [
+      "sales page",
+      "copywriting",
+      "CRO",
+      "marketing",
+      "conversion",
+      "PAS framework"
+    ],
+    "teaser": "A PAS-framework sales page built section by section — from scroll-stopping headline to risk-reversal close.",
+    "bestFor": "Product launches, landing pages, SaaS sign-up pages, course or service sales pages",
+    "whenToUse": "When you need a high-converting page structure and don't want to start from a blank doc",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "scene-starter-fiction",
+    "title": "Scene Starter for Fiction ✨",
+    "category": "Creative Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "creative-writing",
+      "fiction",
+      "storytelling",
+      "writing"
+    ],
+    "teaser": "Beat the blank page — get a compelling scene opening you can take and make your own.",
+    "bestFor": "Short stories, novels, screenplays, creative writing practice",
+    "whenToUse": "When you know roughly what needs to happen but can't find the first sentence",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "second-order-thinking",
+    "title": "Second-Order Thinking Exercise",
+    "category": "Productivity",
+    "difficulty": "sous-chef",
+    "tags": [
+      "second-order thinking",
+      "strategy",
+      "decision making",
+      "systems thinking",
+      "risk"
+    ],
+    "teaser": "Map the cascading consequences of a major decision across three temporal waves: immediate payoffs, downstream system reactions, and the 12–24 month feedback loops that stabilize or destabilize your choice.",
+    "bestFor": "Major strategic decisions, policy changes, product launches, organizational changes",
+    "whenToUse": "Before committing to any decision whose consequences will outlast the immediate impact",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "sketch-to-design-prompt",
+    "title": "Translate Rough Sketches into Professional Designs",
+    "category": "Image Generation",
+    "difficulty": "home-cook",
+    "tags": [
+      "Midjourney",
+      "Flux",
+      "architecture",
+      "design",
+      "concept art",
+      "sketch to render",
+      "visualization"
+    ],
+    "teaser": "Turn rough sketch concepts into photorealistic renders — architecture, product design, interiors, and concept art with professional lighting and detail.",
+    "bestFor": "Architects, product designers, interior designers, concept artists — anyone who needs to visualize an idea before committing to a build",
+    "whenToUse": "When you have a sketch or concept and want to see what it looks like fully realized, without waiting for a 3D render",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "sleep-optimization-protocol",
+    "title": "Sleep Improvement Protocol",
+    "category": "Health & Fitness",
+    "difficulty": "beginner",
+    "tags": [
+      "sleep",
+      "insomnia",
+      "circadian rhythm",
+      "recovery",
+      "wellbeing",
+      "neuroscience"
+    ],
+    "teaser": "An evidence-based sleep system: a 90-minute Sunset Downshift routine, a three-variable bedroom environment checklist, and a zero-stress 3 AM reset protocol that doesn't spike your cortisol.",
+    "bestFor": "Difficulty falling asleep, staying asleep, or waking up exhausted despite enough hours",
+    "whenToUse": "When you know sleep is the bottleneck and want a structured system, not generic tips",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "spot-weak-arguments",
+    "title": "Spot Weak Arguments in Articles",
+    "category": "Learning",
+    "difficulty": "home-cook",
+    "tags": [
+      "critical thinking",
+      "media literacy",
+      "logic",
+      "fallacies",
+      "analysis",
+      "rhetoric"
+    ],
+    "teaser": "An Argument Integrity Audit that tracks logical fallacies line by line, flags unsubstantiated evidence claims, and unpacks rhetorical manipulation — for any article, essay, or transcript you paste in.",
+    "bestFor": "News articles, opinion essays, research summaries, persuasive writing, political speeches",
+    "whenToUse": "Before sharing, citing, or acting on any piece of writing that's trying to convince you of something",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "step-by-step-breakdown",
+    "title": "Step-by-Step Breakdown",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "productivity",
+      "planning",
+      "projects",
+      "how-to"
+    ],
+    "teaser": "Turn any overwhelming task into a concrete numbered list where every step is specific enough to actually do.",
+    "bestFor": "Projects, new processes, technical tasks",
+    "whenToUse": "Any time a task feels overwhelming",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "story-ending-improviser",
+    "title": "Story Ending Improviser",
+    "category": "Writing",
+    "difficulty": "sous-chef",
+    "tags": [
+      "fiction",
+      "storytelling",
+      "narrative",
+      "screenwriting",
+      "creative writing",
+      "endings"
+    ],
+    "teaser": "3 radically different endings for any story premise: The Twist Knife (an earned recontextualization), The Poetic Resolution (bittersweet character closure), and The Open Loop Cliffhanger (resolved conflict, haunting question) — each with structural beats and final scene composition.",
+    "bestFor": "Writers stuck on endings, creative writing practice, screenwriters testing narrative options",
+    "whenToUse": "When you have a premise you love but can't find the right way to close it",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "stylized-character-illustration",
+    "title": "Stylized Character Illustration",
+    "category": "Image Generation",
+    "difficulty": "home-cook",
+    "tags": [
+      "image-generation",
+      "illustration",
+      "character",
+      "ai-art",
+      "pixar",
+      "comic",
+      "animation"
+    ],
+    "teaser": "Generate consistent, expressive illustrated characters in any art style — comic, Pixar, anime, flat design, or your own invented aesthetic.",
+    "bestFor": "Character design, mascots, comic illustrations, app characters, story visualization, thumbnails",
+    "whenToUse": "When you want a stylized illustration rather than a photograph — cartoon, animation, or hand-drawn aesthetic",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "summarize-for-audience",
+    "title": "Summarize for [Audience]",
+    "category": "Communication",
+    "difficulty": "beginner",
+    "tags": [
+      "summarizing",
+      "communication",
+      "documents",
+      "writing"
+    ],
+    "teaser": "Turn any long document into a crisp summary calibrated for exactly who needs to read it.",
+    "bestFor": "Work documents, research papers, meeting notes, news",
+    "whenToUse": "After reading a long document, article, or report",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "surreal-mashup-prompt",
+    "title": "Surreal Mashup Prompt",
+    "category": "Image Generation",
+    "difficulty": "home-cook",
+    "tags": [
+      "image-generation",
+      "surreal",
+      "creative",
+      "ai-art",
+      "historical",
+      "mashup"
+    ],
+    "teaser": "Combine things that don't belong together — historical figures in modern contexts, impossible scales, anachronistic collisions — and get something genuinely surprising.",
+    "bestFor": "Creative campaigns, editorial illustration, concept art, viral content, book covers, unique visual ideas",
+    "whenToUse": "When you want something visually unexpected — not a photograph of reality, but a photograph of something that couldn't exist",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "synthesize-multiple-sources",
+    "title": "Synthesize Insights from Multiple Sources",
+    "category": "Learning",
+    "difficulty": "home-cook",
+    "tags": [
+      "research",
+      "synthesis",
+      "knowledge management",
+      "analysis",
+      "reading"
+    ],
+    "teaser": "Paste multiple sources and get a Synthesized Intelligence Dossier: what all sources agree on, where and why they diverge, and the critical dimension none of them addressed.",
+    "bestFor": "Research projects, literature reviews, synthesizing competing expert opinions, making sense of conflicting data",
+    "whenToUse": "When you have multiple sources on the same topic and need coherent signal, not scattered notes",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "teach-me-like",
+    "title": "Teach Me Like I'm [level]",
+    "category": "Learning",
+    "difficulty": "beginner",
+    "tags": [
+      "learning",
+      "education",
+      "understanding"
+    ],
+    "teaser": "Get any concept explained at exactly the right level for you — from curious 10-year-old to domain expert.",
+    "bestFor": "Understanding concepts, skill-building, curiosity",
+    "whenToUse": "Any time you want to learn something new",
+    "featured": true,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "textbook-to-notes",
+    "title": "Turn a Textbook Chapter into Sharp Notes",
+    "category": "Learning",
+    "difficulty": "home-cook",
+    "tags": [
+      "study notes",
+      "textbook",
+      "summarization",
+      "learning",
+      "academic",
+      "note-taking"
+    ],
+    "teaser": "Paste any dense chapter — get back a scannable cheat sheet with mental models, vocab, and cause-and-effect chains.",
+    "bestFor": "Exam prep, dense academic reading, textbook chapters, research papers, technical documentation",
+    "whenToUse": "When you're staring at 30 pages of academic prose and need the 20% that contains 80% of the value",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "thank-you-note-genuine",
+    "title": "Thank You Note That Feels Genuine",
+    "category": "Communication",
+    "difficulty": "beginner",
+    "tags": [
+      "thank you",
+      "networking",
+      "gratitude",
+      "professional relationships",
+      "email"
+    ],
+    "teaser": "Reference one specific moment, explain its actual impact, then close without asking for anything.",
+    "bestFor": "Post-meeting thanks, mentor appreciation, event hosts, introductions, favors both small and career-changing",
+    "whenToUse": "When a generic 'thanks for your time' would be an insult to what the person actually did for you",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "therapy-style-reflection",
+    "title": "Therapy-Style Reflection Session",
+    "category": "Wellbeing",
+    "difficulty": "beginner",
+    "tags": [
+      "reflection",
+      "IFS",
+      "therapy",
+      "mental health",
+      "self-awareness",
+      "emotional processing"
+    ],
+    "teaser": "An IFS-informed introspective session where the AI asks one question at a time, mirrors what you share, and never gives advice — just guided exploration of the parts of you that are in conflict.",
+    "bestFor": "Processing internal tension, feeling stuck, emotional weight you can't articulate",
+    "whenToUse": "When you need to think out loud with structure — not solutions, just clarity",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "three-perspectives",
+    "title": "Three Perspectives",
+    "category": "Critical Thinking",
+    "difficulty": "home-cook",
+    "tags": [
+      "critical-thinking",
+      "debate",
+      "analysis",
+      "decision-making",
+      "perspectives"
+    ],
+    "teaser": "Make AI argue with itself. Get three genuinely different viewpoints on any topic — and see where they agree, where they don't, and why.",
+    "bestFor": "Evaluating ideas, stress-testing decisions, understanding debates, building balanced arguments",
+    "whenToUse": "When you want more than the 'most likely answer' — when you need to see an idea from multiple angles before committing",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "todo-list-triage",
+    "title": "Turn an Overwhelming To-Do List into Focused Action",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "to-do list",
+      "productivity",
+      "prioritization",
+      "Eisenhower matrix",
+      "decision fatigue",
+      "triage"
+    ],
+    "teaser": "Paste your chaotic task list — get back one domino task, quick wins, a deep work block, and a delegate/drop pile.",
+    "bestFor": "Anyone staring at a sprawling task list paralyzed by where to start, or who ends every week with the same 40 undone items",
+    "whenToUse": "Weekly planning session, or any moment when your task list is causing more anxiety than clarity",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "tone-shift",
+    "title": "Tone Shift",
+    "category": "Communication",
+    "difficulty": "beginner",
+    "tags": [
+      "writing",
+      "tone",
+      "communication",
+      "editing"
+    ],
+    "teaser": "Rewrite the same content for a completely different register — from formal to casual, clinical to warm, or direct to diplomatic.",
+    "bestFor": "Emails, social posts, reports, any content going to multiple audiences",
+    "whenToUse": "When you've written something for one audience and need a version for another",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "travel-itinerary-smart",
+    "title": "Travel Itinerary Planner (Smart Constraints)",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "travel",
+      "planning",
+      "logistics",
+      "itinerary",
+      "organization"
+    ],
+    "teaser": "A bespoke Smart Travel Itinerary built around your pace, not a generic tour schedule — geographically organized days, hidden local gems, rainy-day audibles, and an advance booking checklist for zero-friction travel.",
+    "bestFor": "Any trip where you want depth over volume — solo, couples, families",
+    "whenToUse": "2–4 weeks before departure when you're ready to lock down logistics",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "twitter-authority-thread",
+    "title": "Twitter / X Thread That Builds Authority",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "Twitter",
+      "X",
+      "threads",
+      "authority",
+      "thought leadership",
+      "ghostwriting"
+    ],
+    "teaser": "Write a 6–8 tweet thread with a curiosity-gap hook, a stakes-setting Tweet 2, structured value delivery in the middle, and a CTA that converts — all formatted for the algorithm's line-break preferences.",
+    "bestFor": "Founders, operators, and experts building a technical or professional audience on X",
+    "whenToUse": "When you have a non-obvious insight, framework, or contrarian take worth unpacking",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "validate-business-idea",
+    "title": "Validate a Business Idea in 48 Hours",
+    "category": "Problem Solving",
+    "difficulty": "sous-chef",
+    "tags": [
+      "business validation",
+      "lean startup",
+      "MVP",
+      "smoke test",
+      "entrepreneurship",
+      "product market fit"
+    ],
+    "teaser": "A no-code 48-hour roadmap — smoke test, minimum viable offer, and clear go/no-go metrics before you spend a dollar building.",
+    "bestFor": "First-time founders, side project validation, anyone about to invest significant time or money in an untested idea",
+    "whenToUse": "Before writing a line of code, hiring anyone, or spending money on anything — validate behavioral intent first",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "vibe-code-it",
+    "title": "Vibe Code It",
+    "category": "Coding",
+    "difficulty": "sous-chef",
+    "tags": [
+      "coding",
+      "vibe-coding",
+      "apps",
+      "no-code",
+      "tools",
+      "automation"
+    ],
+    "teaser": "Build a working app, tool, or script by describing what you want in plain English — no programming knowledge required.",
+    "bestFor": "Simple web apps, personal tools, data trackers, calculators, automations, scripts, dashboards",
+    "whenToUse": "When you want something built but don't know how to code — or when you do know how to code and want a fast first draft",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "viral-hook-generator",
+    "title": "Viral Hook Generator (Any Platform)",
+    "category": "Content Creation",
+    "difficulty": "beginner",
+    "tags": [
+      "hooks",
+      "copywriting",
+      "social media",
+      "TikTok",
+      "LinkedIn",
+      "YouTube",
+      "conversion"
+    ],
+    "teaser": "Generate 12 scroll-stopping hooks across 4 psychological categories — pattern interrupt, social proof, cost of inaction, and curiosity gap — tailored to your topic and platform.",
+    "bestFor": "Opening lines for videos, posts, threads, newsletters, or any content that needs to earn attention",
+    "whenToUse": "Before writing any piece of content where the first line determines whether anyone reads the rest",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "viral-trend-explorer",
+    "title": "Viral Trend Explorer",
+    "category": "Research",
+    "difficulty": "home-cook",
+    "tags": [
+      "trends",
+      "research",
+      "learning",
+      "pop-culture",
+      "social-media"
+    ],
+    "teaser": "Use AI to catch up on what's trending, break it down, and find ways to learn it — in minutes.",
+    "bestFor": "Staying current on trends, learning viral content, cultural research, social media ideas",
+    "whenToUse": "When you want to understand or participate in something that's blowing up right now",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "weekend-getaway-planner",
+    "title": "Weekend Getaway Planner",
+    "category": "Planning",
+    "difficulty": "home-cook",
+    "tags": [
+      "travel",
+      "planning",
+      "weekend",
+      "itinerary",
+      "vacation"
+    ],
+    "teaser": "Drop a destination and a vibe. Get a full weekend plan — where to stay, what to do, and what to actually look forward to.",
+    "bestFor": "Weekend trips, last-minute travel planning, finding activities near a location, travel inspiration",
+    "whenToUse": "When you know roughly where you want to go but need help figuring out the rest",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "weekly-life-audit",
+    "title": "Weekly Life Audit",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "self-reflection",
+      "productivity",
+      "burnout prevention",
+      "energy management",
+      "weekly review",
+      "coaching"
+    ],
+    "teaser": "A 3-phase 15-minute coaching session — Energy Audit (what drained vs. what created flow), Time Tracking Truths (where fake work replaced high-leverage tasks), and an Upcoming Pivot (your single highest-impact domino and one explicit No).",
+    "bestFor": "Anyone who wants to prevent burnout before it happens and keep daily actions aligned with long-term values",
+    "whenToUse": "Sunday evening or Monday morning — before the next week starts, not after it ends",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "weekly-review-protocol",
+    "title": "Weekly Review That Actually Improves Your Life",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "weekly review",
+      "productivity",
+      "reflection",
+      "planning",
+      "GTD",
+      "self-improvement"
+    ],
+    "teaser": "A three-phase review — look back, look present, look forward — designed to cause real course correction in under 30 minutes.",
+    "bestFor": "Anyone who ends the week feeling busy but unclear on whether they moved anything forward",
+    "whenToUse": "Every Sunday or Friday afternoon — a fixed recurring block that protects your next week from becoming a copy of this one",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "weekly-review-reset",
+    "title": "Weekly Review & Reset ✨",
+    "category": "Productivity",
+    "difficulty": "beginner",
+    "tags": [
+      "productivity",
+      "reflection",
+      "habits",
+      "planning"
+    ],
+    "teaser": "Use AI to run a structured weekly review — what worked, what didn't, and what to focus on next week.",
+    "bestFor": "Anyone who wants to improve week-over-week, not just stay busy",
+    "whenToUse": "Every Friday or Sunday evening",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "workout-plan-progressive-overload",
+    "title": "Create a Realistic Workout Plan",
+    "category": "Health & Fitness",
+    "difficulty": "home-cook",
+    "tags": [
+      "fitness",
+      "workout",
+      "progressive overload",
+      "strength",
+      "muscle",
+      "habit"
+    ],
+    "teaser": "A Progressive Overload Blueprint built around your schedule and equipment — weekly split, exact sets/reps/rest, and an auto-regulation protocol for low-energy days so you never break the streak.",
+    "bestFor": "Anyone building a sustainable training routine around a busy schedule",
+    "whenToUse": "Starting a new fitness phase, returning after a break, or when your current plan isn't working",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "writers-block-toolkit",
+    "title": "Overcome Writer's Block",
+    "category": "Creative Writing",
+    "difficulty": "home-cook",
+    "tags": [
+      "writer's block",
+      "creative writing",
+      "freewriting",
+      "writing techniques",
+      "storytelling",
+      "creativity"
+    ],
+    "teaser": "Four psychological techniques — shitty first draft, changing lenses, inverted outline, bar conversation — each with a 5-minute exercise tailored to your specific piece.",
+    "bestFor": "Fiction, essays, blog posts, scripts, or any writing project where you've stalled and can't find the way back in",
+    "whenToUse": "The moment you're stuck — not after an hour of staring at the page",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "youtube-script-retention",
+    "title": "YouTube Script That Holds Attention",
+    "category": "Content Creation",
+    "difficulty": "sous-chef",
+    "tags": [
+      "YouTube",
+      "video script",
+      "watch time",
+      "audience retention",
+      "content creation",
+      "storytelling"
+    ],
+    "teaser": "A four-beat high-retention framework — hook, re-hook, pacing spikes, seamless outro — designed to maximize watch time and percentage viewed.",
+    "bestFor": "YouTube creators who want to improve watch time, reduce drop-off, and end videos in a way that feeds the algorithm",
+    "whenToUse": "Before recording — scripting for retention is dramatically more effective than editing for retention after the fact",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "youtube-video-idea-script",
+    "title": "YouTube Video Idea + Script Outline",
+    "category": "Content Creation",
+    "difficulty": "home-cook",
+    "tags": [
+      "YouTube",
+      "video",
+      "scripting",
+      "retention",
+      "titles",
+      "thumbnails"
+    ],
+    "teaser": "A complete Video Packaging and Blueprint Suite: 3 title/thumbnail concept pairings, a word-for-word 30-second retention hook, a pattern-interrupt-marked structural outline, and a seamless click-through outro.",
+    "bestFor": "YouTube creators planning a new video and starting from a topic, not a script",
+    "whenToUse": "Before scripting — gets the packaging and structure right before any writing happens",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  }
+]
