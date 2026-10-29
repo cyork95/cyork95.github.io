@@ -128,3 +128,11 @@ The links page and the blog now live in this repo and are served from here:
 - `blog/` → https://yorkdevelops.com/blog/ (copied byte-for-byte from cyork95/york-develops-blog, 57 posts)
 
 The old `cyork95/links` and `cyork95/york-develops-blog` repos are retained as read-only history. URLs under `/york-develops-blog/` redirect via the stubs in `york-develops-blog/`.
+
+---
+
+## Repository conventions
+
+- **Naming is kebab-case everywhere** — repositories (`york-develops-blog-legacy`), folders and files (`projects/tornado-tracker/`, `blog/posts/registry.json`), blog post slugs, and branches (`phase-3d-career-content`). New repos, pages, files, and posts follow the same rule: lowercase words joined by hyphens — no underscores, no camelCase.
+- **Branches** are short-lived and named for the work (`consolidation/phase-1`, `phase-3a-shared-chrome`). They merge into `main` by pull request with a merge commit, and are deleted once the PR is merged.
+- **This repo is the YorkDevelops monorepo**: the career site at the root, the link-in-bio page under `links/`, and the blog under `blog/`. Neighbouring project sites on this domain (`wow-anniversary-tracker`, `tos-ai-sim`, `lorerim5-journal`, `wow-forever-command-center`) live in their own repos and are not part of this one.
