@@ -26,6 +26,36 @@
   </url>
 
   <url>
+    <loc>https://yorkdevelops.com/creations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/my-sites/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/resume/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/links/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/blog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://yorkdevelops.com/projects/neon-tiles/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -38,7 +68,25 @@
   </url>
 
   <url>
+    <loc>https://yorkdevelops.com/projects/tornado-tracker/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://yorkdevelops.com/prompt-kitchen/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/wow-anniversary-tracker/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/tos-ai-sim/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
