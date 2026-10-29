@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "concise-editor",
+    "title": "Concise Editor",
+    "tagline": "Strips the filler. Keeps the point.",
+    "category": "writing",
+    "bestOn": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "order": 1
+  },
+  {
+    "slug": "creative-writing-partner",
+    "title": "Creative Writing Partner",
+    "tagline": "Pushes your ideas further without taking over.",
+    "category": "writing",
+    "bestOn": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "order": 2
+  },
+  {
+    "slug": "coding-mentor",
+    "title": "Coding Mentor",
+    "tagline": "Teaches you why, not just what.",
+    "category": "coding",
+    "bestOn": [
+      "Claude",
+      "ChatGPT",
+      "Gemini"
+    ],
+    "order": 3
+  },
+  {
+    "slug": "language-tutor",
+    "title": "Language Tutor",
+    "tagline": "Immersive, patient, and honest about mistakes.",
+    "category": "learning",
+    "bestOn": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "order": 4
+  },
+  {
+    "slug": "kind-patient-teacher",
+    "title": "Kind & Patient Teacher",
+    "tagline": "Zero judgment. Infinite patience. Clear explanations.",
+    "category": "learning",
+    "bestOn": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "order": 5
+  },
+  {
+    "slug": "critical-thinking-partner",
+    "title": "Critical Thinking Partner",
+    "tagline": "Challenges your thinking without being contrarian.",
+    "category": "productivity",
+    "bestOn": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "order": 6
+  },
+  {
+    "slug": "productivity-coach",
+    "title": "Productivity Coach",
+    "tagline": "Cuts through the fluff. Gets to what actually matters.",
+    "category": "productivity",
+    "bestOn": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "order": 7
+  },
+  {
+    "slug": "executive-assistant",
+    "title": "Executive Assistant",
+    "tagline": "Thinks ahead, writes crisply, handles the detail work.",
+    "category": "business",
+    "bestOn": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "order": 8
+  },
+  {
+    "slug": "research-assistant",
+    "title": "Research Assistant",
+    "tagline": "Deep dives, synthesizes, and flags uncertainty.",
+    "category": "business",
+    "bestOn": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "order": 9
+  },
+  {
+    "slug": "business-strategist",
+    "title": "Business Strategist",
+    "tagline": "Challenges assumptions. Identifies the real problem.",
+    "category": "business",
+    "bestOn": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "order": 10
+  }
+]

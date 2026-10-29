@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "avoid-hallucinations",
+    "title": "How to Avoid AI Hallucinations",
+    "category": "accuracy",
+    "analogy": "Checking the chef's claim before serving it to guests",
+    "order": 1
+  },
+  {
+    "slug": "verify-output",
+    "title": "Verify Before You Trust",
+    "category": "trust",
+    "analogy": "Tasting the dish before it leaves the kitchen",
+    "order": 2
+  },
+  {
+    "slug": "avoid-overtrust",
+    "title": "Knowing When Not to Trust AI",
+    "category": "trust",
+    "analogy": "Knowing which dishes the chef is actually trained to make",
+    "order": 3
+  },
+  {
+    "slug": "privacy-data",
+    "title": "Protecting Your Privacy with AI",
+    "category": "privacy",
+    "analogy": "Not putting your secret recipe in the window display",
+    "order": 4
+  },
+  {
+    "slug": "spotting-bias",
+    "title": "Spotting AI Bias",
+    "category": "bias",
+    "analogy": "Noticing when the menu only features one type of cuisine",
+    "order": 5
+  },
+  {
+    "slug": "sensitive-topics",
+    "title": "Handling Sensitive Topics",
+    "category": "safety",
+    "analogy": "Knowing which dishes require extra care in the kitchen",
+    "order": 6
+  },
+  {
+    "slug": "when-to-trust",
+    "title": "When (and When Not) to Trust AI",
+    "category": "trust",
+    "analogy": "Knowing your sous-chef's actual training vs. what they claim to know",
+    "order": 7
+  },
+  {
+    "slug": "creative-fact-checking",
+    "title": "Fact-Checking Creative Work",
+    "category": "accuracy",
+    "analogy": "Making sure the garnish matches what's on the menu",
+    "order": 8
+  }
+]

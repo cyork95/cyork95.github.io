@@ -1,0 +1,133 @@
+[
+  {
+    "slug": "act-as-expert",
+    "title": "Act As [Expert]",
+    "shelf": "role",
+    "whenToUse": "When you need domain-specific vocabulary and perspective",
+    "combineWith": [
+      "chain-of-thought",
+      "constraints"
+    ],
+    "order": 1
+  },
+  {
+    "slug": "format-table",
+    "title": "Format as Table",
+    "shelf": "format",
+    "whenToUse": "When comparing options or showing structured data",
+    "combineWith": [
+      "compare-options",
+      "constraints"
+    ],
+    "order": 2
+  },
+  {
+    "slug": "context-brief",
+    "title": "Context Brief",
+    "shelf": "context",
+    "whenToUse": "When you need AI to deeply understand your situation before responding",
+    "combineWith": [
+      "role",
+      "constraints"
+    ],
+    "order": 3
+  },
+  {
+    "slug": "think-step-by-step",
+    "title": "Think Step by Step",
+    "shelf": "chain",
+    "whenToUse": "Before complex reasoning, analysis, or multi-part problems",
+    "combineWith": [
+      "chain-of-thought"
+    ],
+    "order": 4
+  },
+  {
+    "slug": "max-words",
+    "title": "Maximum [X] Words",
+    "shelf": "constraint",
+    "whenToUse": "When AI tends to over-produce or you need a tight output",
+    "combineWith": [
+      "format-table",
+      "constraints-guardrails"
+    ],
+    "order": 5
+  },
+  {
+    "slug": "no-jargon",
+    "title": "No Jargon",
+    "shelf": "constraint",
+    "whenToUse": "When writing for non-specialist audiences",
+    "combineWith": [
+      "context-brief",
+      "format-table"
+    ],
+    "order": 6
+  },
+  {
+    "slug": "devil-s-advocate",
+    "title": "Devil's Advocate",
+    "shelf": "role",
+    "whenToUse": "When you want your idea stress-tested before you commit to it",
+    "combineWith": [
+      "think-step-by-step",
+      "context-brief"
+    ],
+    "order": 7
+  },
+  {
+    "slug": "audience-profile",
+    "title": "Audience Profile",
+    "shelf": "context",
+    "whenToUse": "Before writing anything that needs to land with a specific person or group",
+    "combineWith": [
+      "act-as-expert",
+      "no-jargon"
+    ],
+    "order": 8
+  },
+  {
+    "slug": "before-you-answer",
+    "title": "Before You Answer",
+    "shelf": "chain",
+    "whenToUse": "Before any question where accuracy or nuance really matters",
+    "combineWith": [
+      "think-step-by-step",
+      "context-brief"
+    ],
+    "order": 9
+  },
+  {
+    "slug": "executive-summary-format",
+    "title": "Executive Summary Format",
+    "shelf": "format",
+    "whenToUse": "When your output needs to be scannable for a busy reader",
+    "combineWith": [
+      "max-words",
+      "audience-profile"
+    ],
+    "order": 10
+  },
+  {
+    "slug": "casual-direct",
+    "title": "Casual & Direct",
+    "shelf": "tone",
+    "whenToUse": "For anything that should sound like a confident human, not a corporate document",
+    "combineWith": [
+      "no-jargon",
+      "max-words"
+    ],
+    "order": 11
+  },
+  {
+    "slug": "formal-precise",
+    "title": "Formal & Precise",
+    "shelf": "tone",
+    "whenToUse": "For professional documents, legal or financial writing, academic work",
+    "combineWith": [
+      "executive-summary-format",
+      "audience-profile"
+    ],
+    "order": 12
+  }
+]

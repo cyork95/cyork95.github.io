@@ -1,0 +1,1997 @@
+[
+  {
+    "slug": "accelerated-learning",
+    "title": "Accelerated Learning & Cognitive Performance",
+    "emoji": "🧠",
+    "tagline": "\"Bypass beginner traps. Build deep mastery faster.\"",
+    "description": "Seven cognitive accelerator tools — public speaking delivery framework, speed reading extraction, muscle memory myelination protocols, data analysis self-teaching roadmap, skill diagnostic audit, emergency exam prep, and a failure-to-learning forensic review.",
+    "audience": [
+      "Ambitious professionals and self-learners",
+      "Engineers, creators, and students hitting performance plateaus"
+    ],
+    "color": "#7C3AED",
+    "chapters": [
+      {
+        "slug": "accel-1-public-speaking",
+        "title": "Learn Public Speaking Effectively",
+        "category": "Speed Mastery",
+        "difficulty": "home-cook",
+        "tags": [
+          "public speaking",
+          "presentation",
+          "delivery",
+          "rhetoric",
+          "performance",
+          "communication"
+        ],
+        "teaser": "A 48-hour Rhetorical Delivery Framework: a 3-sentence structural anchor (hook, transition, payoff), pacing brake mechanisms tailored to your specific vulnerability, and a 15-minute deliberate practice protocol using audio self-recording for feedback loops.",
+        "order": 1
+      },
+      {
+        "slug": "accel-2-speed-reading",
+        "title": "Speed Read Non-Fiction Books",
+        "category": "Speed Mastery",
+        "difficulty": "beginner",
+        "tags": [
+          "reading",
+          "learning",
+          "non-fiction",
+          "speed reading",
+          "knowledge management",
+          "Obsidian"
+        ],
+        "teaser": "A 30-minute Hyper-Extraction Protocol: a 5-minute structural scan using ToC and introduction only, syntopic skimming focused on topic sentences and data thresholds (not descriptive prose), and a Blank Sheet Capture template for Obsidian-compatible knowledge archiving.",
+        "order": 2
+      },
+      {
+        "slug": "accel-3-muscle-memory",
+        "title": "Build Muscle Memory for Any Skill",
+        "category": "Speed Mastery",
+        "difficulty": "home-cook",
+        "tags": [
+          "muscle memory",
+          "deliberate practice",
+          "motor learning",
+          "skill building",
+          "neuroscience"
+        ],
+        "teaser": "A Myelination & Deliberate Practice Protocol: deconstruct the skill into 3 micro-steps, train at 25% real-time speed to prevent mistake hardcoding, and use interleaved variable loading to force the nervous system to consolidate the pattern faster.",
+        "order": 3
+      },
+      {
+        "slug": "accel-4-data-analysis",
+        "title": "Teach Yourself Data Analysis",
+        "category": "Speed Mastery",
+        "difficulty": "sous-chef",
+        "tags": [
+          "data analysis",
+          "self-teaching",
+          "Python",
+          "SQL",
+          "data engineering",
+          "learning roadmap"
+        ],
+        "teaser": "A Data Analysis Mastery Track: a mental bridge from your existing skills to data engineering concepts, a 4-week project-based syllabus that avoids tutorial loops, and a non-trivial end-to-end portfolio project spec.",
+        "order": 4
+      },
+      {
+        "slug": "accel-5-skill-diagnostic",
+        "title": "Fix My Weakest Skill (Diagnostic)",
+        "category": "Diagnostic Tools",
+        "difficulty": "home-cook",
+        "tags": [
+          "skill development",
+          "diagnosis",
+          "performance plateau",
+          "deliberate practice",
+          "remediation"
+        ],
+        "teaser": "A Skill Isolation & Remediation Audit: 3 targeted diagnostic questions to separate environmental friction from mechanical gaps, a 7-day over-indexed micro-training sprint on the isolated weakness, and a binary verification test to confirm the bottleneck is resolved.",
+        "order": 5
+      },
+      {
+        "slug": "accel-6-exam-prep",
+        "title": "Prepare for a Tough Exam in Limited Time",
+        "category": "Diagnostic Tools",
+        "difficulty": "home-cook",
+        "tags": [
+          "exam prep",
+          "studying",
+          "active recall",
+          "triage",
+          "learning strategy",
+          "time management"
+        ],
+        "teaser": "An Emergency Retrieval Schedule: a 2x2 High-Probability vs. Current Weakness triage matrix to ruthlessly cut low-leverage topics, active recall blocks banning passive reading, and a 1-page Memory Dump Sheet protocol for pre-exam review.",
+        "order": 6
+      },
+      {
+        "slug": "accel-7-failure-learning",
+        "title": "Turn Failure into Learning",
+        "category": "Resilience Frameworks",
+        "difficulty": "beginner",
+        "tags": [
+          "failure",
+          "resilience",
+          "growth mindset",
+          "post-mortem",
+          "imposter syndrome",
+          "reflection"
+        ],
+        "teaser": "A Post-Incident Forensic Review: a somatic de-escalation to drop emotional defenses, 3 precise factual autopsy questions separating the real timeline from the catastrophic story your mind is spinning, and 2 concrete single-responsibility process adjustments to prevent recurrence.",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "slug": "ai-engineering-os",
+    "title": "AI Engineering & Prompt Architecture System",
+    "emoji": "🤖",
+    "tagline": "\"Stop prompting. Start engineering.\"",
+    "description": "Six meta-layer tools for AI power users — prompt optimization with advanced token structure, AI output polishing, forensic AI text detection, multi-model pipeline architecture, persistent personal memory system, and custom agent specification with injection protection.",
+    "audience": [
+      "Developers, engineers, and AI power users",
+      "Anyone building custom AI workflows, agents, or prompt systems who wants precision over accident"
+    ],
+    "color": "#6D28D9",
+    "chapters": [
+      {
+        "slug": "ai-1-prompt-improver",
+        "title": "Prompt Improver (Make This Prompt Better)",
+        "category": "Prompt Engineering",
+        "difficulty": "home-cook",
+        "tags": [
+          "prompt engineering",
+          "LLM optimization",
+          "few-shot",
+          "prompt design",
+          "token structure",
+          "NLP"
+        ],
+        "teaser": "A Master Prompt Blueprint with 4 structural upgrades: an Explicit Persona Assignment anchored to operational domains, Systemic Input/Output Framing using clean delimiter tags, Strict Formatting Guardrails banning robotic jargon, and Few-Shot Scaffolding showing the exact reasoning model the AI must follow.",
+        "order": 1
+      },
+      {
+        "slug": "ai-2-output-editor",
+        "title": "AI Output Editor & Polisher",
+        "category": "Output Refinement",
+        "difficulty": "beginner",
+        "tags": [
+          "editing",
+          "AI writing",
+          "copywriting",
+          "formatting",
+          "polish",
+          "content refinement"
+        ],
+        "teaser": "3 sequential refinement passes on any pasted AI-generated text: a Fluff Deletion Pass targeting automated AI tells and throat-clearing phrases, a Structural Scannability Refactor using markdown hierarchies and judicious bolding, and a Tonal Calibration pass matching the output to a sophisticated direct professional voice.",
+        "order": 2
+      },
+      {
+        "slug": "ai-3-detect-ai-text",
+        "title": "Detect AI-Generated Text",
+        "category": "Output Refinement",
+        "difficulty": "home-cook",
+        "tags": [
+          "AI detection",
+          "linguistic analysis",
+          "authenticity",
+          "writing analysis",
+          "LLM forensics",
+          "content integrity"
+        ],
+        "teaser": "A Linguistic Integrity Audit on any pasted text: a Perplexity & Burstiness Triage flagging zones of overly uniform sentence length, a Boilerplate Tracker listing exact AI-pattern words and transitions, a Human Irregularity Matrix checking for the absence of idiomatic quirks — and a 0–100% probability score with granular linguistic justification.",
+        "order": 3
+      },
+      {
+        "slug": "ai-4-multimodel-pipeline",
+        "title": "Multi-Model Workflow Coordinator",
+        "category": "AI Architecture",
+        "difficulty": "sous-chef",
+        "tags": [
+          "multi-model",
+          "AI pipeline",
+          "LLM orchestration",
+          "workflow automation",
+          "system design",
+          "token management"
+        ],
+        "teaser": "A Multi-Model Workflow Blueprint: a Model Routing Topology assigning the optimal model to each pipeline step based on native benchmarks, a Context Ingestion & Token Management map showing how each step's output is sanitized before piping to the next, and a Fallback & Validation Layer with a programmatic checklist each stage must pass before unblocking the next model.",
+        "order": 4
+      },
+      {
+        "slug": "ai-5-memory-system",
+        "title": "Personal AI Memory System",
+        "category": "AI Architecture",
+        "difficulty": "home-cook",
+        "tags": [
+          "AI memory",
+          "system prompt",
+          "personal context",
+          "PKM",
+          "custom instructions",
+          "AI personalization"
+        ],
+        "teaser": "A 4-question Socratic interview asked one at a time — Core Identity, Technical Stack, Interpersonal Guardrails, and Active Horizons — synthesized into a clean markdown User Context Ledger ready to paste into any AI agent's system prompt, with a User Correction Ledger block at the bottom for future updates.",
+        "order": 5
+      },
+      {
+        "slug": "ai-6-custom-agent-brief",
+        "title": "Custom GPT / Claude Project Brief",
+        "category": "AI Architecture",
+        "difficulty": "sous-chef",
+        "tags": [
+          "custom GPT",
+          "Claude projects",
+          "system prompt",
+          "agent design",
+          "AI security",
+          "prompt injection protection"
+        ],
+        "teaser": "A 4-section Custom Agent Architecture Specification ready to copy-paste: an Operational Persona & Objective defining role and delivery metrics, an Input Data Architecture specifying how inputs are validated before processing, a Step-by-Step Execution Protocol the agent follows on every interaction, and System Guardrails with hardcoded injection protection refusing all attempts to expose or repeat system instructions.",
+        "order": 6
+      }
+    ]
+  },
+  {
+    "slug": "creative-spark-os",
+    "title": "Creative Spark & Brand Ideation System",
+    "emoji": "⚡",
+    "tagline": "\"From blank page to market-ready concept — without the block.\"",
+    "description": "Seven ideation engine tools — filtered business idea generation, creative block destruction, Socratic fiction world-building, unforgettable metaphor crafting, lyric construction blueprints, product naming with taglines, and a full campaign activation blueprint.",
+    "audience": [
+      "Solopreneurs, creators, and indie builders",
+      "Writers, brand strategists, and anyone who builds things that need to be named and sold"
+    ],
+    "color": "#B45309",
+    "chapters": [
+      {
+        "slug": "creative-1-business-ideas",
+        "title": "New Business Idea Generator (With Filters)",
+        "category": "Market Concepts",
+        "difficulty": "home-cook",
+        "tags": [
+          "business ideas",
+          "startup",
+          "validation",
+          "lean startup",
+          "solopreneur",
+          "micro-SaaS"
+        ],
+        "teaser": "A filtered business idea matrix: 4 non-cliché concepts matched to your specific skill stack, capital constraints, and time-to-value targets — each with a Hook, a Monetization Architecture, and the leanest possible Smoke Test to validate demand before building.",
+        "order": 1
+      },
+      {
+        "slug": "creative-2-block-destroyer",
+        "title": "Creative Block Destroyer",
+        "category": "Ideation Engine",
+        "difficulty": "beginner",
+        "tags": [
+          "creative block",
+          "writer's block",
+          "divergent thinking",
+          "brainstorming",
+          "perfectionism",
+          "creative process"
+        ],
+        "teaser": "3 rapid-fire exercises for a forced perspective shift: an Extreme Constraint Refactor that compresses your idea to under 20 words or a single analogy, an Inversion Principle that deliberately writes the worst version to break perfectionism, and a Somatic Brain Dump that offloads raw internal concepts without formatting filters.",
+        "order": 2
+      },
+      {
+        "slug": "creative-3-world-building",
+        "title": "World-Building for Fiction Writers",
+        "category": "Ideation Engine",
+        "difficulty": "sous-chef",
+        "tags": [
+          "world-building",
+          "fiction",
+          "speculative fiction",
+          "fantasy",
+          "creative writing",
+          "Socratic method"
+        ],
+        "teaser": "A 3-part Socratic world-building protocol asked one question at a time: Core Infrastructure & Scarcity (what resource dictates the economy and what problem its shortage creates), Downstream Cultural Mutations (how that infrastructure shapes rituals, architecture, and taboos), and the Systemic Flashpoint threatening the status quo.",
+        "order": 3
+      },
+      {
+        "slug": "creative-4-metaphor-creator",
+        "title": "Unique Metaphor & Analogy Creator",
+        "category": "Ideation Engine",
+        "difficulty": "home-cook",
+        "tags": [
+          "metaphors",
+          "analogies",
+          "technical writing",
+          "explanation",
+          "communication",
+          "teaching"
+        ],
+        "teaser": "4 vivid analogies drawn from completely different operational worlds — Nature/Biology, Daily Rituals/Culinary Arts, Gaming/Pop Culture, and History/Architecture — each with explicit variable mapping so the conceptual bridge between your complex topic and the analogy is crystal clear.",
+        "order": 4
+      },
+      {
+        "slug": "creative-5-lyric-blueprint",
+        "title": "Song Lyric & Poetry Blueprint",
+        "category": "Ideation Engine",
+        "difficulty": "home-cook",
+        "tags": [
+          "songwriting",
+          "poetry",
+          "lyrics",
+          "creative writing",
+          "imagery",
+          "verse structure"
+        ],
+        "teaser": "A Lyric Construction Blueprint: an Image Vault of 5 hyper-specific non-cliché sensory nouns anchoring your theme, a Structural Constraint giving you a rhythmic rule or stanza layout to write under, and 3 high-tension Opening Line Launchpads to break blank-page friction and establish vocal rhythm.",
+        "order": 5
+      },
+      {
+        "slug": "creative-6-product-naming",
+        "title": "Product Name + Tagline Generator",
+        "category": "Market Concepts",
+        "difficulty": "home-cook",
+        "tags": [
+          "product naming",
+          "brand strategy",
+          "taglines",
+          "copywriting",
+          "branding",
+          "naming"
+        ],
+        "teaser": "12 name and tagline options organized into 4 strategic categories: Literal & Clear (zero explanation needed), Compound/Neologism (brandable digital handles), Evocative/Metaphorical (philosophy-hinting story-driven names), and Minimalist (ultra-short high-leverage terms) — all taglines focused on tangible transformation, not generic fluff.",
+        "order": 6
+      },
+      {
+        "slug": "creative-7-campaign-blueprint",
+        "title": "Marketing Campaign Concept Developer",
+        "category": "Market Concepts",
+        "difficulty": "sous-chef",
+        "tags": [
+          "marketing",
+          "campaign",
+          "growth marketing",
+          "content strategy",
+          "conversion",
+          "viral mechanics"
+        ],
+        "teaser": "A Campaign Activation Blueprint: one Big Creative Hook that stops the scroll with a contrarian narrative angle, a 3-Part Content Ingestion Funnel mapping exactly how a cold viewer travels to high-trust conversion across your channels, and a Low-Friction Viral Mechanism that naturally incentivizes sharing without a paid referral program.",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "slug": "creator",
+    "title": "Creator Cookbook",
+    "emoji": "🎨",
+    "tagline": "\"More ideas, less blank-page paralysis.\"",
+    "description": "Content ideas, scripts, hooks, repurposing, and building an audience — for creators on any platform.",
+    "audience": [
+      "YouTubers, podcasters, writers",
+      "Anyone building an audience"
+    ],
+    "color": "#D97706",
+    "chapters": [
+      {
+        "slug": "creator-day-1-brain-trust",
+        "title": "Day 1: The Brain Trust (Ideation & Visual Concepting)",
+        "category": "Ideation",
+        "difficulty": "home-cook",
+        "tags": [
+          "ideation",
+          "strategy",
+          "thumbnails",
+          "platforms",
+          "week-start"
+        ],
+        "teaser": "Kick off your week by transforming a rough topic into three fully-formed content angles, thumbnail concepts, and a platform split — all in one session.",
+        "order": 1
+      },
+      {
+        "slug": "creator-day-2-hook-blueprint",
+        "title": "Day 2: The Hook & Retention Blueprint (Scripting)",
+        "category": "Scripting",
+        "difficulty": "sous-chef",
+        "tags": [
+          "scripting",
+          "hooks",
+          "retention",
+          "youtube",
+          "video"
+        ],
+        "teaser": "Write a high-retention script blueprint with a proven 15-second hook, pattern interrupt cues every 30–45 seconds, and a call-to-action that doesn't tank your metrics.",
+        "order": 2
+      },
+      {
+        "slug": "creator-day-3-writers-block",
+        "title": "Day 3: Overcoming the Mid-Week Wall (Bypassing Writer's Block)",
+        "category": "Writing",
+        "difficulty": "home-cook",
+        "tags": [
+          "writer's block",
+          "creativity",
+          "momentum",
+          "writing",
+          "unstuck"
+        ],
+        "teaser": "Three rapid-fire techniques to break through creative walls mid-production — a voice-to-text freewrite, an extreme constraint exercise, and a full reframe of your stuck section.",
+        "order": 3
+      },
+      {
+        "slug": "creator-day-4-asset-refinement",
+        "title": "Day 4: Asset Refinement & Visual Styling",
+        "category": "Editing",
+        "difficulty": "home-cook",
+        "tags": [
+          "editing",
+          "copyediting",
+          "thumbnails",
+          "visuals",
+          "polish"
+        ],
+        "teaser": "Run your draft through two parallel tracks: copyediting for rhythm and pacing, plus two ready-to-paste AI image prompts for your cover and supporting graphics.",
+        "order": 4
+      },
+      {
+        "slug": "creator-day-5-atomization",
+        "title": "Day 5: The Atomization Engine (Multi-Platform Distribution)",
+        "category": "Distribution",
+        "difficulty": "sous-chef",
+        "tags": [
+          "distribution",
+          "repurposing",
+          "social media",
+          "newsletter",
+          "threads"
+        ],
+        "teaser": "One piece of content becomes a thread, two short-form scripts, and a newsletter teaser — each formatted for its native platform, not copy-pasted from the original.",
+        "order": 5
+      },
+      {
+        "slug": "creator-day-6-automation",
+        "title": "Day 6: The Automation & Repurposing Blueprint",
+        "category": "Systems",
+        "difficulty": "sous-chef",
+        "tags": [
+          "automation",
+          "systems",
+          "notion",
+          "zapier",
+          "scheduling",
+          "evergreen"
+        ],
+        "teaser": "Build a lean automation system: a tagging structure for your content vault, two automated workflows using your existing tools, and an evergreen recycling protocol for top performers.",
+        "order": 6
+      },
+      {
+        "slug": "creator-day-7-audit",
+        "title": "Day 7: The Creative Audit & Velocity Review",
+        "category": "Strategy",
+        "difficulty": "home-cook",
+        "tags": [
+          "review",
+          "audit",
+          "productivity",
+          "velocity",
+          "improvement"
+        ],
+        "teaser": "A 15-minute structured review to identify where your creative energy drained this week, score your main asset on three dimensions, and fix one bottleneck before next Monday.",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "slug": "critical-analysis-os",
+    "title": "Critical Analysis & Decision Engines",
+    "emoji": "📊",
+    "tagline": "\"No confirmation bias. No narrative spin. Just the data.\"",
+    "description": "Six high-stakes evaluation tools — an engineering-first buyer's guide, a relocation triage scorecard, a career pivot matrix, an investment risk stress-test, a book knowledge repository extractor, and a media integrity bias audit.",
+    "audience": [
+      "Analysts, investors, and high-stakes decision-makers",
+      "Anyone who needs to cut through marketing noise, political spin, or emotional friction to reach a clear verdict"
+    ],
+    "color": "#1D4ED8",
+    "chapters": [
+      {
+        "slug": "analysis-1-buyers-guide",
+        "title": "Buyer's Guide Creator (Any Product)",
+        "category": "Consumer Intelligence",
+        "difficulty": "home-cook",
+        "tags": [
+          "buying guide",
+          "product research",
+          "consumer advocacy",
+          "product review",
+          "spec analysis"
+        ],
+        "teaser": "An Engineering-First Buyer's Guide: a Spec-Sheet Lie Detector exposing the top 2 marketing buzzwords manufacturers use to overcharge, a Mechanical Failure Points audit of components that break first, a 3-Tier Value Framework across Minimalist / Sweet-Spot / Edge Operator personas, and 3 technical diagnostic questions to answer before purchase.",
+        "order": 1
+      },
+      {
+        "slug": "analysis-2-relocation",
+        "title": "Relocation Decision Helper",
+        "category": "Life Logistics",
+        "difficulty": "home-cook",
+        "tags": [
+          "relocation",
+          "moving",
+          "city comparison",
+          "cost of living",
+          "lifestyle design",
+          "urban planning"
+        ],
+        "teaser": "A Relocation Triage Audit: a 5-variable Infrastructure Scorecard comparing locations on Cost of Living, Micro-Climate Resilience, Cultural Integration, Transit Velocity, and Spatial Layout — plus Downstream Friction Warnings for hidden operational expenses unique to each move, and a Geometric Verdict decision rule calibrated to your constraints.",
+        "order": 2
+      },
+      {
+        "slug": "analysis-3-quit-job",
+        "title": "\"Should I Quit My Job?\" Analyzer",
+        "category": "Career Intelligence",
+        "difficulty": "home-cook",
+        "tags": [
+          "career",
+          "resignation",
+          "burnout",
+          "job change",
+          "career strategy",
+          "decision making"
+        ],
+        "teaser": "A 4-question Career Pivot Matrix interview asked one at a time — exit drivers, financial runway, 90-day path to improvement, and assets you'd abandon — synthesized into one of three operational verdicts: 'Resign with Velocity,' 'The Defensive-Boundary Pivot,' or 'The Extraction Sprint,' each with a 30-day tactical roadmap.",
+        "order": 3
+      },
+      {
+        "slug": "analysis-4-investment-eval",
+        "title": "Investment Idea Evaluator",
+        "category": "Financial Intelligence",
+        "difficulty": "sous-chef",
+        "tags": [
+          "investing",
+          "risk management",
+          "portfolio",
+          "due diligence",
+          "stocks",
+          "crypto",
+          "financial analysis"
+        ],
+        "teaser": "A Risk Mitigation & Asset Evaluation Matrix: a Disruption Thesis mapping macro tailwinds to maximum upside, a Zero-Out Diagnostic tracing the exact failure sequence to total loss, a Counterparty & Liquidity Audit exposing hidden fees and lock-up risks, and a Capital Allocation Rule specifying the exact conditions for entry, scaling, or walking away.",
+        "order": 4
+      },
+      {
+        "slug": "analysis-5-book-summary",
+        "title": "Book Summary + Key Takeaways Extractor",
+        "category": "Knowledge Intelligence",
+        "difficulty": "home-cook",
+        "tags": [
+          "book summary",
+          "Obsidian",
+          "knowledge management",
+          "PARA",
+          "mental models",
+          "non-fiction"
+        ],
+        "teaser": "A Knowledge Repository Document formatted for Obsidian: a 3-sentence Core Thesis Box, 5 Functional Mental Models translated into Input→Mechanism→Output blueprints, an Operational Playbook for deploying the book's insights into daily routines, and a Critique & Missing Vector identifying the author's logical gaps and oversimplifications.",
+        "order": 5
+      },
+      {
+        "slug": "analysis-6-media-bias",
+        "title": "Media Bias Detector",
+        "category": "Information Intelligence",
+        "difficulty": "home-cook",
+        "tags": [
+          "media bias",
+          "critical thinking",
+          "rhetoric",
+          "journalism",
+          "logical fallacies",
+          "information literacy"
+        ],
+        "teaser": "A Media Integrity Audit on any pasted article: Adjective & Emotional Payload Analysis isolating loaded verbs and emotional anchors, an Omission & Sourcing Triage tracking who gets cited vs. who gets summarized with vague pronouns, a Framed Dichotomies map of false choices and strawman fallacies, and a Neutral Recalibration rewriting the most biased paragraph as pure factual data.",
+        "order": 6
+      }
+    ]
+  },
+  {
+    "slug": "deep-work-session",
+    "title": "Deep Work Session System",
+    "emoji": "🧠",
+    "tagline": "\"One prompt per phase. Full cognitive depth, no friction.\"",
+    "description": "A 4-phase cognitive OS — pre-session runway to eliminate distraction, a Socratic sounding board for complex logic, a mid-session unblocking protocol, and a shutdown context anchor for seamless next-session re-entry.",
+    "audience": [
+      "Knowledge workers, engineers, and writers",
+      "Anyone doing high-cognitive-load solo work"
+    ],
+    "color": "#7C3AED",
+    "chapters": [
+      {
+        "slug": "deep-work-phase-1-runway",
+        "title": "Phase 1: Cognitive Runway & Friction Elimination (Pre-Session)",
+        "category": "Pre-Session",
+        "difficulty": "beginner",
+        "tags": [
+          "focus",
+          "deep work",
+          "flow state",
+          "productivity",
+          "pre-session",
+          "environment"
+        ],
+        "teaser": "Run 10 minutes before any high-cognitive-load task — clears working memory, converts a vague task into a binary Definition of Done, sweeps your environment against your specific distraction vulnerability, and scaffolds 3 micro-milestones to build momentum in the first 15 minutes.",
+        "order": 1
+      },
+      {
+        "slug": "deep-work-phase-2-sounding-board",
+        "title": "Phase 2: Socratic Sounding Board & Architecture Sandbox (Execution)",
+        "category": "Execution",
+        "difficulty": "sous-chef",
+        "tags": [
+          "architecture",
+          "systems design",
+          "Socratic",
+          "reasoning",
+          "logic",
+          "sounding board"
+        ],
+        "teaser": "A zero-fluff interactive sandbox for complex logic and system design — one targeted question at a time, forcing you to define data structures and constraints, with critique of hidden dependencies and scaling bottlenecks at each step.",
+        "order": 2
+      },
+      {
+        "slug": "deep-work-phase-3-unblocking",
+        "title": "Phase 3: Mid-Session Pacing & Cognitive Unblocking (The Wall)",
+        "category": "Recovery",
+        "difficulty": "beginner",
+        "tags": [
+          "focus",
+          "unblocking",
+          "cognitive load",
+          "flow state",
+          "perfectionism",
+          "recovery"
+        ],
+        "teaser": "Deploy when you hit a wall mid-session — an Ugly Blueprint directive to bypass your perfectionist editor, a 2-minute tactical pivot to a momentum-restoring sub-task, and a 60-second somatic grounding exercise to lower cortisol and restore working memory.",
+        "order": 3
+      },
+      {
+        "slug": "deep-work-phase-4-shutdown",
+        "title": "Phase 4: Clean Slate Capture & Context Anchor (Shutdown)",
+        "category": "Shutdown",
+        "difficulty": "beginner",
+        "tags": [
+          "shutdown",
+          "context",
+          "knowledge management",
+          "Obsidian",
+          "session handoff",
+          "focus"
+        ],
+        "teaser": "Run in the final 5 minutes of your block — converts raw notes and unfinished thoughts into a markdown Session Hand-off Log: what you built, open threads still floating in your head, and a single launchpad instruction to re-enter flow state instantly next session.",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "slug": "engineering-manager-os",
+    "title": "Team Leader & Engineering Manager OS",
+    "emoji": "👑",
+    "tagline": "\"Protect your team's velocity. Build high-trust culture.\"",
+    "description": "Eight operational tools for engineering managers — performance reviews, diplomatic no emails, project kickoff briefs, scope creep responses, retrospectives, remote icebreakers, 1:1 agendas, and quarterly OKRs.",
+    "audience": [
+      "Engineering managers and tech leads",
+      "Senior ICs moving into leadership roles"
+    ],
+    "color": "#0369A1",
+    "chapters": [
+      {
+        "slug": "em-os-1-performance-review",
+        "title": "Performance Review for Direct Reports",
+        "category": "People",
+        "difficulty": "home-cook",
+        "tags": [
+          "performance review",
+          "direct reports",
+          "management",
+          "feedback",
+          "growth",
+          "engineering"
+        ],
+        "teaser": "Converts your raw notes into a structured evaluation: Action→Output→ROI impact bullets, autonomy and ambiguity navigation assessment, growth vectors framed as promotion milestones (not failures), and a 2-sentence 90-Day Focus Directive.",
+        "order": 1
+      },
+      {
+        "slug": "em-os-2-no-email",
+        "title": "\"No\" Email Without Burning Bridges",
+        "category": "Communication",
+        "difficulty": "home-cook",
+        "tags": [
+          "stakeholder management",
+          "email",
+          "negotiation",
+          "boundaries",
+          "communication",
+          "diplomacy"
+        ],
+        "teaser": "A 4-part diplomatic no: a warm pivot acknowledging the request's value, an objective trade-off stated in resource/OKR terms, two concrete alternative options that hand agency back, and a single direct question that closes toward a decision.",
+        "order": 2
+      },
+      {
+        "slug": "em-os-3-kickoff-brief",
+        "title": "Project Kickoff Brief",
+        "category": "Execution",
+        "difficulty": "home-cook",
+        "tags": [
+          "project management",
+          "kickoff",
+          "architecture",
+          "scope",
+          "alignment",
+          "engineering"
+        ],
+        "teaser": "A structured markdown Kickoff Brief: a 2-sentence mission statement, 3–4 binary Definition-of-Done milestones, explicit In-Scope vs. Out-of-Scope boundaries to prevent sprawl, and the top 2 high-risk dependencies to defensive-program against.",
+        "order": 3
+      },
+      {
+        "slug": "em-os-4-scope-creep",
+        "title": "Scope Creep Response Template",
+        "category": "Communication",
+        "difficulty": "home-cook",
+        "tags": [
+          "scope creep",
+          "stakeholders",
+          "project management",
+          "boundaries",
+          "change order",
+          "contracts"
+        ],
+        "teaser": "Two swappable responses: a Flexible Upsell that validates the idea but routes it through a formal Change Order process, and a Phase 2 Hard Line that anchors to current deadlines and moves the request to the backlog without apology.",
+        "order": 4
+      },
+      {
+        "slug": "em-os-5-retrospective",
+        "title": "Team Retrospective Facilitator",
+        "category": "Process",
+        "difficulty": "home-cook",
+        "tags": [
+          "retrospective",
+          "agile",
+          "scrum",
+          "process improvement",
+          "team",
+          "velocity"
+        ],
+        "teaser": "A structured Retrospective Roadmap: a 2-minute sentiment warm-up, Tri-Lens questions across velocity accelerators / breakdowns / immediate changes, and a markdown Continuous Improvement Tracker with owners and verification loops.",
+        "order": 5
+      },
+      {
+        "slug": "em-os-6-icebreakers",
+        "title": "Remote Team Icebreaker Questions",
+        "category": "Culture",
+        "difficulty": "beginner",
+        "tags": [
+          "remote work",
+          "team culture",
+          "icebreakers",
+          "async",
+          "engagement",
+          "team building"
+        ],
+        "teaser": "10 icebreaker questions in 3 buckets: async Slack/Discord thread hooks (impossible not to answer), technical/geeky quirks that tap engineering culture, and rapid-fire X-vs-Y casuals for the first 3 minutes of a live call.",
+        "order": 6
+      },
+      {
+        "slug": "em-os-7-one-on-one",
+        "title": "One-on-One Meeting Agenda Generator",
+        "category": "People",
+        "difficulty": "home-cook",
+        "tags": [
+          "1:1",
+          "one-on-one",
+          "management",
+          "direct reports",
+          "career development",
+          "leadership"
+        ],
+        "teaser": "A 30-minute 1:1 framework in 4 timed blocks: a 5-minute human-first check-in, 15 minutes of friction triage with open-ended unblocking questions, 7 minutes of career horizon tracking, and a 3-minute action item close with a markdown accountability template.",
+        "order": 7
+      },
+      {
+        "slug": "em-os-8-team-okr",
+        "title": "Quarterly OKR Setter",
+        "category": "Strategy",
+        "difficulty": "sous-chef",
+        "tags": [
+          "OKR",
+          "quarterly planning",
+          "team strategy",
+          "metrics",
+          "engineering",
+          "leadership"
+        ],
+        "teaser": "A Quarterly Team OKR Suite: 3 strategic objectives, 3 binary quantitative Key Results per objective, a Leading vs. Lagging Indicators matrix, and a Contingency Risk Matrix naming the top 2 systemic threats with defensive mitigation loops.",
+        "order": 8
+      }
+    ]
+  },
+  {
+    "slug": "human-connection-os",
+    "title": "Human Connection & Emotional Resilience Architecture",
+    "emoji": "🤍",
+    "tagline": "\"Say the hard thing well. Hold the people you love.\"",
+    "description": "Seven relational blueprint tools — conflict resolution playbooks, age-calibrated parenting scaffolds, friendship reconnection messages, high-resonance gratitude practice, acute anxiety unwinding sequences, boundary-setting sovereignty packets, and a legacy letter protocol.",
+    "audience": [
+      "Anyone navigating a difficult relationship moment or emotional transition",
+      "Parents, partners, and people who want to communicate with more precision and care"
+    ],
+    "color": "#BE185D",
+    "chapters": [
+      {
+        "slug": "human-1-conflict-resolution",
+        "title": "Conflict Resolution Between Two People",
+        "category": "Relational Blueprints",
+        "difficulty": "home-cook",
+        "tags": [
+          "conflict resolution",
+          "NVC",
+          "relationships",
+          "communication",
+          "couples",
+          "family"
+        ],
+        "teaser": "A 3-step Conflict Resolution Playbook: a Defense-Breaker Opener that leads with vulnerability and frames the problem as 'you and me vs. the issue,' a Safe Reflection Track for mirroring their frustration before stating your own, and a Process Refactor designing a concrete operational shift to prevent the loop from re-triggering.",
+        "order": 1
+      },
+      {
+        "slug": "human-2-parenting-advice",
+        "title": "Parenting Advice Tailored to Age",
+        "category": "Relational Blueprints",
+        "difficulty": "home-cook",
+        "tags": [
+          "parenting",
+          "child development",
+          "behavioral psychology",
+          "co-regulation",
+          "neurobiology",
+          "emotional intelligence"
+        ],
+        "teaser": "A customized Parenting Scaffold Plan: a Developmental Lens explaining what is happening in your child's brain at their exact age, a word-for-word De-escalation Script for the exact moment the flashpoint occurs, and 2 Environmental Pivots to adjust your household rhythm and prevent the friction from occurring in the first place.",
+        "order": 2
+      },
+      {
+        "slug": "human-3-friendship-message",
+        "title": "Friendship Maintenance Message",
+        "category": "Relational Blueprints",
+        "difficulty": "beginner",
+        "tags": [
+          "friendship",
+          "reconnection",
+          "relationships",
+          "communication",
+          "long-distance",
+          "social connection"
+        ],
+        "teaser": "2 swappable message variations: a Zero-Pressure Drop-In that name-drops your shared passion, validates the gap without over-apologizing, and explicitly states no reply is required — and a Low-Friction Catch-Up that shares a tiny snapshot of your world and invites a casual low-stakes touchpoint. Both versions eliminate 'Hope you're doing well' entirely.",
+        "order": 3
+      },
+      {
+        "slug": "human-4-gratitude-practice",
+        "title": "Gratitude Practice That Actually Works",
+        "category": "Emotional Architecture",
+        "difficulty": "beginner",
+        "tags": [
+          "gratitude",
+          "neuroplasticity",
+          "well-being",
+          "mindfulness",
+          "cortisol",
+          "positive psychology"
+        ],
+        "teaser": "A High-Resonance Reflection Protocol: isolate one specific micro-interaction or sensory detail from the last 48 hours (not a broad category), identify the hidden effort someone else put in to make that moment possible, and anchor the positive state with a 30-second somatic focus exercise before returning to your day.",
+        "order": 4
+      },
+      {
+        "slug": "human-5-anxiety-protocol",
+        "title": "Dealing with Anxiety — Unwinding Protocol",
+        "category": "Emotional Architecture",
+        "difficulty": "beginner",
+        "tags": [
+          "anxiety",
+          "IFS",
+          "somatic experiencing",
+          "nervous system",
+          "mental health",
+          "grounding"
+        ],
+        "teaser": "A 3-step somatic and cognitive unwinding sequence: a 90-second Somatic Brake using a physiologically proven breathing pattern to lower heart rate now, a Fact-Data Separation distinguishing objective environmental facts from anxious future-catastrophizing stories, and a compassionate IFS-based script to de-escalate the anxious part of yourself rather than fighting it.",
+        "order": 5
+      },
+      {
+        "slug": "human-6-boundary-setting",
+        "title": "Boundary Setting Script Builder",
+        "category": "Relational Blueprints",
+        "difficulty": "home-cook",
+        "tags": [
+          "boundaries",
+          "assertive communication",
+          "relationships",
+          "self-advocacy",
+          "NVC",
+          "conflict"
+        ],
+        "teaser": "A Sovereignty Packet: a 2-sentence Direct Assertion Script using the 'When X / I need Y / Moving forward Z' structure, 2 Explanation Shield scripts to hold the line if they get defensive or guilt-trip you, and 3 Over-Apology Filter phrases to delete from your vocabulary before the conversation to prevent leverage dilution.",
+        "order": 6
+      },
+      {
+        "slug": "human-7-legacy-letter",
+        "title": "Legacy Letter & Future Message to Loved Ones",
+        "category": "Emotional Architecture",
+        "difficulty": "sous-chef",
+        "tags": [
+          "legacy",
+          "letter writing",
+          "family",
+          "values",
+          "life reflection",
+          "meaningful writing"
+        ],
+        "teaser": "A 3-question Socratic interview asked one at a time — Core Anchors (your 2 immutable values through your darkest crossroads), a Love Vignette (the quiet everyday moment you cherished above all else), and an Existential Compass (your deepest wish for how they navigate uncertainty without you) — synthesized into a timeless digital time-capsule message.",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "slug": "indie-hacker",
+    "title": "Indie Hacker Cookbook",
+    "emoji": "💻",
+    "tagline": "\"Ship faster. Learn cheaper. Grow without a team.\"",
+    "description": "AI as your co-founder, copywriter, researcher, and customer success team — all at once.",
+    "audience": [
+      "Solo founders & bootstrappers",
+      "Pre-launch through early traction"
+    ],
+    "color": "#6366F1",
+    "chapters": [
+      {
+        "slug": "indie-hacker-phase-0-cofounder-init",
+        "title": "Phase 0: The Co-Founder System Initialization",
+        "category": "Setup",
+        "difficulty": "beginner",
+        "tags": [
+          "system prompt",
+          "co-founder",
+          "setup",
+          "persona",
+          "lean startup"
+        ],
+        "teaser": "Run this before everything else. Sets up your AI as a cross-trained technical co-founder who defaults to lean solutions, anticipates bottlenecks, and never speaks in corporate fluff.",
+        "order": 0
+      },
+      {
+        "slug": "indie-hacker-phase-1-researcher",
+        "title": "Phase 1: The Researcher — Waitlist & Scarcity Engine",
+        "category": "Validation",
+        "difficulty": "home-cook",
+        "tags": [
+          "waitlist",
+          "validation",
+          "landing page",
+          "pre-launch",
+          "demand"
+        ],
+        "teaser": "Your AI Researcher builds a pre-launch landing page framework, a sustainable scarcity lever, and a 3-email nurture sequence — before you've written a line of product code.",
+        "order": 1
+      },
+      {
+        "slug": "indie-hacker-phase-2-copywriter",
+        "title": "Phase 2: The Copywriter — Product Hunt & Hacker News Positioning",
+        "category": "Launch Copy",
+        "difficulty": "home-cook",
+        "tags": [
+          "Product Hunt",
+          "Hacker News",
+          "copywriting",
+          "positioning",
+          "launch"
+        ],
+        "teaser": "Your AI Copywriter writes three Product Hunt taglines under 60 characters, an authentic maker story comment, and a Hacker News Show HN pitch that won't get roasted in the comments.",
+        "order": 2
+      },
+      {
+        "slug": "indie-hacker-phase-3-seeding",
+        "title": "Phase 3: Organic Seeding — Community Distribution Playbook",
+        "category": "Distribution",
+        "difficulty": "home-cook",
+        "tags": [
+          "community",
+          "Reddit",
+          "Discord",
+          "cold outreach",
+          "organic growth",
+          "seeding"
+        ],
+        "teaser": "Post in niche communities without getting banned — a value-first post template, three cold DM swipes asking for feedback not sales, and a 4-step platform safety checklist.",
+        "order": 3
+      },
+      {
+        "slug": "indie-hacker-phase-4-war-room",
+        "title": "Phase 4: The Co-Founder — Launch Day War Room Operations",
+        "category": "Launch Day",
+        "difficulty": "sous-chef",
+        "tags": [
+          "launch day",
+          "operations",
+          "technical",
+          "war room",
+          "Stripe",
+          "Vercel"
+        ],
+        "teaser": "Your AI Co-Founder maps out a 24-hour launch roadmap: Hour 0 technical sanity checks, Hours 1–6 momentum protocols, the global time zone pivot at Hour 12, and an Hour 24 retrospective template.",
+        "order": 4
+      },
+      {
+        "slug": "indie-hacker-phase-5-customer-success",
+        "title": "Phase 5: Customer Success — The Retention & Activation Flywheel",
+        "category": "Retention",
+        "difficulty": "sous-chef",
+        "tags": [
+          "retention",
+          "onboarding",
+          "customer success",
+          "churn",
+          "referral",
+          "flywheel"
+        ],
+        "teaser": "Your AI Customer Success team designs an onboarding flow that hits the Aha Moment in under 2 minutes, segments users into three feedback buckets, and builds a referral flywheel with low-code tools.",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "slug": "indie-hacker-launch",
+    "title": "Indie Hacker Launch Checklist",
+    "emoji": "🚢",
+    "tagline": "\"From waitlist to War Room to retention flywheel.\"",
+    "description": "The complete launch lifecycle for solo builders — pre-launch scarcity, Product Hunt positioning, community seeding, launch day operations, and post-launch retention.",
+    "audience": [
+      "Solo founders & indie builders",
+      "Launching a micro-SaaS or digital product"
+    ],
+    "color": "#7C3AED",
+    "chapters": [
+      {
+        "slug": "launch-phase-1-waitlist",
+        "title": "Phase 1: The Pre-Launch Scarcity & Waitlist Engine",
+        "category": "Pre-Launch",
+        "difficulty": "home-cook",
+        "tags": [
+          "waitlist",
+          "landing page",
+          "scarcity",
+          "email",
+          "pre-launch"
+        ],
+        "teaser": "Build a landing page hero section, a FOMO lever that doesn't feel gross, and a 3-email nurture sequence — before you've written a line of product code.",
+        "order": 1
+      },
+      {
+        "slug": "launch-phase-2-product-hunt",
+        "title": "Phase 2: The Product Hunt & Indie Hackers Positioning Dossier",
+        "category": "Launch Positioning",
+        "difficulty": "home-cook",
+        "tags": [
+          "Product Hunt",
+          "Hacker News",
+          "positioning",
+          "copywriting",
+          "launch day"
+        ],
+        "teaser": "Generate three Product Hunt tagline options under 60 characters, an authentic maker story comment, and a Hacker News Show HN pitch that won't get roasted.",
+        "order": 2
+      },
+      {
+        "slug": "launch-phase-3-community-seeding",
+        "title": "Phase 3: The Cold Outreach & Community Seeding Playbook",
+        "category": "Distribution",
+        "difficulty": "home-cook",
+        "tags": [
+          "community",
+          "outreach",
+          "Reddit",
+          "Discord",
+          "cold DM",
+          "organic growth"
+        ],
+        "teaser": "Post in niche communities without getting banned — a value-first post template, three cold DM swipes that ask for feedback not sales, and a 4-step platform safety check.",
+        "order": 3
+      },
+      {
+        "slug": "launch-phase-4-war-room",
+        "title": "Phase 4: Launch Day Operations & War Room Checklist",
+        "category": "Launch Day",
+        "difficulty": "sous-chef",
+        "tags": [
+          "launch day",
+          "operations",
+          "war room",
+          "technical",
+          "checklist"
+        ],
+        "teaser": "A chronological 24-hour launch roadmap: Hour 0 technical sanity checks, Hours 1–6 momentum protocols, Hours 12–18 global time zone pivot, and an Hour 24 retrospective template.",
+        "order": 4
+      },
+      {
+        "slug": "launch-phase-5-retention-flywheel",
+        "title": "Phase 5: The Post-Launch Retention & Flywheel Blueprint",
+        "category": "Post-Launch",
+        "difficulty": "sous-chef",
+        "tags": [
+          "retention",
+          "onboarding",
+          "referral",
+          "churn",
+          "flywheel",
+          "post-launch"
+        ],
+        "teaser": "Design a first-time user experience that hits the Aha Moment in under 2 minutes, segment users into three buckets with distinct email flows, and build a referral flywheel with low-code tools.",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "slug": "job-search-os",
+    "title": "The Job Search OS",
+    "emoji": "💼",
+    "tagline": "\"Turn chaos into a high-velocity hiring pipeline.\"",
+    "description": "A 6-phase operational system — ATS resume optimization, cover letters, direct outreach, technical interview coaching, behavioral STAR prep, and offer negotiation — for serious career transitions.",
+    "audience": [
+      "Mid-career professionals making a move",
+      "Engineers, data professionals, and knowledge workers"
+    ],
+    "color": "#0369A1",
+    "chapters": [
+      {
+        "slug": "job-search-os-phase-1-resume",
+        "title": "Phase 1: ATS Optimization & Resume Tailor",
+        "category": "Profile",
+        "difficulty": "home-cook",
+        "tags": [
+          "resume",
+          "ATS",
+          "keywords",
+          "job description",
+          "optimization"
+        ],
+        "teaser": "Keyword gap analysis, X-Y-Z bullet rewrites, and a 3-sentence summary hook — all extracted directly from the target job description so your resume passes the filter and compels the human.",
+        "order": 1
+      },
+      {
+        "slug": "job-search-os-phase-2-cover-letter",
+        "title": "Phase 2: Pitch Perfect Cover Letter Generator",
+        "category": "Profile",
+        "difficulty": "home-cook",
+        "tags": [
+          "cover letter",
+          "writing",
+          "persuasion",
+          "application",
+          "narrative"
+        ],
+        "teaser": "A 3-paragraph cover letter with a non-generic Hook (a specific company observation), a Proof Point (a parallel achievement with metrics), and a Frictionless Close — no boilerplate, no 'I am writing to express my interest.'",
+        "order": 2
+      },
+      {
+        "slug": "job-search-os-phase-3-outreach",
+        "title": "Phase 3: Multi-Channel Networking Outreach Engine",
+        "category": "Outreach",
+        "difficulty": "home-cook",
+        "tags": [
+          "networking",
+          "LinkedIn",
+          "cold outreach",
+          "email",
+          "warm intro"
+        ],
+        "teaser": "3 outreach templates for 3 channels: a 300-character LinkedIn connection request, a 3-paragraph cold InMail to the hiring manager, and a warm intro blurb your mutual contact can forward in one click.",
+        "order": 3
+      },
+      {
+        "slug": "job-search-os-phase-4-technical-interview",
+        "title": "Phase 4: Technical & Systems Interview Coach",
+        "category": "Interview Prep",
+        "difficulty": "sous-chef",
+        "tags": [
+          "technical interview",
+          "systems design",
+          "coaching",
+          "architecture",
+          "practice"
+        ],
+        "teaser": "An interactive interview simulation — one architectural scenario at a time, with critique of your scaling and edge-case gaps, followed by a constraint-injection that forces you to iterate on your solution under pressure.",
+        "order": 4
+      },
+      {
+        "slug": "job-search-os-phase-5-star-matrix",
+        "title": "Phase 5: Behavioral STAR Matrix Builder",
+        "category": "Interview Prep",
+        "difficulty": "home-cook",
+        "tags": [
+          "behavioral interview",
+          "STAR",
+          "storytelling",
+          "career",
+          "preparation"
+        ],
+        "teaser": "A one-question-at-a-time coaching session that extracts your best career story across Situation, Action, and undeniable ROI — then compiles it into a scannable STAR Matrix Profile you can review right before the interview.",
+        "order": 5
+      },
+      {
+        "slug": "job-search-os-phase-6-offer-leverage",
+        "title": "Phase 6: Post-Interview Momentum & Offer Leverage Playbook",
+        "category": "Conversion",
+        "difficulty": "sous-chef",
+        "tags": [
+          "negotiation",
+          "offer",
+          "salary",
+          "thank you email",
+          "closing"
+        ],
+        "teaser": "3 high-stakes message scripts: a Value-Add thank-you email referencing a specific interview debate, a salary negotiation opener that moves collaboratively toward base/bonus/equity, and a Multi-Offer Velocity Multiplier to accelerate competing pipelines.",
+        "order": 6
+      }
+    ]
+  },
+  {
+    "slug": "lifestyle-design-os",
+    "title": "Lifestyle Design & Experiential Planning Suite",
+    "emoji": "🏡",
+    "tagline": "\"Design the systems that run your days. Build the milestones that define your years.\"",
+    "description": "Six intentional life infrastructure tools — an integrated fitness and nutrition sync engine, a spatial home organization architecture plan, three non-cliché gathering blueprints, a custom road trip entertainment suite, a capsule wardrobe matrix, and a hyper-personalized bucket list generator.",
+    "audience": [
+      "Anyone designing a more intentional daily life",
+      "Hosts, planners, travelers, and people who want their environment and experiences to match who they actually are"
+    ],
+    "color": "#065F46",
+    "chapters": [
+      {
+        "slug": "lifestyle-1-workout-meal",
+        "title": "Personalized Workout + Meal Combo",
+        "category": "Physical Architecture",
+        "difficulty": "home-cook",
+        "tags": [
+          "fitness",
+          "nutrition",
+          "meal prep",
+          "workout plan",
+          "hypertrophy",
+          "metabolic health"
+        ],
+        "teaser": "A Metabolic Sync Engine: a Unified Weekly Matrix aligning training days with nutritional timing windows, Targeted Workout Blocks with exact exercises, sets, reps, and rest intervals, and a Modular Assembly Meal Prep system of 3 versatile bases, proteins, and sauces cross-combinable into macro-precise meals in under 5 minutes.",
+        "order": 1
+      },
+      {
+        "slug": "lifestyle-2-home-organization",
+        "title": "Home Organization Plan",
+        "category": "Environmental Architecture",
+        "difficulty": "beginner",
+        "tags": [
+          "home organization",
+          "declutter",
+          "space planning",
+          "minimalism",
+          "productivity environment",
+          "storage"
+        ],
+        "teaser": "A Spatial Architecture Plan: a 4-Bin Sort Protocol with a binary sorting rule that processes every item in a single afternoon without sentimental stagnation, a 3-Zone ergonomic layout by usage frequency, a Cable & Micro-Asset Management strategy, and a 5-Minute Maintenance Audit to reset the space each evening.",
+        "order": 2
+      },
+      {
+        "slug": "lifestyle-3-party-theme",
+        "title": "Party Theme + Activity Generator",
+        "category": "Experiential Design",
+        "difficulty": "home-cook",
+        "tags": [
+          "event planning",
+          "party",
+          "hosting",
+          "social design",
+          "gathering",
+          "experiential"
+        ],
+        "teaser": "3 non-cliché Gathering Blueprints, each with a Hook & Aesthetic (thematic title, mood board notes, sonic profile), an Interactive Catalyst (a low-pressure centerpiece activity that drives conversation without feeling forced), and a Signature Pairings Menu of 3 easy-to-assemble premium finger foods or beverages that fit the theme.",
+        "order": 3
+      },
+      {
+        "slug": "lifestyle-4-road-trip",
+        "title": "Road Trip Game & Activity Creator",
+        "category": "Experiential Design",
+        "difficulty": "beginner",
+        "tags": [
+          "road trip",
+          "travel",
+          "games",
+          "conversation",
+          "entertainment",
+          "travel activities"
+        ],
+        "teaser": "A custom Transit Entertainment Suite: a 2-Player Asymmetric Road Game using the physical landscape with zero boards or cards, a Socratic Dilemma Deck of 5 thought-provoking hypotheticals tailored to your interests for multi-hour discussion, and an Immersive Audio Anchor Track framework for cooperative music-triggered trivia or storytelling.",
+        "order": 4
+      },
+      {
+        "slug": "lifestyle-5-wardrobe-planner",
+        "title": "Wardrobe / Outfit Planner",
+        "category": "Environmental Architecture",
+        "difficulty": "home-cook",
+        "tags": [
+          "wardrobe",
+          "capsule wardrobe",
+          "personal style",
+          "outfit planning",
+          "minimalism",
+          "fashion"
+        ],
+        "teaser": "A Capsule Outfit Architecture Matrix: a 10-Item Core Grid of essential interchangeable pieces forming the wardrobe foundation, a 5-Day Uniform Rotation table showing exact daily configurations with styling details, and a Temperature/Altitude Variant providing one-step adjustments for weather shifts or demanding environments.",
+        "order": 5
+      },
+      {
+        "slug": "lifestyle-6-bucket-list",
+        "title": "Bucket List Idea Generator",
+        "category": "Experiential Design",
+        "difficulty": "home-cook",
+        "tags": [
+          "bucket list",
+          "life design",
+          "experiences",
+          "goals",
+          "adventure",
+          "personal growth"
+        ],
+        "teaser": "A 4-question Socratic interview asked one at a time — Skill Mastery Mirage, Somatic Environment, Creation Artifact, and Relational Milestone — synthesized into 5 hyper-customized tier-ranked Existential Quests, each with a vivid outcome description, the internal transformation it delivers, and the first actionable logistics step to take this month.",
+        "order": 6
+      }
+    ]
+  },
+  {
+    "slug": "personal-infrastructure-os",
+    "title": "Personal Infrastructure & Life Strategy System",
+    "emoji": "⚓",
+    "tagline": "\"Master your internal architecture. Build operational clarity.\"",
+    "description": "Seven operational core tools — a flow-state trigger protocol, circadian energy matrix, distraction fireproofing guide, brain dump triage system, end-of-day shutdown ritual, annual life review framework, and a life trajectory explorer.",
+    "audience": [
+      "High-performers optimizing attention and energy",
+      "Anyone at a crossroads wanting operational clarity on their daily life and long-term direction"
+    ],
+    "color": "#0F766E",
+    "chapters": [
+      {
+        "slug": "infra-1-deep-work-trigger",
+        "title": "Deep Work Flow-State Trigger",
+        "category": "Daily Bookends",
+        "difficulty": "beginner",
+        "tags": [
+          "deep work",
+          "focus",
+          "flow state",
+          "productivity",
+          "attention",
+          "cognitive performance"
+        ],
+        "teaser": "A 3-minute Flow-State Trigger Protocol: a Micro-Agreement so small your brain can't register it as threatening, a 3-step Sensory & Environment Lock to close every attention leak, and an Internal Stopwatch framing to surf the uncomfortable first 10 minutes until your focus engine catches.",
+        "order": 1
+      },
+      {
+        "slug": "infra-2-energy-management",
+        "title": "Build Your Energy Management System",
+        "category": "Weekly Triage",
+        "difficulty": "home-cook",
+        "tags": [
+          "energy management",
+          "chronobiology",
+          "circadian rhythm",
+          "deep work scheduling",
+          "burnout prevention"
+        ],
+        "teaser": "A Circadian Energy Matrix built from 4 biological baseline questions: your wake-up ramp time, slump zone timing, second wind window, and hard schedule constraints — mapped into three daily zones (Deep Focus, Administrative/Shallow, Complete Recovery) aligned to your actual biological peaks.",
+        "order": 2
+      },
+      {
+        "slug": "infra-3-distraction-blocker",
+        "title": "Distraction Fireproofing Guide",
+        "category": "Daily Bookends",
+        "difficulty": "beginner",
+        "tags": [
+          "distraction",
+          "focus",
+          "behavioral design",
+          "dopamine",
+          "attention management",
+          "digital friction"
+        ],
+        "teaser": "A Cognitive Fireproofing Guide: 3 custom If-Then Implementation Intentions to intercept your specific distraction pattern before it fires, 2 low-friction physical friction methods to raise the cost of the vice without software blocklists, and an Internal Monologue Reset to interrupt the dopamine loop mid-impulse.",
+        "order": 3
+      },
+      {
+        "slug": "infra-4-brain-dump",
+        "title": "Brain Dump to Actionable List",
+        "category": "Weekly Triage",
+        "difficulty": "beginner",
+        "tags": [
+          "brain dump",
+          "GTD",
+          "task management",
+          "cognitive overload",
+          "PARA",
+          "prioritization"
+        ],
+        "teaser": "A 4-output cognitive triage: a Velocity Score table sorting tasks by Impact vs. Effort, one 'One Domino' task that collapses the rest of the list, a 5-Minute Clear-Out Pile for immediate momentum, and a PARA-compatible Storage Vault for long-term ideas.",
+        "order": 4
+      },
+      {
+        "slug": "infra-5-shutdown-ritual",
+        "title": "End-of-Day Shutdown Ritual",
+        "category": "Daily Bookends",
+        "difficulty": "beginner",
+        "tags": [
+          "shutdown ritual",
+          "work-life balance",
+          "attention residue",
+          "sleep quality",
+          "GTD",
+          "evening routine"
+        ],
+        "teaser": "A 5-minute Shutdown Ritual: a 2-Minute Administrative Sweep to capture open loops and log work state so you don't carry it overnight, a Tomorrow's Launchpad to set up a frictionless morning start, and a Terminal Phrase that acts as an unshakeable psychological boundary between Work and Life.",
+        "order": 5
+      },
+      {
+        "slug": "infra-6-annual-review",
+        "title": "Annual Life Review",
+        "category": "Seasonal Pivots",
+        "difficulty": "sous-chef",
+        "tags": [
+          "annual review",
+          "reflection",
+          "life strategy",
+          "goal setting",
+          "personal development",
+          "narrative therapy"
+        ],
+        "teaser": "A 3-phase Annual Life Review: a Forensic Inventory of the past 12 months (wins, failures, systemic vulnerabilities), a Truth Audit of where you're settling for comfortable mediocrity, and an Upcoming Design session to name your single transformation goal and the non-goals you must commit to declining.",
+        "order": 6
+      },
+      {
+        "slug": "infra-7-life-explorer",
+        "title": "What Should I Do With My Life? Explorer",
+        "category": "Seasonal Pivots",
+        "difficulty": "home-cook",
+        "tags": [
+          "life direction",
+          "career strategy",
+          "ikigai",
+          "identity",
+          "life design",
+          "crossroads"
+        ],
+        "teaser": "A 3-phase life trajectory explorer: an Unfair Leverage Audit to surface skills that feel like play to you but look like work to everyone else, an Ikigai Tension Test mapping your ideas across four overlapping lenses, and a 3-Alternative Worlds Simulation projecting three divergent high-potential life tracks.",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "slug": "quarterly-goal-setting",
+    "title": "Quarterly Goal Setting Ritual",
+    "emoji": "📅",
+    "tagline": "\"90 days. 3 objectives. No abandoned resolutions.\"",
+    "description": "A 5-phase system from reflection to daily execution — post-mortem audit, ruthless priority filter, OKR translation, 12-week sprint scaffolding, and a daily/weekly ritual integration framework.",
+    "audience": [
+      "Creators, builders, and ambitious professionals",
+      "Anyone tired of goals that stall after January"
+    ],
+    "color": "#059669",
+    "chapters": [
+      {
+        "slug": "quarterly-phase-1-postmortem",
+        "title": "Phase 1: Execution Post-Mortem & Energy Audit (Look Back)",
+        "category": "Reflection",
+        "difficulty": "beginner",
+        "tags": [
+          "post-mortem",
+          "retrospective",
+          "energy audit",
+          "quarterly review",
+          "behavioral patterns"
+        ],
+        "teaser": "A 4-question interview — one at a time — covering execution rate, energy drain, systemic friction, and your biggest win's enabling conditions. Synthesized into a Quarterly Momentum Audit that names your hidden behavioral patterns before you set a single new goal.",
+        "order": 1
+      },
+      {
+        "slug": "quarterly-phase-2-priority-filter",
+        "title": "Phase 2: The Ruthless 90-Day Priority Filter (The Strategy)",
+        "category": "Strategy",
+        "difficulty": "home-cook",
+        "tags": [
+          "priority",
+          "strategy",
+          "focus",
+          "goals",
+          "quarterly planning",
+          "domino goals"
+        ],
+        "teaser": "Paste your raw wishlist and get a Quarterly Focus Matrix: 2–3 non-conflicting high-leverage objectives, a Domino Indicator for each (the one lever that makes everything else easier), and an explicit Non-Goal list of what must be intentionally dropped this quarter.",
+        "order": 2
+      },
+      {
+        "slug": "quarterly-phase-3-okr-blueprint",
+        "title": "Phase 3: OKR Translation & Binary Success Metrics (The Blueprint)",
+        "category": "Planning",
+        "difficulty": "home-cook",
+        "tags": [
+          "OKR",
+          "metrics",
+          "measurement",
+          "planning",
+          "key results",
+          "goals"
+        ],
+        "teaser": "Translates your Phase 2 priorities into an ironclad 90-Day OKR Blueprint — inspiring Objective statements, 3 binary quantitative Key Results per objective, and a Lagging vs. Leading Matrix separating the outputs you measure from the inputs you control daily.",
+        "order": 3
+      },
+      {
+        "slug": "quarterly-phase-4-sprint-roadmap",
+        "title": "Phase 4: 12-Week Sprint & Micro-Milestone Scaffolding (The Tactics)",
+        "category": "Execution",
+        "difficulty": "home-cook",
+        "tags": [
+          "sprints",
+          "roadmap",
+          "milestones",
+          "tactics",
+          "execution",
+          "agile"
+        ],
+        "teaser": "Converts your OKR Blueprint into a 12-Week Sprint Roadmap across 4 blocks of 3 weeks each — Momentum & Foundation, Deep Execution, Optimization & Refinement, and The Push & Close — each with a binary Sprint Milestone you can cross off with certainty.",
+        "order": 4
+      },
+      {
+        "slug": "quarterly-phase-5-daily-ritual",
+        "title": "Phase 5: Daily & Weekly Ritual Alignment (The Integration)",
+        "category": "Integration",
+        "difficulty": "home-cook",
+        "tags": [
+          "habits",
+          "daily ritual",
+          "weekly review",
+          "calendar",
+          "Obsidian",
+          "time blocking",
+          "integration"
+        ],
+        "teaser": "Anchors your sprint roadmap into real-world operations: a 4-step Sunday Weekly Review Audit, a time-block architecture for deep work before communications, and a markdown Daily Note template for leading indicator tracking in Obsidian or any note system.",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "slug": "side-hustle-validation",
+    "title": "Side Hustle Validation Framework",
+    "emoji": "💡",
+    "tagline": "\"Idea to market signal in a weekend.\"",
+    "description": "A 5-phase sprint from raw idea to hard data — asymmetric advantage audit, smoke-test landing page, $0 guerrilla distribution, unit economics modeling, and a Go/No-Go verdict based on real market signals.",
+    "audience": [
+      "Creators and solo builders with a day job",
+      "Professionals looking to launch a secondary revenue stream"
+    ],
+    "color": "#D97706",
+    "chapters": [
+      {
+        "slug": "side-hustle-phase-1-advantage-audit",
+        "title": "Phase 1: The Asymmetric Advantage Audit (Ideation)",
+        "category": "Ideation",
+        "difficulty": "beginner",
+        "tags": [
+          "ideation",
+          "self-assessment",
+          "niche",
+          "unfair advantage",
+          "solo business"
+        ],
+        "teaser": "A 4-question interview that maps your professional stack, obsessive fixations, recurring frustrations, and time capital — synthesized into 3 high-leverage Side Hustle Primitives you can build solo and operate asynchronously.",
+        "order": 1
+      },
+      {
+        "slug": "side-hustle-phase-2-smoke-test",
+        "title": "Phase 2: The Smoke Test Landing Page Blueprint (Validation)",
+        "category": "Validation",
+        "difficulty": "home-cook",
+        "tags": [
+          "landing page",
+          "validation",
+          "copywriting",
+          "conversion",
+          "smoke test",
+          "waitlist"
+        ],
+        "teaser": "A complete landing page copy framework — 3 headline options, 3 pain-point bullets, a Minimum Viable Offer structure, and the exact micro-copy around the signup button — designed to measure real buying intent before you build anything.",
+        "order": 2
+      },
+      {
+        "slug": "side-hustle-phase-3-traffic",
+        "title": "Phase 3: The Frictionless Traffic Injection Engine (Distribution)",
+        "category": "Distribution",
+        "difficulty": "home-cook",
+        "tags": [
+          "traffic",
+          "distribution",
+          "organic growth",
+          "community",
+          "outreach",
+          "$0 marketing"
+        ],
+        "teaser": "A $0 guerrilla Traffic Injection Playbook: a native value post for forums, a 3-sentence micro-influencer DM asking for critique (not promotion), and a 5-rule Community Safety Checklist to avoid getting flagged as spam.",
+        "order": 3
+      },
+      {
+        "slug": "side-hustle-phase-4-unit-economics",
+        "title": "Phase 4: The Dollar Velocity Audit (Financial Viability)",
+        "category": "Finance",
+        "difficulty": "home-cook",
+        "tags": [
+          "unit economics",
+          "revenue",
+          "break-even",
+          "pricing",
+          "financial modeling"
+        ],
+        "teaser": "A 4-variable interview that calculates your unit margin, exact monthly break-even threshold, and a 3-tier scaling matrix — so you know how many sales you need to hit your income target before you spend another hour building.",
+        "order": 4
+      },
+      {
+        "slug": "side-hustle-phase-5-go-no-go",
+        "title": "Phase 5: The Go / No-Go Metric Triage (Decision)",
+        "category": "Decision",
+        "difficulty": "home-cook",
+        "tags": [
+          "validation",
+          "metrics",
+          "decision making",
+          "pivot",
+          "go/no-go",
+          "data-driven"
+        ],
+        "teaser": "A 4-metric debrief after 7–14 days of live validation: conversion velocity, qualitative feedback tone, energy cost, and competitor friction — resulting in an immediate Build, Pivot, or Kill verdict with a concrete 7-day action plan.",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "slug": "startup-founder",
+    "title": "Startup Founder Cookbook",
+    "emoji": "🚀",
+    "tagline": "\"Move faster than you have any right to.\"",
+    "description": "Investor decks, hiring, GTM, fundraising emails, and everything founders need to move fast.",
+    "audience": [
+      "Early-stage founders",
+      "Pre-seed through Series A"
+    ],
+    "color": "#DC2626",
+    "chapters": [
+      {
+        "slug": "startup-phase-0-board-advisor-init",
+        "title": "Phase 0: The Board Advisor System Initialization",
+        "category": "Setup",
+        "difficulty": "beginner",
+        "tags": [
+          "system prompt",
+          "board advisor",
+          "setup",
+          "persona",
+          "VC",
+          "fundraising"
+        ],
+        "teaser": "Run this before everything else. Sets up your AI as a battle-tested board member and VC who delivers high-conviction advice, identifies fake work, and critiques your pitch the way a tier-one investor actually would.",
+        "order": 0
+      },
+      {
+        "slug": "startup-phase-1-pitch-deck",
+        "title": "Phase 1: The Pitch Deck Architect — Storyline & Slide Breakdown",
+        "category": "Fundraising",
+        "difficulty": "sous-chef",
+        "tags": [
+          "pitch deck",
+          "fundraising",
+          "investors",
+          "narrative",
+          "slides",
+          "seed round"
+        ],
+        "teaser": "Build a 10-slide venture deck outline: each slide gets a high-impact header, a visual direction with Midjourney prompts, and the exact unvoiced investor risk question it needs to answer.",
+        "order": 1
+      },
+      {
+        "slug": "startup-phase-2-warm-intro-engine",
+        "title": "Phase 2: The Warm Intro Engine — High-Conversion Angel & VC Outbound",
+        "category": "Fundraising",
+        "difficulty": "home-cook",
+        "tags": [
+          "fundraising",
+          "cold email",
+          "investor outreach",
+          "angel",
+          "VC",
+          "warm intro"
+        ],
+        "teaser": "Three investor outreach assets: a 4-sentence forwardable blurb your network can paste and send, a cold outbound email that leads with insight not ask, and an update template for investors who said 'too early.'",
+        "order": 2
+      },
+      {
+        "slug": "startup-phase-3-gtm-blitz",
+        "title": "Phase 3: The GTM Blitz — Go-To-Market & Early Traction Playbook",
+        "category": "Go-To-Market",
+        "difficulty": "sous-chef",
+        "tags": [
+          "GTM",
+          "go-to-market",
+          "growth",
+          "acquisition",
+          "ICP",
+          "traction"
+        ],
+        "teaser": "A 30-day GTM Blitz Playbook: two unconventional acquisition channels matched to your budget, a hook offer that eliminates trial friction, and a daily execution cadence your team can actually run.",
+        "order": 3
+      },
+      {
+        "slug": "startup-phase-4-talent-magnet",
+        "title": "Phase 4: The Talent Magnet — Hiring Framework & First-Employee Pitch",
+        "category": "Hiring",
+        "difficulty": "home-cook",
+        "tags": [
+          "hiring",
+          "talent",
+          "job spec",
+          "equity pitch",
+          "founding team",
+          "culture"
+        ],
+        "teaser": "Write an anti-corporate job spec that explicitly states the chaos, a closing pitch for candidates leaving stable corporate roles, and a 3–5 hour paid trial task that filters for execution speed.",
+        "order": 4
+      },
+      {
+        "slug": "startup-phase-5-war-room-audit",
+        "title": "Phase 5: The War Room Audit — Runway Management & Pivot Framework",
+        "category": "Operations",
+        "difficulty": "sous-chef",
+        "tags": [
+          "runway",
+          "burn rate",
+          "audit",
+          "pivot",
+          "PMF",
+          "cash management"
+        ],
+        "teaser": "A four-metric interview that diagnoses operational health: burn rate, retention signals, sales cycle, and biggest bottleneck — then delivers a survival runway calculation, a cut-without-killing checklist, and a data-driven Pivot vs. Double Down framework.",
+        "order": 5
+      },
+      {
+        "slug": "startup-investor-update-email",
+        "title": "Phase 6: The Investor Update Email — Wins, Blockers, Asks, Financials",
+        "category": "Investor Relations",
+        "difficulty": "home-cook",
+        "tags": [
+          "investor update",
+          "fundraising",
+          "email",
+          "MRR",
+          "burn rate",
+          "transparency"
+        ],
+        "teaser": "Transform raw company metrics into a scannable investor update VCs actually read — bold headings, clean financial tables, transparent wins/losses, and a clear Asks section that activates your investor network.",
+        "order": 6
+      }
+    ]
+  },
+  {
+    "slug": "student",
+    "title": "Student Cookbook",
+    "emoji": "📚",
+    "tagline": "\"Study smarter. Think sharper. Write better.\"",
+    "description": "Make AI your most patient tutor — essays, revision, research, and academic writing.",
+    "audience": [
+      "University & college students",
+      "High school advanced"
+    ],
+    "color": "#059669",
+    "chapters": [
+      {
+        "slug": "student-phase-0-professor-init",
+        "title": "Phase 0: The Professor System Initialization",
+        "category": "Setup",
+        "difficulty": "beginner",
+        "tags": [
+          "system prompt",
+          "tutor",
+          "setup",
+          "persona",
+          "Socratic",
+          "academic"
+        ],
+        "teaser": "Run this before everything else. Sets up your AI as an Academic Mentor and Socratic Tutor who guides your thinking instead of just handing you answers.",
+        "order": 0
+      },
+      {
+        "slug": "student-phase-1-personal-tutor",
+        "title": "Phase 1: The Personal Tutor — Mastering Complex Concepts",
+        "category": "Understanding",
+        "difficulty": "beginner",
+        "tags": [
+          "Feynman technique",
+          "learning",
+          "concepts",
+          "active recall",
+          "tutoring"
+        ],
+        "teaser": "Break down any dense academic concept in three steps: a 5-year-old explanation, layered deep-dive scaffolding, and a scenario-based pop quiz that waits for your answer before scoring it.",
+        "order": 1
+      },
+      {
+        "slug": "student-phase-2-study-partner",
+        "title": "Phase 2: The Socratic Study Partner — Active Recall & Exam Prep",
+        "category": "Exam Prep",
+        "difficulty": "home-cook",
+        "tags": [
+          "active recall",
+          "exam prep",
+          "Socratic",
+          "study notes",
+          "quiz"
+        ],
+        "teaser": "Paste your notes and get a live Socratic examiner — one challenging open-ended question at a time, each scored 1–10 with precise feedback before the next one drops.",
+        "order": 2
+      },
+      {
+        "slug": "student-phase-3-essay-architect",
+        "title": "Phase 3: The Essay Architect — Structural Outlining & Thesis Building",
+        "category": "Writing",
+        "difficulty": "home-cook",
+        "tags": [
+          "essay",
+          "thesis",
+          "outline",
+          "academic writing",
+          "argument"
+        ],
+        "teaser": "Transform a vague essay prompt into a sharpened argumentative thesis, a paragraph-by-paragraph structural roadmap, and a pre-emptive counter-argument triage — before you write a single sentence.",
+        "order": 3
+      },
+      {
+        "slug": "student-phase-4-peer-reviewer",
+        "title": "Phase 4: The Peer Reviewer — Line Editing & Argument Validation",
+        "category": "Editing",
+        "difficulty": "home-cook",
+        "tags": [
+          "editing",
+          "peer review",
+          "academic writing",
+          "argument",
+          "clarity"
+        ],
+        "teaser": "Paste your draft and get a four-lens audit: argumentation gaps, tone and academic register, flow and transitions, and redundancy — each with specific Before/After examples.",
+        "order": 4
+      },
+      {
+        "slug": "student-phase-5-literature-assistant",
+        "title": "Phase 5: The Literature Assistant — Synthesizing Research Papers",
+        "category": "Research",
+        "difficulty": "sous-chef",
+        "tags": [
+          "research",
+          "literature review",
+          "academic papers",
+          "synthesis",
+          "methodology"
+        ],
+        "teaser": "Paste an abstract or paper excerpt and get a Research Blueprint: plain-English methodology breakdown, explicit limitations and biases, and three specific ways to use it in your own writing.",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "slug": "youtube-growth",
+    "title": "YouTube Channel Growth System",
+    "emoji": "📺",
+    "tagline": "\"Turn the algorithm into your distribution engine.\"",
+    "description": "Channel architecture, CTR engineering, retention blueprints, SEO metadata, launch velocity, and analytics triage — a complete operational system for serious YouTube creators.",
+    "audience": [
+      "YouTube creators at any stage",
+      "Stuck at a plateau or starting from 0"
+    ],
+    "color": "#FF0000",
+    "chapters": [
+      {
+        "slug": "youtube-phase-1-channel-architecture",
+        "title": "Phase 1: The Channel Architecture & Positioning Matrix",
+        "category": "Strategy",
+        "difficulty": "sous-chef",
+        "tags": [
+          "channel strategy",
+          "positioning",
+          "niche",
+          "funnel",
+          "monetization"
+        ],
+        "teaser": "Design your channel's core value proposition, three content pillars, viewer funnel, and competitor differentiation before you film a single video.",
+        "order": 1
+      },
+      {
+        "slug": "youtube-phase-2-ctr-engine",
+        "title": "Phase 2: The CTR Engine (Title & Thumbnail Ideation)",
+        "category": "Packaging",
+        "difficulty": "home-cook",
+        "tags": [
+          "CTR",
+          "thumbnails",
+          "titles",
+          "packaging",
+          "psychology"
+        ],
+        "teaser": "Generate five psychology-driven title variants and three detailed Midjourney thumbnail concepts — optimized for mobile, high contrast, and title/thumbnail synergy.",
+        "order": 2
+      },
+      {
+        "slug": "youtube-phase-3-retention-blueprint",
+        "title": "Phase 3: The First 60 Seconds Retention Blueprint",
+        "category": "Scripting",
+        "difficulty": "sous-chef",
+        "tags": [
+          "retention",
+          "scripting",
+          "hooks",
+          "audience",
+          "intro"
+        ],
+        "teaser": "Write a word-for-word 60-second intro blueprint across four retention phases — with visual pattern interrupt cues included — that keeps the algorithm's drop-off detector quiet.",
+        "order": 3
+      },
+      {
+        "slug": "youtube-phase-4-seo-metadata",
+        "title": "Phase 4: Algorithmic Metadata & SEO Optimization",
+        "category": "SEO",
+        "difficulty": "home-cook",
+        "tags": [
+          "SEO",
+          "metadata",
+          "description",
+          "tags",
+          "YouTube search"
+        ],
+        "teaser": "Generate a complete upload packet: a keyword-rich description with search-snippet-optimized opening lines, chapter breakdowns with timestamps, 15 curated tags, and category recommendation.",
+        "order": 4
+      },
+      {
+        "slug": "youtube-phase-5-launch-velocity",
+        "title": "Phase 5: The Post-Publish Velocity Playbook",
+        "category": "Distribution",
+        "difficulty": "home-cook",
+        "tags": [
+          "launch",
+          "community tab",
+          "Shorts",
+          "engagement",
+          "velocity"
+        ],
+        "teaser": "A 24-hour launch protocol: a pinned comment strategy to spark discussion, a community tab post, and two Shorts/Reels scripts that drive traffic back to the main video.",
+        "order": 5
+      },
+      {
+        "slug": "youtube-phase-6-analytics-triage",
+        "title": "Phase 6: Analytics Triage & Iteration Protocol",
+        "category": "Analytics",
+        "difficulty": "sous-chef",
+        "tags": [
+          "analytics",
+          "YouTube Studio",
+          "CTR",
+          "retention",
+          "data",
+          "iteration"
+        ],
+        "teaser": "A structured 4-metric interview that diagnoses exactly what's killing your video's performance — and gives you a specific action plan to fix it or apply the learning to the next upload.",
+        "order": 6
+      }
+    ]
+  }
+]
