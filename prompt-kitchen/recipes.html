@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Book — The Prompt Kitchen</title>
+  <meta name="description" content="Browse all AI prompt recipes — practical, tested prompts for writing, coding, research, and more." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/recipes.html" />
+  <meta property="og:title" content="Recipe Book — The Prompt Kitchen" />
+  <meta property="og:description" content="Browse all AI prompt recipes — practical, tested prompts for writing, coding, research, and more." />
+  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/recipes.html" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────────────── -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="container">
+
+      <section class="pk-page-hero">
+        <h1>📖 Recipe Book</h1>
+        <p>Practical, tested prompts for every situation. Search, filter, and save your favourites.</p>
+      </section>
+
+      <!-- ─── Search ─────────────────────────────────────────────── -->
+      <div class="pk-search-bar" role="search">
+        <span aria-hidden="true">🔍</span>
+        <input
+          type="text"
+          id="recipe-search"
+          placeholder="Search recipes…"
+          aria-label="Search recipes"
+          autocomplete="off"
+        />
+      </div>
+
+      <!-- ─── Filter pills (built by recipes.js) ──────────────────── -->
+      <div class="pk-filter-pills" id="filter-pills" role="group" aria-label="Filter by category"></div>
+
+      <!-- ─── Results count ──────────────────────────────────────── -->
+      <p class="pk-results-count" id="results-count" aria-live="polite">142 recipes</p>
+
+      <!-- ─── Card grid ──────────────────────────────────────────── -->
+      <div class="pk-card-grid" id="recipe-grid">
+        <p class="pk-loading">Loading recipes…</p>
+      </div>
+
+      <!-- ─── Empty state ────────────────────────────────────────── -->
+      <div class="pk-empty-state" id="empty-state" hidden>
+        <p>No recipes match your search.</p>
+        <button class="pk-filter-pill active" id="btn-clear-filters" type="button">Clear filters</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <div id="site-footer"></div>
+
+  <script src="pk.js" defer></script>
+  <script src="recipes.js" defer></script>
+</body>
+</html>

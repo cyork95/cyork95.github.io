@@ -80,6 +80,42 @@
   </url>
 
   <url>
+    <loc>https://yorkdevelops.com/prompt-kitchen/recipes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/prompt-kitchen/cookbooks.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/prompt-kitchen/meal-prep.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/prompt-kitchen/pantry.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/prompt-kitchen/guardrails.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://yorkdevelops.com/prompt-kitchen/context.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://yorkdevelops.com/wow-anniversary-tracker/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Prep — The Prompt Kitchen</title>
+  <meta name="description" content="System prompts you paste once and reuse forever — each one transforms an AI into a specialized assistant." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/meal-prep.html" />
+  <meta property="og:title" content="Meal Prep — The Prompt Kitchen" />
+  <meta property="og:description" content="System prompts you paste once and reuse forever — each one transforms an AI into a specialized assistant." />
+  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/meal-prep.html" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────────────── -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="container">
+
+      <section class="pk-page-hero">
+        <h1>🍱 Meal Prep</h1>
+        <p>System prompts that transform any AI into a specialized assistant. Copy once, use forever.</p>
+      </section>
+
+      <!-- ─── Explainer (ported from the source page) ─────────────── -->
+      <div class="pk-explainer">
+        <h2>What's a system prompt?</h2>
+        <p>It's a set of instructions you give an AI <em>before</em> your conversation starts — like briefing an assistant on how to work with you. Most AI tools let you save system prompts and reuse them. These are battle-tested setups that make AI consistently better at specific tasks.</p>
+        <div class="pk-explainer__row">
+          <div class="pk-explainer__platform">
+            <strong>ChatGPT</strong>
+            <span>Settings → Personalization → Custom Instructions</span>
+          </div>
+          <div class="pk-explainer__platform">
+            <strong>Claude</strong>
+            <span>Projects → Add project instructions</span>
+          </div>
+          <div class="pk-explainer__platform">
+            <strong>Gemini</strong>
+            <span>Gems → Create a Gem</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="pk-results-count" id="mp-count">10 system prompts</p>
+
+      <div class="pk-detail-grid" id="mp-grid" style="padding-bottom: 4rem;">
+        <p class="pk-loading">Loading system prompts…</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <div id="site-footer"></div>
+
+  <script src="vendor/marked.min.js"></script>
+  <script src="pk.js" defer></script>
+  <script src="meal-prep.js" defer></script>
+</body>
+</html>
