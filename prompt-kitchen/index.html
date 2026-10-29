@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Prompt Kitchen — York Develops</title>
-  <meta name="description" content="The Prompt Kitchen is a free, practical AI knowledge base for everyday people — no hype, no jargon, just techniques that work.">
-  <meta name="author" content="Cody York">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/">
+  <meta name="description" content="The Prompt Kitchen is a free, practical AI knowledge base for everyday people — no hype, no jargon, just techniques that work." />
 
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/">
-  <meta property="og:title" content="The Prompt Kitchen — York Develops">
-  <meta property="og:description" content="A free knowledge base about using AI practically — for everyday people who want results, not theory.">
-  <meta property="og:site_name" content="York Develops">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/" />
+  <meta property="og:title" content="The Prompt Kitchen — York Develops" />
+  <meta property="og:description" content="A free knowledge base about using AI practically — for everyday people who want results, not theory." />
+  <meta property="og:site_name" content="York Develops" />
+  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/" />
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <script src="/js/site-chrome.js"></script>
   <script src="/js/main.js"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- ─── Header ─────────────────────────────────────────────── -->
   <div id="site-nav"></div>
 
   <main>
+    <div class="container">
 
-    <!-- PK Hero -->
-    <div class="pk-hero">
-      <div class="container">
+      <!-- ─── Hero ─────────────────────────────────────────────── -->
+      <div class="pk-hero" style="margin-bottom: 2.5rem;">
         <div class="pk-hero__content">
-          <p class="pk-hero__eyebrow">&#x1F373; A sister site</p>
+          <p class="pk-hero__eyebrow">🍳 York Develops</p>
           <h1 class="pk-hero__title">
             The <span class="highlight">Prompt Kitchen</span>
           </h1>
@@ -40,77 +38,107 @@
             A free, practical knowledge base about getting real work done with AI tools — written for people who want techniques that work, not another explainer about how transformative everything is.
           </p>
           <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="btn btn--amber">
-              Visit thepromptkitchen.fyi &#x2197;
-            </a>
-            <a href="#why" class="btn btn--outline">Why I built it</a>
+            <a href="recipes.html" class="btn btn--amber">Browse the recipes</a>
+            <a href="context.html" class="btn btn--outline">Why context matters</a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
+      <!-- ─── Stats ────────────────────────────────────────────── -->
+      <div class="pk-stats" id="pk-stats">
+        <div class="pk-stat"><div class="pk-stat__num" data-stat="recipes">142</div><div class="pk-stat__label">Recipes</div></div>
+        <div class="pk-stat"><div class="pk-stat__num" data-stat="cookbooks">18</div><div class="pk-stat__label">Cookbooks</div></div>
+        <div class="pk-stat"><div class="pk-stat__num" data-stat="meal-prep">10</div><div class="pk-stat__label">System Prompts</div></div>
+        <div class="pk-stat"><div class="pk-stat__num" data-stat="pantry">12</div><div class="pk-stat__label">Pantry Ingredients</div></div>
+      </div>
 
-      <!-- What it is -->
-      <section data-reveal>
+      <!-- ─── Sections ─────────────────────────────────────────── -->
+      <section>
         <div class="section-header">
-          <p class="section-label" style="color: var(--amber);">What it is</p>
-          <h2 class="section-title">Practical AI. No hype.</h2>
-          <p class="section-desc">
-            The Prompt Kitchen is a collection of guides, techniques, and real examples for using AI tools effectively in everyday work and life.
-          </p>
+          <p class="section-label">Start cooking</p>
+          <h2 class="section-title">Explore the kitchen</h2>
         </div>
-
-        <div class="pk-feature-grid">
-
-          <div class="pk-feature">
-            <div class="pk-feature__icon">&#x270F;&#xFE0F;</div>
-            <h3 class="pk-feature__title">Prompt writing</h3>
-            <p class="pk-feature__desc">How to write prompts that actually get what you want — with real before/after examples, not vague advice.</p>
-          </div>
-
-          <div class="pk-feature">
-            <div class="pk-feature__icon">&#x26A1;</div>
-            <h3 class="pk-feature__title">Practical workflows</h3>
-            <p class="pk-feature__desc">Step-by-step processes for common tasks: writing, research, summarizing, editing, and more.</p>
-          </div>
-
-          <div class="pk-feature">
-            <div class="pk-feature__icon">&#x1F4CB;</div>
-            <h3 class="pk-feature__title">Real use cases</h3>
-            <p class="pk-feature__desc">Examples grounded in actual tasks people do — not AI generating poetry or writing code from scratch.</p>
-          </div>
-
-          <div class="pk-feature">
-            <div class="pk-feature__icon">&#x1F6A7;</div>
-            <h3 class="pk-feature__title">Honest limitations</h3>
-            <p class="pk-feature__desc">What these tools can't do well, where they fail, and how to know when not to use them.</p>
-          </div>
-
-          <div class="pk-feature">
-            <div class="pk-feature__icon">&#x1F193;</div>
-            <h3 class="pk-feature__title">Always free</h3>
-            <p class="pk-feature__desc">No paywall, no newsletter gate, no "download this PDF for the real tips." Just open, readable content.</p>
-          </div>
-
-          <div class="pk-feature">
-            <div class="pk-feature__icon">&#x1F9E0;</div>
-            <h3 class="pk-feature__title">Written for people</h3>
-            <p class="pk-feature__desc">Not for developers, not for AI researchers. For people who have jobs and want to do them better.</p>
-          </div>
-
+        <div class="pk-sections">
+          <a class="pk-section-card" href="recipes.html">
+            <span class="pk-section-card__icon">📖</span>
+            <h3>Recipe Book</h3>
+            <p>Practical, tested prompts for every situation. Search, filter, and save your favourites.</p>
+            <span class="pk-section-card__cta">Browse recipes →</span>
+          </a>
+          <a class="pk-section-card" href="cookbooks.html">
+            <span class="pk-section-card__icon">📚</span>
+            <h3>Cookbooks</h3>
+            <p>Curated prompt collections for specific situations. Each cookbook is a complete toolkit for a role or goal.</p>
+            <span class="pk-section-card__cta">Browse cookbooks →</span>
+          </a>
+          <a class="pk-section-card" href="meal-prep.html">
+            <span class="pk-section-card__icon">🍱</span>
+            <h3>Meal Prep</h3>
+            <p>System prompts that transform any AI into a specialized assistant. Copy once, use forever.</p>
+            <span class="pk-section-card__cta">See system prompts →</span>
+          </a>
+          <a class="pk-section-card" href="pantry.html">
+            <span class="pk-section-card__icon">🫙</span>
+            <h3>The Pantry</h3>
+            <p>Reusable prompt ingredients — the building blocks you can combine into any recipe.</p>
+            <span class="pk-section-card__cta">Stock the pantry →</span>
+          </a>
+          <a class="pk-section-card" href="guardrails.html">
+            <span class="pk-section-card__icon">🛡️</span>
+            <h3>Kitchen Guardrails</h3>
+            <p>Practical AI safety — not corporate policy. How to use AI responsibly without overthinking it.</p>
+            <span class="pk-section-card__cta">Read the guardrails →</span>
+          </a>
+          <a class="pk-section-card" href="context.html">
+            <span class="pk-section-card__icon">🧑‍🍳</span>
+            <h3>Kitchen Prep</h3>
+            <p>The difference between a useful AI response and a generic one is almost always context. Here's what to give it and why.</p>
+            <span class="pk-section-card__cta">Learn why context matters →</span>
+          </a>
+          <a class="pk-section-card" href="favorites.html">
+            <span class="pk-section-card__icon">🍽️</span>
+            <h3>My Kitchen</h3>
+            <p>Your saved recipes — stored right here in your browser. No account needed.</p>
+            <span class="pk-section-card__cta">Open my kitchen →</span>
+          </a>
         </div>
       </section>
 
-      <hr class="divider">
-
-      <!-- Why I built it -->
-      <section id="why" style="padding-top: 0;" data-reveal>
+      <!-- ─── Featured ─────────────────────────────────────────── -->
+      <section>
         <div class="section-header">
-          <p class="section-label" style="color: var(--amber);">Origin</p>
+          <p class="section-label">Featured</p>
+          <h2 class="section-title">Featured recipes</h2>
+        </div>
+        <div class="pk-card-grid" id="featured-grid">
+          <p class="pk-loading">Loading featured recipes…</p>
+        </div>
+      </section>
+
+      <!-- ─── Gallery ──────────────────────────────────────────── -->
+      <section>
+        <div class="section-header">
+          <p class="section-label">From the kitchen</p>
+          <h2 class="section-title">Gallery</h2>
+        </div>
+        <div class="pk-gallery">
+          <img src="gallery/img-001.jpg" alt="Prompt Kitchen gallery photo 1" loading="lazy" />
+          <img src="gallery/img-002.jpg" alt="Prompt Kitchen gallery photo 2" loading="lazy" />
+          <img src="gallery/img-003.jpg" alt="Prompt Kitchen gallery photo 3" loading="lazy" />
+          <img src="gallery/img-004.jpg" alt="Prompt Kitchen gallery photo 4" loading="lazy" />
+          <img src="gallery/img-005.jpg" alt="Prompt Kitchen gallery photo 5" loading="lazy" />
+          <img src="gallery/img-006.jpg" alt="Prompt Kitchen gallery photo 6" loading="lazy" />
+          <img src="gallery/img-007.jpg" alt="Prompt Kitchen gallery photo 7" loading="lazy" />
+          <img src="gallery/img-008.jpg" alt="Prompt Kitchen gallery photo 8" loading="lazy" />
+        </div>
+      </section>
+
+      <!-- ─── Why I built it (ported verbatim from the showcase) ── -->
+      <section>
+        <div class="section-header">
+          <p class="section-label">Origin</p>
           <h2 class="section-title">Why I built it</h2>
         </div>
-
         <div style="max-width: 65ch;">
           <p style="margin-bottom: 20px;">
             The AI conversation has two speeds: breathless optimism from people who want you to believe it changes everything, and quiet frustration from people who tried it, found it annoying, and moved on. Neither of those groups is serving the people in the middle — people who sense there's something genuinely useful here but haven't found their way in yet.
@@ -127,30 +155,30 @@
         </div>
       </section>
 
-      <hr class="divider">
+      <hr class="divider" />
 
-      <!-- CTA -->
-      <section style="padding-top: 0; padding-bottom: 80px;" data-reveal>
+      <!-- ─── Closing ──────────────────────────────────────────── -->
+      <section style="padding-bottom: 80px;">
         <div class="pk-card" style="max-width: 600px;">
-          <p class="pk-card__eyebrow">&#x1F373; Live now</p>
-          <h3 class="pk-card__title">Ready to visit?</h3>
+          <p class="pk-card__eyebrow">🍳 Get cooking</p>
+          <h3 class="pk-card__title">Start with one recipe</h3>
           <p class="pk-card__desc">
-            The Prompt Kitchen lives at its own domain. Open it in a new tab — it's a separate site, built to stand on its own.
+            Pick a recipe from the book, or learn why context is the ingredient that matters most.
           </p>
           <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="btn btn--amber">
-              Open thepromptkitchen.fyi &#x2197;
-            </a>
-            <a href="/projects/" class="btn btn--outline">All projects</a>
+            <a href="recipes.html" class="btn btn--amber">Browse the recipes</a>
+            <a href="context.html" class="btn btn--outline">Why context matters</a>
           </div>
         </div>
       </section>
 
-    </div><!-- /container -->
+    </div>
   </main>
 
-  <!-- Footer -->
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
   <div id="site-footer"></div>
 
+  <script src="pk.js" defer></script>
+  <script src="index.js" defer></script>
 </body>
 </html>

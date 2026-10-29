@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Kitchen — The Prompt Kitchen</title>
+  <meta name="description" content="Your saved AI prompt recipes — your personal collection, stored in your browser." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/favorites.html" />
+  <meta property="og:title" content="My Kitchen — The Prompt Kitchen" />
+  <meta property="og:description" content="Your saved AI prompt recipes — your personal collection, stored in your browser." />
+  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/favorites.html" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────────────── -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="container">
+
+      <section class="pk-page-hero">
+        <h1>🍽️ My Kitchen</h1>
+        <p>Your saved recipes — stored right here in your browser. No account needed.</p>
+      </section>
+
+      <p class="pk-results-count" id="favorites-count"></p>
+
+      <div class="pk-card-grid" id="favorites-grid" hidden>
+        <!-- Populated by favorites.js -->
+      </div>
+
+      <div class="pk-empty-state" id="empty-state">
+        <p>🤍</p>
+        <p>You haven't saved any recipes yet.</p>
+        <a href="recipes.html" class="btn btn--outline">Browse Recipes →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <div id="site-footer"></div>
+
+  <script src="pk.js" defer></script>
+  <script src="favorites.js" defer></script>
+</body>
+</html>

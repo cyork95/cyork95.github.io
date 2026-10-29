@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitchen Guardrails — The Prompt Kitchen</title>
+  <meta name="description" content="Practical, non-corporate guide to AI safety — avoiding hallucinations, verifying output, spotting bias, and knowing when to trust AI." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/guardrails.html" />
+  <meta property="og:title" content="Kitchen Guardrails — The Prompt Kitchen" />
+  <meta property="og:description" content="Practical AI safety — not corporate policy. How to use AI responsibly without overthinking it." />
+  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/guardrails.html" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────────────── -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="container">
+
+      <section class="pk-page-hero">
+        <h1>🛡️ Kitchen Guardrails</h1>
+        <p>Practical AI safety — not corporate policy. How to use AI responsibly without overthinking it.</p>
+      </section>
+
+      <div id="guardrail-groups" style="padding-bottom: 1rem;">
+        <p class="pk-loading">Loading guardrails…</p>
+      </div>
+
+      <!-- ─── Further Reading (ported from the source page) ───────── -->
+      <section class="pk-reading" style="padding-bottom: 4rem;">
+        <h2>Further Reading</h2>
+        <div class="pk-reading-list">
+          <a class="pk-reading-card" href="https://www.wired.com/story/googles-ai-overviews-can-scam-you-heres-how-to-stay-safe/" target="_blank" rel="noopener">
+            <span class="pk-reading-card__tag">AI Safety</span>
+            <span class="pk-reading-card__title">Google's AI Overviews Can Scam You. Here's How to Stay Safe</span>
+            <span class="pk-reading-card__source">Wired</span>
+            <p class="pk-reading-card__desc">AI-generated search summaries are being exploited to surface scam sites and misinformation at scale. How the attack works and practical steps to protect yourself.</p>
+          </a>
+          <a class="pk-reading-card" href="recipe.html?slug=ai-fact-check">
+            <span class="pk-reading-card__tag">Recipe</span>
+            <span class="pk-reading-card__title">Make AI Check Its Work</span>
+            <span class="pk-reading-card__source">The Prompt Kitchen</span>
+            <p class="pk-reading-card__desc">A practical recipe for forcing AI to verify its own output before you trust it — layered fact-checking built into the prompt itself.</p>
+          </a>
+          <a class="pk-reading-card" href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener">
+            <span class="pk-reading-card__tag">Security</span>
+            <span class="pk-reading-card__title">OWASP LLM Top 10: Prompt Injection &amp; Agent Safety</span>
+            <span class="pk-reading-card__source">OWASP</span>
+            <p class="pk-reading-card__desc">The definitive security reference for LLM applications — prompt injection, insecure output handling, training data poisoning, and the 7 other attack vectors every AI builder needs to understand.</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <div id="site-footer"></div>
+
+  <script src="vendor/marked.min.js"></script>
+  <script src="pk.js" defer></script>
+  <script src="guardrails.js" defer></script>
+</body>
+</html>
