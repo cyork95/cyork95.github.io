@@ -6,6 +6,7 @@
 
 let allRecipes = [];
 let activeCategory = 'All';
+let activeDifficulty = 'All';
 let searchQuery = '';
 
 function recipeCard(recipe) {
@@ -16,6 +17,7 @@ function recipeCard(recipe) {
   return `
     <a class="pk-recipe-card" href="recipe.html?slug=${slug}"
        data-category="${escapeHTML(recipe.category || '')}"
+       data-difficulty="${escapeHTML(recipe.difficulty || '')}"
        data-title="${escapeHTML((recipe.title || '').toLowerCase())}"
        data-tags="${escapeHTML((recipe.tags || []).join(' ').toLowerCase())}"
        data-teaser="${escapeHTML((recipe.teaser || '').toLowerCase())}">
@@ -54,9 +56,11 @@ function filterRecipes() {
       cardCategory.toLowerCase(),
     ].join(' ');
 
+    const cardDifficulty = card.dataset.difficulty ?? '';
     const matchesCategory = activeCategory === 'All' || cardCategory === activeCategory;
+    const matchesDifficulty = activeDifficulty === 'All' || cardDifficulty === activeDifficulty;
     const matchesSearch = searchQuery === '' || searchText.includes(searchQuery);
-    const show = matchesCategory && matchesSearch;
+    const show = matchesCategory && matchesDifficulty && matchesSearch;
 
     card.style.display = show ? '' : 'none';
     if (show) visible++;
@@ -68,6 +72,35 @@ function filterRecipes() {
 
 function setActivePill(pills, category) {
   pills.forEach((p) => p.classList.toggle('active', p.dataset.category === category));
+}
+
+const DIFFICULTY_VALUES = ['All', 'beginner', 'home-cook', 'sous-chef'];
+
+function setActiveDiffPill(pills, difficulty) {
+  pills.forEach((p) => p.classList.toggle('active', p.dataset.difficulty === difficulty));
+}
+
+function buildDifficultyPills() {
+  const container = document.getElementById('difficulty-pills');
+  if (!container) return [];
+  container.innerHTML = '';
+  const pills = DIFFICULTY_VALUES.map((value) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `pk-filter-pill${value === 'All' ? ' active' : ''}`;
+    btn.dataset.difficulty = value;
+    btn.textContent = value === 'All' ? 'All levels' : difficultyLabel(value);
+    container.appendChild(btn);
+    return btn;
+  });
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      activeDifficulty = pill.dataset.difficulty;
+      setActiveDiffPill(pills, activeDifficulty);
+      filterRecipes();
+    });
+  });
+  return pills;
 }
 
 function buildPills(categories) {
@@ -126,6 +159,7 @@ fetch('data/recipes.json')
     if (grid) grid.innerHTML = allRecipes.map(recipeCard).join('');
 
     const pills = buildPills(['All', ...new Set(allRecipes.map((r) => r.category))]);
+    const diffPills = buildDifficultyPills();
 
     const searchInput = document.getElementById('recipe-search');
     if (searchInput) {
@@ -139,9 +173,11 @@ fetch('data/recipes.json')
     if (clearBtn && searchInput) {
       clearBtn.addEventListener('click', () => {
         activeCategory = 'All';
+        activeDifficulty = 'All';
         searchQuery = '';
         searchInput.value = '';
         setActivePill(pills, 'All');
+        setActiveDiffPill(diffPills, 'All');
         filterRecipes();
       });
     }

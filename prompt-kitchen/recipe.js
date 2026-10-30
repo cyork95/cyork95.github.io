@@ -67,6 +67,7 @@ function renderRecipe(meta, body) {
     <p style="margin-top:2.5rem"><a href="recipes.html" class="pk-back-link">← Back to Recipe Book</a></p>`;
 
   document.getElementById('recipe-body').innerHTML = marked.parse(body);
+  addCopyButtons(document.getElementById('recipe-body'));
 
   // Votes: pressed state reflects getMyVotes, toggling writes pk-votes-<slug>
   const myVotes = getMyVotes(slug);
