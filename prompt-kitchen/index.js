@@ -31,6 +31,26 @@ function renderStats(counts) {
   });
 }
 
+function formatDailyDate(now) {
+  const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const months = ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'];
+  return `${weekdays[now.getDay()]}, ${months[now.getMonth()]} ${now.getDate()}`;
+}
+
+function pickDailyRecipe(recipes, now) {
+  const seed = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+  return recipes[seed % recipes.length];
+}
+
+function renderDaily(recipes, now) {
+  const grid = document.getElementById('daily-grid');
+  const dateEl = document.getElementById('daily-date');
+  if (!grid || !recipes.length) return;
+  grid.innerHTML = featuredCard(pickDailyRecipe(recipes, now));
+  if (dateEl) dateEl.textContent = formatDailyDate(now);
+}
+
 Promise.all([
   fetch('data/recipes.json').then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }),
   fetch('data/cookbooks.json').then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }),
@@ -44,6 +64,8 @@ Promise.all([
       mealPrep: mealPrep.length,
       pantry: pantry.length,
     });
+
+    renderDaily(recipes, new Date());
 
     const featured = recipes.filter((r) => r.featured);
     const grid = document.getElementById('featured-grid');

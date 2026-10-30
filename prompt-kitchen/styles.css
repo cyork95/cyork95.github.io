@@ -194,6 +194,25 @@
   margin: 0 0 1rem;
 }
 
+/* Difficulty filter row (Recipe Book) */
+.pk-difficulty-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.pk-difficulty-row .pk-filter-pills { margin-bottom: 0; }
+
+.pk-filter-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
 /* ─── Recipe cards ─────────────────────────────────────────────── */
 
 .pk-card-grid {
@@ -775,6 +794,7 @@
 
 /* Fenced prompt blocks: dark panel, wrapping allowed */
 .pk-prose pre {
+  position: relative;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
@@ -796,6 +816,35 @@
   line-height: 1.7;
   white-space: pre-wrap;
   word-break: break-word;
+}
+
+/* Copy button on fenced prompt blocks */
+.pk-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.pk-copy-btn:hover,
+.pk-copy-btn:focus-visible {
+  opacity: 1;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (hover: none) {
+  .pk-copy-btn { opacity: 1; }
 }
 
 .pk-prose hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }

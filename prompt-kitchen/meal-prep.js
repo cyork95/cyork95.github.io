@@ -26,6 +26,7 @@ function loadBody(details, slug, target) {
     })
     .then((raw) => {
       target.innerHTML = marked.parse(stripFrontmatter(raw));
+      addCopyButtons(target);
     })
     .catch((err) => {
       target.innerHTML = '<p class="pk-empty-state">Could not load this prompt.</p>';

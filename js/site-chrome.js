@@ -22,6 +22,7 @@
     '<li><a href="/projects/">Projects</a></li>' +
     '<li><a href="/creations/">Creations</a></li>' +
     '<li><a href="/blog/">Blog</a></li>' +
+    '<li><a href="/prompt-kitchen/">Prompt Kitchen</a></li>' +
     '<li><a href="/contact/">Contact</a></li>' +
     '</ul>' +
     '<div class="nav__actions">' +
@@ -37,6 +38,7 @@
     '<li><a href="/projects/">Projects</a></li>' +
     '<li><a href="/creations/">Creations</a></li>' +
     '<li><a href="/blog/">Blog</a></li>' +
+    '<li><a href="/prompt-kitchen/">Prompt Kitchen</a></li>' +
     '<li><a href="/contact/">Contact</a></li>' +
     '</ul>' +
     '</div>' +
