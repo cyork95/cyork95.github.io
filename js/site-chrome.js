@@ -52,7 +52,7 @@
     '<nav class="footer__links" aria-label="Footer navigation">' +
     '<a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub</a>' +
     '<a href="https://medium.com/@yorkc36" target="_blank" rel="noopener">Medium</a>' +
-    '<a href="https://thepromptkitchen.fyi" target="_blank" rel="noopener" class="footer__pk-link">The Prompt Kitchen</a>' +
+    '<a href="/prompt-kitchen/" class="footer__pk-link">The Prompt Kitchen</a>' +
     '<a href="/blog/">Blog</a>' +
     '<a href="/my-sites/">My Sites</a>' +
     '<a href="/contact/">Contact</a>' +
