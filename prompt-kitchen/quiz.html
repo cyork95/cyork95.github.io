@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask the Chef — The Prompt Kitchen</title>
+  <meta name="description" content="Answer a few questions and get a personalised AI tool recommendation." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yorkdevelops.com/prompt-kitchen/quiz.html" />
+  <meta property="og:title" content="Ask the Chef — The Prompt Kitchen" />
+  <meta property="og:description" content="Answer a few questions and get a personalised AI tool recommendation." />
+  <link rel="canonical" href="https://yorkdevelops.com/prompt-kitchen/quiz.html" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────────────── -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="container">
+
+      <section class="pk-page-hero">
+        <h1>👨🍳 Ask the Chef</h1>
+        <p>Not sure which AI tool to use? Answer a few questions and get a personalised recommendation.</p>
+      </section>
+
+      <div class="pk-quiz-layout">
+        <div class="pk-quiz-card">
+          <div class="pk-quiz-steps" id="quiz-steps" aria-hidden="true">
+            <span class="pk-quiz-step"></span>
+            <span class="pk-quiz-step"></span>
+            <span class="pk-quiz-step"></span>
+            <span class="pk-quiz-step"></span>
+          </div>
+          <div id="quiz-body">
+            <p class="pk-loading">Loading the quiz…</p>
+          </div>
+        </div>
+
+        <aside class="pk-quiz-sidebar">
+          <div class="pk-sidebar-card">
+            <h3>🎓 New to all this?</h3>
+            <p>The Lessons page walks through the fundamentals — starting with why context matters.</p>
+            <a class="pk-sidebar-link" href="lessons.html">Browse lessons →</a>
+          </div>
+          <div class="pk-sidebar-card">
+            <h3>📖 Just want recipes?</h3>
+            <p>Skip the quiz and browse 142 ready-to-use prompts.</p>
+            <a class="pk-sidebar-link" href="recipes.html">Recipe Book →</a>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <div id="site-footer"></div>
+
+  <script src="quiz.js" defer></script>
+</body>
+</html>
