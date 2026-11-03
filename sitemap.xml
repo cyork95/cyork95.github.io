@@ -128,6 +128,12 @@
   </url>
 
   <url>
+    <loc>https://yorkdevelops.com/prompt-kitchen/lesson.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://yorkdevelops.com/wow-anniversary-tracker/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
