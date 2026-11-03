@@ -1063,3 +1063,45 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/* --- Lesson page ------------------------------------------------ */
+
+.pk-lesson-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+.pk-lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.pk-lesson-nav__link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pk-lesson-nav__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* --- Lessons landing: live track intro -------------------------- */
+
+.pk-track-intro {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 65ch;
+  margin: 0 0 1rem;
+}

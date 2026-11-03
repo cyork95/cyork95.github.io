@@ -1,0 +1,8 @@
+[
+  { "slug": "context-is-the-ingredient-list", "number": 1, "title": "Context is the ingredient list", "subtitle": "Why the same prompt fails without it" },
+  { "slug": "show-dont-tell", "number": 2, "title": "Show, don't tell", "subtitle": "Why one example beats ten adjectives" },
+  { "slug": "the-pantry-method", "number": 3, "title": "The pantry method", "subtitle": "Reusable context blocks — so you stop retyping the same ingredients" },
+  { "slug": "what-to-leave-out", "number": 4, "title": "What to leave out", "subtitle": "Noise, contradictions, and stale context hurt" },
+  { "slug": "context-windows-are-budgets", "number": 5, "title": "Context windows are budgets", "subtitle": "Spending your tokens where they change the output" },
+  { "slug": "memory-across-sessions", "number": 6, "title": "Memory across sessions", "subtitle": "Carrying context between chats and tools — honestly" }
+]
