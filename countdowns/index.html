@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdowns — York Develops</title>
+  <meta name="description" content="Countdowns to the things worth looking forward to — holidays, game launches, and events." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yorkdevelops.com/countdowns/" />
+  <meta property="og:title" content="Countdowns — York Develops" />
+  <meta property="og:description" content="Countdowns to the things worth looking forward to — holidays, game launches, and events." />
+  <link rel="canonical" href="https://yorkdevelops.com/countdowns/" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────────────── -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="container">
+      <h1 class="cd-sr-only">Countdowns</h1>
+
+      <noscript>
+        <p class="cd-noscript">Countdowns need JavaScript to tick. The events are listed in <a href="data/countdowns.json">data/countdowns.json</a>.</p>
+      </noscript>
+
+      <!-- ─── Featured hero (rendered by app.js) ───────────────── -->
+      <section class="cd-hero" id="cd-hero" aria-label="Featured countdown">
+        <p class="cd-loading">Loading countdowns…</p>
+      </section>
+
+      <!-- ─── Category filter ──────────────────────────────────── -->
+      <div class="cd-chips" role="group" aria-label="Filter countdowns by category" id="cd-chips" hidden>
+        <button type="button" class="cd-chip active" data-category="All">All</button>
+        <button type="button" class="cd-chip" data-category="Games">Games</button>
+        <button type="button" class="cd-chip" data-category="Holidays">Holidays</button>
+        <button type="button" class="cd-chip" data-category="Releases">Releases</button>
+        <button type="button" class="cd-chip" data-category="Events">Events</button>
+      </div>
+
+      <!-- ─── Grouped grid (rendered by app.js) ────────────────── -->
+      <div id="cd-groups"></div>
+
+      <!-- ─── Retired ──────────────────────────────────────────── -->
+      <details class="cd-retired" id="cd-retired" hidden>
+        <summary><span id="cd-retired-label">Retired</span></summary>
+        <div class="cd-grid" id="cd-retired-grid"></div>
+      </details>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <div id="site-footer"></div>
+
+  <!-- ─── Detail overlay (rendered by app.js) ────────────────── -->
+  <div class="cd-overlay" id="cd-overlay" hidden>
+    <div class="cd-dialog" role="dialog" aria-modal="true" aria-labelledby="cd-dialog-title">
+      <div class="cd-dialog__head">
+        <button type="button" class="cd-dialog__close" id="cd-dialog-close">← Back to countdowns</button>
+      </div>
+      <div id="cd-dialog-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
