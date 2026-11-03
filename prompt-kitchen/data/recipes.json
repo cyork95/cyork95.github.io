@@ -376,7 +376,7 @@
       "character consistency",
       "image generation",
       "character design",
-      "cref",
+      "oref",
       "sref",
       "portrait"
     ],
@@ -502,7 +502,7 @@
   },
   {
     "slug": "competitor-analysis-opportunities",
-    "title": "Competitor Analysis That Reveals Opportunities",
+    "title": "Competitor Analysis: The Forensic Audit",
     "category": "Business",
     "difficulty": "home-cook",
     "tags": [
@@ -1679,7 +1679,7 @@
       "photorealism",
       "ai-art",
       "midjourney",
-      "dall-e",
+      "gpt-image",
       "product"
     ],
     "teaser": "Get photo-quality AI images by describing the scene the way a photographer would — camera specs, lighting, and physical detail.",

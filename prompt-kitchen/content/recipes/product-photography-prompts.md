@@ -17,7 +17,7 @@ Product photography prompts follow a tighter formula than portrait or landscape 
 A professional product photograph of a sleek, matte black wireless pair of earbuds 
 in their open charging case, placed on a light grey textured concrete surface, 
 with a subtle background bokeh of a modern desk. Sharp focus, clean lines, 
-natural daylight, 8k resolution, shot with a Canon EOS R5. --ar 1:1 --v 6.0
+natural daylight, 8k resolution, shot with a Canon EOS R5. --ar 1:1
 ```
 
 ## The product photography formula

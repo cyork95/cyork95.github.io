@@ -17,7 +17,7 @@ AI image generation is especially powerful for design visualization — it lets 
 A refined concept for a futuristic architectural structure inspired by a sketch. 
 A modern, flowing, curved glass and steel building with incorporated greenery on 
 terraces, shot at twilight with glowing interior lights, urban skyline in the 
-background. Photorealistic, detailed texture, cinematic lighting. --ar 16:9 --v 6.0
+background. Photorealistic, detailed texture, cinematic lighting. --ar 16:9
 ```
 
 ## The sketch-to-render translation process

@@ -17,7 +17,7 @@ The difference between a photorealistic result and a generic AI image is usually
 A hyper-realistic photograph of a young woman with curly brown hair, smiling broadly, 
 wearing a vintage denim jacket and standing in a sun-drenched field of wildflowers at 
 sunset. Golden hour lighting, backlighting, cinematic composition, depth of field, 
-8k resolution, shot on a Sony A1 with a 50mm f/1.2 lens. --ar 16:9 --v 6.0
+8k resolution, shot on a Sony A1 with a 50mm f/1.2 lens. --ar 16:9
 ```
 
 ## The anatomy of a photorealism prompt

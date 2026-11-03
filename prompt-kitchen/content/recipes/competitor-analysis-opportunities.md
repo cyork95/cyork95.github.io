@@ -1,5 +1,5 @@
 ---
-title: "Competitor Analysis That Reveals Opportunities"
+title: "Competitor Analysis: The Forensic Audit"
 category: "Business"
 difficulty: "home-cook"
 tags: ["business", "strategy", "competitor-analysis", "marketing", "indie-hacker"]

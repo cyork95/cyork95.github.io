@@ -78,7 +78,7 @@ Then create 3 variations with:
 Keep the face, proportions, and color palette identical across all versions.
 ```
 
-Note: for true consistency across separate generations, tools like Midjourney's `--cref` (character reference) or custom Stable Diffusion models work better than a single prompt.
+Note: for true consistency across separate generations, tools like Midjourney's reference images (the Edit Model on V8, Omni Reference on V7) or custom Stable Diffusion models work better than a single prompt.
 
 ## 🔁 Leftover Remixes
 
