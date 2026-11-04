@@ -290,6 +290,42 @@
     "contributor": null
   },
   {
+    "slug": "brief-the-agent",
+    "title": "Brief the Agent",
+    "category": "Productivity",
+    "difficulty": "home-cook",
+    "tags": [
+      "agents",
+      "delegation",
+      "workflows",
+      "automation"
+    ],
+    "teaser": "Hand a task to an AI agent the way you'd brief a sharp contractor — outcome, context, guardrails, checkpoints, and a clear definition of done.",
+    "bestFor": "Anyone delegating multi-step work to AI agents or assistants",
+    "whenToUse": "Before any task where the AI will work in several steps — research, drafting, coding, data cleanup — instead of one prompt at a time",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "build-a-context-pack",
+    "title": "Build a Context Pack",
+    "category": "Prompt Engineering",
+    "difficulty": "home-cook",
+    "tags": [
+      "context engineering",
+      "context",
+      "prompt engineering",
+      "reusable prompts"
+    ],
+    "teaser": "Assemble one reusable context pack for a project — goal, background, constraints, examples, current state — so every new chat starts on second base.",
+    "bestFor": "Ongoing projects, client work, codebases, research threads — anything you keep re-explaining",
+    "whenToUse": "When you catch yourself explaining the same project to a fresh chat for the third time",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
     "slug": "build-your-own-prompt",
     "title": "Build Your Own Prompt",
     "category": "Prompt Engineering",
@@ -1039,6 +1075,24 @@
     "contributor": null
   },
   {
+    "slug": "grade-it-against-a-rubric",
+    "title": "Grade It Against a Rubric",
+    "category": "AI & Prompting",
+    "difficulty": "sous-chef",
+    "tags": [
+      "evaluation",
+      "rubric",
+      "quality",
+      "review"
+    ],
+    "teaser": "Stop asking 'is this good?' — score any output against explicit criteria, with evidence quoted for every score and a fix list in priority order.",
+    "bestFor": "Writers, reviewers, and anyone quality-checking AI output or human drafts",
+    "whenToUse": "When you have a draft — yours or the model's — and need a judgment you can act on, not a vibe",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
     "slug": "habit-builder-blueprint",
     "title": "Habit Builder That Actually Sticks",
     "category": "Health",
@@ -1546,6 +1600,24 @@
     "teaser": "Three full-text welcome emails with subject lines and preview text: an immediate Deliver & Delight, a 48-hour story/framework shift, and a 72-hour offer introduction — built to turn cold signups into engaged subscribers.",
     "bestFor": "Anyone with an email list and a lead magnet who wants to convert subscribers before they go cold",
     "whenToUse": "Setting up your first automated welcome sequence or auditing an existing one that's underperforming",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "onboard-me-to-this-codebase",
+    "title": "Onboard Me to This Codebase",
+    "category": "Coding",
+    "difficulty": "home-cook",
+    "tags": [
+      "coding assistants",
+      "codebase",
+      "onboarding",
+      "documentation"
+    ],
+    "teaser": "Point your coding assistant at an unfamiliar repo and get a real orientation — architecture map, entry points, conventions, and the files you shouldn't touch casually.",
+    "bestFor": "Developers joining a project, inheriting a codebase, or returning to an old one",
+    "whenToUse": "On day one with any codebase you didn't write — or wrote long enough ago that it counts",
     "featured": false,
     "community": false,
     "contributor": null
@@ -2269,6 +2341,24 @@
     "teaser": "3 radically different endings for any story premise: The Twist Knife (an earned recontextualization), The Poetic Resolution (bittersweet character closure), and The Open Loop Cliffhanger (resolved conflict, haunting question) — each with structural beats and final scene composition.",
     "bestFor": "Writers stuck on endings, creative writing practice, screenwriters testing narrative options",
     "whenToUse": "When you have a premise you love but can't find the right way to close it",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "storyboard-a-short-video",
+    "title": "Storyboard a Short Video",
+    "category": "Content Creation",
+    "difficulty": "beginner",
+    "tags": [
+      "video",
+      "storyboard",
+      "short-form",
+      "content creation"
+    ],
+    "teaser": "Turn a loose idea into a shootable — or generatable — shot list: hook, beats, and per-shot visuals, lines, and timing for a 30–60 second video.",
+    "bestFor": "Creators making Shorts, Reels, TikToks, or AI-generated video clips",
+    "whenToUse": "When you have a topic and a free half hour but no plan for what the camera — or the video model — should actually do",
     "featured": false,
     "community": false,
     "contributor": null
