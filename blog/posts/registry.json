@@ -454,5 +454,13 @@
     "description": "A running list of the most baffling, cursed, and beautiful hacks I've seen in the wild.",
     "tags": ["lists", "humor"],
     "section": "fun"
+  },
+  {
+    "slug": "the-prompt-kitchen-moved-in",
+    "title": "The Prompt Kitchen Moved In",
+    "date": "2026-11-03",
+    "description": "The Prompt Kitchen has a new home — it lives on this site now, with a freshness-audited recipe library and a brand-new lesson track on why context matters.",
+    "tags": ["meta", "prompt-kitchen", "ai", "site-news"],
+    "section": "programming"
   }
 ]
