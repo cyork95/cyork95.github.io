@@ -729,6 +729,24 @@
     "contributor": null
   },
   {
+    "slug": "debug-a-failing-prompt",
+    "title": "Debug a Failing Prompt",
+    "category": "Prompt Engineering",
+    "difficulty": "home-cook",
+    "tags": [
+      "prompt engineering",
+      "debugging",
+      "troubleshooting",
+      "iteration"
+    ],
+    "teaser": "When a prompt keeps giving you the wrong thing, stop rewriting it at random — isolate the failure, name the cause, and fix one variable at a time.",
+    "bestFor": "Anyone with a saved prompt that used to work, almost works, or works except when it matters",
+    "whenToUse": "After the second disappointing output from the same prompt — before the third rewrite from scratch",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
     "slug": "debug-like-senior-engineer",
     "title": "Debug Code Like a Senior Engineer",
     "category": "Coding",
@@ -2634,6 +2652,25 @@
     "contributor": null
   },
   {
+    "slug": "verify-the-agents-work",
+    "title": "Verify the Agent's Work",
+    "category": "AI & Prompting",
+    "difficulty": "sous-chef",
+    "tags": [
+      "agents",
+      "verification",
+      "evaluation",
+      "quality",
+      "review"
+    ],
+    "teaser": "An agent's confident summary is not evidence. Audit its claims, sources, and changes — with spot-checks you choose, not ones it picks for you.",
+    "bestFor": "Anyone accepting multi-step work from an AI agent — research, drafts, data cleanup, or code changes",
+    "whenToUse": "Before you use, send, publish, or build on anything an agent produced while you weren't watching",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
     "slug": "vibe-code-it",
     "title": "Vibe Code It",
     "category": "Coding",
@@ -2786,6 +2823,24 @@
     "teaser": "A Progressive Overload Blueprint built around your schedule and equipment — weekly split, exact sets/reps/rest, and an auto-regulation protocol for low-energy days so you never break the streak.",
     "bestFor": "Anyone building a sustainable training routine around a busy schedule",
     "whenToUse": "Starting a new fitness phase, returning after a break, or when your current plan isn't working",
+    "featured": false,
+    "community": false,
+    "contributor": null
+  },
+  {
+    "slug": "write-a-handoff-note",
+    "title": "Write a Handoff Note",
+    "category": "Communication",
+    "difficulty": "beginner",
+    "tags": [
+      "handoff",
+      "context",
+      "collaboration",
+      "documentation"
+    ],
+    "teaser": "End a session — with an AI, a teammate, or future you — with a note that lets the next person start working in two minutes instead of twenty questions.",
+    "bestFor": "Anyone pausing work mid-stream: ending an AI chat, handing a task to a teammate, or stopping for the day",
+    "whenToUse": "In the last five minutes of any work session that someone — including you, tomorrow — will need to pick back up",
     "featured": false,
     "community": false,
     "contributor": null
