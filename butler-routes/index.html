@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butler Routes - Completionist — York Develops</title>
+  <meta name="description" content="Butler Routes - Completionist: a completionist all-quests guide pack for Polestar in WoW Forever. Every quest in every zone, both factions, with rares, recipes, and profession tracking. Search every quest, rare, and recipe.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yorkdevelops.com/butler-routes/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yorkdevelops.com/butler-routes/">
+  <meta property="og:title" content="Butler Routes - Completionist">
+  <meta property="og:description" content="Completionist all-quests guide pack for Polestar in WoW Forever. Searchable reference: every quest, rare, and recipe, and where each one lives.">
+  <meta property="og:site_name" content="York Develops">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <p class="page-header__eyebrow">// butler routes</p>
+          <h1 class="page-header__title">Butler Routes - Completionist</h1>
+          <p class="page-header__desc">
+            Completionist (all-quests) guide pack for Polestar in WoW Forever —
+            every quest in every zone, both factions, with rares, recipes,
+            and profession tracking you choose.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--wide">
+      <nav class="br-tabs" aria-label="Butler Routes sections">
+        <a href="#/" data-br-tab="overview">Overview</a>
+        <a href="#/zones" data-br-tab="zones">Zones</a>
+        <a href="#/search" data-br-tab="search">Search</a>
+      </nav>
+
+      <div class="br-searchbar" role="search">
+        <input id="br-search-input" type="search"
+               placeholder="Search quests, rares, recipes, zones…"
+               aria-label="Search quests, rares, recipes, zones"
+               autocomplete="off">
+      </div>
+
+      <div id="br-app" aria-live="polite">
+        <p class="br-loading">Loading pack data…</p>
+      </div>
+
+      <noscript>
+        <p>The Butler Routes reference needs JavaScript to search and render
+        guides. The underlying data is generated from the public pack repo;
+        see the GitHub link below.</p>
+      </noscript>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
