@@ -27,8 +27,8 @@ function check(label, ok, extra) {
 
 check('totals: 51 contracts', DATA.totals.contracts === 51, JSON.stringify(DATA.totals));
 check('totals: 3604 contracted quests', DATA.totals.contractedQuests === 3604);
-check('totals: 141 guides', DATA.totals.guides === 141);
-check('stamp: pack v0.99.0', DATA.generatedFrom.packVersion === '0.99.0');
+check('totals: 144 guides', DATA.totals.guides === 144);
+check('stamp: pack v0.100.0', DATA.generatedFrom.packVersion === '0.100.0');
 check('zones == contracts', DATA.zones.length === DATA.totals.contracts);
 check('questCount sums to contractedQuests',
   DATA.zones.reduce((n, z) => n + z.questCount, 0) === DATA.totals.contractedQuests);
@@ -53,13 +53,12 @@ check('tirisfal buried treasure has its point', DATA.treasures.some(
   (r) => r.zone === 'tirisfal-glades' && r.name === 'Buried Treasure' && r.points.length === 1));
 check('durotar first rare is Warlord Kolkanis',
   DATA.rares.filter((r) => r.zone === 'durotar')[0].name === 'Warlord Kolkanis');
-check('docs: curated set published', DATA.docs.length === 94, String(DATA.docs.length));
+check('docs: curated set published', DATA.docs.length === 95, String(DATA.docs.length));
 check('docs: no excluded files published',
   !DATA.docs.some((d) => ['guide-status.md', 'ZEPHRAS-5-CHECK.md', 'AUTHORING-NOTES-elwynn.md'].includes(d.file)));
 check('docs: kind split sane',
   DATA.docs.filter((d) => d.kind === 'census').length === 48 &&
-  DATA.docs.filter((d) => d.kind === 'inventory').length === 44 &&
-  DATA.docs.filter((d) => d.kind === 'method').length === 2);
+  DATA.docs.filter((d) => d.kind === 'inventory').length === 44 && DATA.docs.filter((d) => d.kind === 'method').length === 3);
 check('docs: every zone doc maps to a real zone',
   DATA.docs.filter((d) => d.zone).every((d) => DATA.zones.some((z) => z.id === d.zone)));
 check('docs: pages exist on disk',
@@ -108,7 +107,7 @@ function count(html, sub) { return html.split(sub).length - 1; }
   /* overview + directory regression */
   let html = go('#/');
   check('overview: stamp', html.includes('Pack data: v' + DATA.generatedFrom.packVersion));
-  check('overview: totals strip', html.includes('>51<') && html.includes('3,604') && html.includes('>141<'));
+  check('overview: totals strip', html.includes('>51<') && html.includes('3,604') && html.includes('>144<'));
   html = go('#/zones');
   check('zones: 51 cards', count(html, 'br-zonecard') === 51, String(count(html, 'br-zonecard')));
 
