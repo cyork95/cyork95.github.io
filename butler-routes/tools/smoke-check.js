@@ -25,10 +25,10 @@ function check(label, ok, extra) {
 
 /* ---------- data invariants ---------- */
 
-check('totals: 49 contracts', DATA.totals.contracts === 49, JSON.stringify(DATA.totals));
-check('totals: 3418 contracted quests', DATA.totals.contractedQuests === 3418);
-check('totals: 139 guides', DATA.totals.guides === 139);
-check('stamp: pack v0.97.0', DATA.generatedFrom.packVersion === '0.97.0');
+check('totals: 50 contracts', DATA.totals.contracts === 50, JSON.stringify(DATA.totals));
+check('totals: 3496 contracted quests', DATA.totals.contractedQuests === 3496);
+check('totals: 140 guides', DATA.totals.guides === 140);
+check('stamp: pack v0.98.0', DATA.generatedFrom.packVersion === '0.98.0');
 check('zones == contracts', DATA.zones.length === DATA.totals.contracts);
 check('questCount sums to contractedQuests',
   DATA.zones.reduce((n, z) => n + z.questCount, 0) === DATA.totals.contractedQuests);
@@ -53,11 +53,11 @@ check('tirisfal buried treasure has its point', DATA.treasures.some(
   (r) => r.zone === 'tirisfal-glades' && r.name === 'Buried Treasure' && r.points.length === 1));
 check('durotar first rare is Warlord Kolkanis',
   DATA.rares.filter((r) => r.zone === 'durotar')[0].name === 'Warlord Kolkanis');
-check('docs: curated set published', DATA.docs.length === 92, String(DATA.docs.length));
+check('docs: curated set published', DATA.docs.length === 93, String(DATA.docs.length));
 check('docs: no excluded files published',
   !DATA.docs.some((d) => ['guide-status.md', 'ZEPHRAS-5-CHECK.md', 'AUTHORING-NOTES-elwynn.md'].includes(d.file)));
 check('docs: kind split sane',
-  DATA.docs.filter((d) => d.kind === 'census').length === 46 &&
+  DATA.docs.filter((d) => d.kind === 'census').length === 47 &&
   DATA.docs.filter((d) => d.kind === 'inventory').length === 44 &&
   DATA.docs.filter((d) => d.kind === 'method').length === 2);
 check('docs: every zone doc maps to a real zone',
@@ -108,9 +108,9 @@ function count(html, sub) { return html.split(sub).length - 1; }
   /* overview + directory regression */
   let html = go('#/');
   check('overview: stamp', html.includes('Pack data: v' + DATA.generatedFrom.packVersion));
-  check('overview: totals strip', html.includes('>49<') && html.includes('3,418') && html.includes('>139<'));
+  check('overview: totals strip', html.includes('>50<') && html.includes('3,496') && html.includes('>140<'));
   html = go('#/zones');
-  check('zones: 49 cards', count(html, 'br-zonecard') === 49, String(count(html, 'br-zonecard')));
+  check('zones: 50 cards', count(html, 'br-zonecard') === 50, String(count(html, 'br-zonecard')));
 
   /* tirisfal detail: split kinds, names, structure */
   html = go('#/zone/tirisfal-glades');
