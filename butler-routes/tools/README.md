@@ -5,11 +5,18 @@
 the app loads: `butler-routes/data/pack-data.json`.
 
 It uses only the pack repo's own files — `pack.json`,
-`docs/quest-contracts.json`, `docs/*-census.md`, `docs/guide-status.md`,
+`docs/quest-contracts.json`, `docs/*-census.md`,
+`docs/*-companions-inventory.md`, `docs/guide-status.md`,
 and the `*.guide` files. Quest names resolve census first, then the
 contract entry, then the accept line's own `-- Name - NPC` rest text; a quest
 with no parsed name ships as `"name": null` (never invented). Where a field
 cannot be extracted the record ships without it.
+
+Rares-guide steps each yield exactly one record: kind `rare` where the
+step has a `kill` line, otherwise kind `treasure` (chest loops, unique
+objects, goto/note-only steps). Rare names resolve against the companions
+inventory docs by NPC id first, then the step-title segment after the last
+` - `, then the full title.
 
 ## Re-running after a pack release
 
@@ -46,10 +53,14 @@ Requires: python3 (stdlib only) + git on PATH (only when cloning).
   accept step + coordinates, every objective occurrence in file order, and
   the turn-in step + coordinates. `acceptOnly: true` where the data has no
   turn-in (the contracts' documented gaps are data, not errors).
-- `rares`: name, zone, level, spawn points, loop flag, signature-drop
-  collects, and the companion step title.
+- `rares` + `treasures`: kind, name (+ which source named it), zone,
+  level, spawn points, loop flag, signature-drop collects, and the
+  companion step title.
+- `npcNames`: the shared NPC-id → name map built from the companions
+  inventory docs (also drives kill-goal names in the app).
 - `recipes`: name, item id, profession (from the companion step title),
   zone, and source — `{type: vendor, npcId, ...}` or `{type: drop, ...}` —
   as the recipes guide states it.
-- `coverage`: honest extraction counts (names by source, rares/recipes
-  parsed, guides matched per kind).
+- `coverage`: honest extraction counts (names by source, rares/treasures
+  parsed, steps without a record, NPC-name map coverage of kill goals,
+  guides matched per kind).

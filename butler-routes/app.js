@@ -35,11 +35,6 @@ var DATA_URL = 'data/pack-data.json';
     return '<span class="br-xy">(' + xy[0] + ', ' + xy[1] + ')</span>';
   }
 
-  function gatesHTML(gates) {
-    if (!gates) return '';
-    return '<span class="tech-tag">' + esc(gates) + '</span>';
-  }
-
   function reportURL(guideName, zoneName, stepTitle) {
     var title = '[butler-routes] ' + guideName + ' — ' + zoneName;
     var body = 'Zone: ' + zoneName + '\n' +
@@ -56,6 +51,7 @@ var DATA_URL = 'data/pack-data.json';
   var PACK = null;
   var zoneById = {};
   var questNameById = {};
+  var npcNameById = {};
   var questIndex = []; // {zone, id, name}
 
   function questName(id) {
@@ -93,91 +89,271 @@ var DATA_URL = 'data/pack-data.json';
     return { npc: m[1], name: m[2].trim().replace(/,$/, ''), x: m[3], y: m[4], extra: m[5].trim() };
   }
 
-  function buyGoal(args) {
-    var m = /^\s*(\d+)\s+"([^"]+)"/.exec(args || '');
-    return m ? { item: m[1], name: m[2] } : null;
-  }
-
-  function collectGoal(args) {
-    var m = /^\s*(\d+)\s*(.*)$/.exec((args || '').trim());
-    if (!m) return null;
-    var nm = /"([^"]+)"/.exec(m[2] || '');
-    return { item: m[1], name: nm ? nm[1] : null, rest: (m[2] || '').trim() };
-  }
+  /* buy/collect lines are parsed inline by goalRowHTML via cleanTail. */
 
   /* ---------- human-form goal rendering ---------- */
 
-  function goalHTML(g, zoneId, questAnchor) {
-    var cmd = g.cmd;
-    var args = g.args || '';
-    if (cmd === 'goto') {
-      var c = /@?(\d{1,3}\.\d+)\s*,\s*(\d{1,3}\.\d+)/.exec(args);
-      if (c) return '<span class="br-go br-goto">Go to <span class="br-xy">(' + c[1] + ', ' + c[2] + ')</span></span>';
-      return '';
-    }
-    if (cmd === 'loop') {
-      return '<span class="br-go br-loop">Patrol loop — checks each point below in turn</span>';
-    }
-    if (cmd === 'accept' || cmd === 'complete' || cmd === 'turnin') {
-      var q = splitQuestGoal(args);
-      var verb = cmd === 'accept' ? 'Accept' : (cmd === 'turnin' ? 'Turn in' : 'Complete');
-      var qid = q.qid;
-      var link = '';
-      if (qid != null && questAnchor) {
-        link = ' <a class="br-qlink" href="#/quest/' + zoneId + '/' + qid + '">quest path &rarr;</a>';
-      }
-      return '<span class="br-go br-' + cmd + '"><strong>' + verb + '</strong> ' +
-        '<span class="br-qname">' + esc(qid != null ? questName(qid) : q.rest) + '</span>' +
-        (qid != null ? ' <span class="br-qid">#' + qid + '</span>' : '') +
-        (q.gates ? ' ' + gatesHTML(q.gates) : '') +
-        (q.rest ? ' <span class="br-rest">' + esc(q.rest) + '</span>' : '') +
-        link + '</span>';
-    }
-    if (cmd === 'kill') {
-      var k = /^\s*(\d+)\s*(.*)$/.exec(args.trim());
-      return '<span class="br-go br-kill">Kill NPC ' + (k ? esc(k[1]) : esc(args)) +
-        (k && k[2] ? ' <span class="br-rest">' + esc(k[2]) + '</span>' : '') + '</span>';
-    }
-    if (cmd === 'collect') {
-      var col = collectGoal(args);
-      if (!col) return '';
-      return '<span class="br-go br-collect">Collect ' +
-        (col.name ? '<span class="br-qname">' + esc(col.name) + '</span> ' : '') +
-        '<span class="br-qid">item ' + esc(col.item) + '</span></span>';
-    }
-    if (cmd === 'buy') {
-      var b = buyGoal(args);
-      if (!b) return '';
-      return '<span class="br-go br-buy">Buy <span class="br-qname">' + esc(b.name) + '</span> ' +
-        '<span class="br-qid">item ' + esc(b.item) + '</span></span>';
-    }
-    if (cmd === 'vendor') {
-      var v = vendorGoal(args);
-      if (!v) return '<span class="br-go">Vendor: ' + esc(args) + '</span>';
-      return '<span class="br-go br-vendor">Vendor <span class="br-qname">' + esc(v.name) + '</span> ' +
-        '<span class="br-qid">npc ' + esc(v.npc) + '</span> ' +
-        '<span class="br-xy">(' + v.x + ', ' + v.y + ')</span>' +
-        (v.extra ? ' <span class="br-rest">' + esc(v.extra) + '</span>' : '') + '</span>';
-    }
-    if (cmd === 'when') {
-      return '<span class="br-go br-when">Requires: ' + esc(args) + '</span>';
-    }
-    if (cmd === 'note' || cmd === 'tip') {
-      return '<span class="br-go br-note">' + esc(args) + '</span>';
-    }
-    return '';
+  /* ---------- structured goal rows ---------- */
+
+  function chipHTML(verb, cls) {
+    return '<span class="br-chip br-chip-' + cls + '">' + esc(verb) + '</span>';
   }
 
-  function stepHTML(step, idx, zoneId, guideLabel) {
-    var goals = [];
-    (step.goals || []).forEach(function (g) {
-      var h = goalHTML(g, zoneId, true);
-      if (h) goals.push('<li>' + h + '</li>');
+  function pillHTML(text) {
+    return '<span class="br-pill">' + esc(text) + '</span>';
+  }
+
+  function ptHTML(xy) {
+    return '<span class="br-pt">(' + xy[0] + ', ' + xy[1] + ')</span>';
+  }
+
+  function questChipHTML(qid, zoneId) {
+    return '<a class="br-qchip" href="#/quest/' + esc(zoneId) + '/' + qid + '">' +
+      esc(questName(qid)) + ' <span class="br-qid">#' + qid + '</span></a>';
+  }
+
+  /* Parse trailing clutter out of goal args: inline coordinates, quest
+     refs, `optional`, `only` gates, `--` separators, map-frame words. */
+  var POS_LIBERAL = /@?(\d{1,3}(?:\.\d+)?)\s*,\s*(\d{1,3}(?:\.\d+)?)/;
+
+  function posIn(text) {
+    var m = POS_LIBERAL.exec(text || '');
+    return m ? [parseFloat(m[1]), parseFloat(m[2])] : null;
+  }
+
+  function cleanTail(args, keepQuestRef) {
+    var text = ' ' + (args || '') + ' ';
+    var coords = [];
+    // `@x,y` first (`@` marks a coordinate; integer parts allowed) …
+    text = text.replace(/@(\d{1,3}(?:\.\d+)?)\s*,\s*(\d{1,3}(?:\.\d+)?)/g,
+      function (m, x, y) {
+        coords.push([parseFloat(x), parseFloat(y)]);
+        return ' ';
+      });
+    // … then bare decimal pairs in prose (`(28.71, 76.89)`).
+    text = text.replace(/(\d{1,3}\.\d+)\s*,\s*(\d{1,3}\.\d+)/g,
+      function (m, x, y) {
+        coords.push([parseFloat(x), parseFloat(y)]);
+        return ' ';
+      });
+    var quests = [];
+    if (!keepQuestRef) {
+      text = text.replace(/\bquest\s+(\d+)(?:\.\d+)?/gi,
+        function (m, q) {
+          quests.push(parseInt(q, 10));
+          return ' ';
+        });
+    }
+    var optional = /\boptional\b/i.test(text);
+    text = text.replace(/\boptional\b\s*/gi, ' ');
+    var gates = [];
+    text = text.replace(/\bonly\s+([A-Za-z,]+)/gi,
+      function (m, g) {
+        gates.push(g);
+        return ' ';
+      });
+    if (coords.length) text = text.replace(/\b(era|live)\b\s*/gi, ' ');
+    text = text.replace(/\(\s*\)/g, ' ');
+    text = text.replace(/\s*--\s*/g, ' ').replace(/\s+/g, ' ').trim();
+    text = text.replace(/^[,;:–—-]+/, '').trim();
+    return { text: text, coords: coords, quests: quests,
+             optional: optional, gates: gates };
+  }
+
+  function tailHTML(t, zoneId) {
+    var h = '';
+    (t.quests || []).forEach(function (qid) {
+      h += ' ' + questChipHTML(qid, zoneId);
     });
+    t.coords.forEach(function (xy) { h += ' ' + ptHTML(xy); });
+    t.gates.forEach(function (g) { h += ' ' + pillHTML('only ' + g); });
+    if (t.optional) h += ' ' + pillHTML('optional');
+    if (t.text) h += ' <span class="br-rest">' + esc(t.text) + '</span>';
+    return h;
+  }
+
+  function npcLabel(npcId) {
+    var name = npcId != null ? npcNameById[npcId] : null;
+    if (name) {
+      return '<span class="br-qname">' + esc(name) + '</span> ' +
+        '<span class="br-qid">npc ' + npcId + '</span>';
+    }
+    return '<span class="br-muted">NPC #' + npcId + '</span>';
+  }
+
+  /* One goal -> one row. `zone` lines are engine plumbing (hidden);
+     standalone `only` lines become head pills (handled by the caller). */
+  function goalRowHTML(cmd, args, zoneId) {
+    var inner = '';
+    if (cmd === 'accept' || cmd === 'complete' || cmd === 'turnin') {
+      var q = splitQuestGoal(args);
+      var t = cleanTail(q.rest, true);
+      var verb = cmd === 'accept' ? 'Accept' : (cmd === 'turnin' ? 'Turn in' : 'Complete');
+      var cls = cmd === 'accept' ? 'accept' : (cmd === 'turnin' ? 'turnin' : 'act');
+      inner = chipHTML(verb, cls) + ' ';
+      if (q.qid != null) {
+        inner += questChipHTML(q.qid, zoneId);
+        if (q.gates) inner += ' ' + pillHTML('only ' + q.gates);
+        inner += tailHTML(t, zoneId);
+      } else {
+        inner += tailHTML({ text: q.rest, coords: [], quests: [],
+                            optional: false, gates: [] }, zoneId);
+      }
+    } else if (cmd === 'kill') {
+      var k = /^\s*(\d+)\s*(.*)$/.exec((args || '').trim());
+      var t2 = cleanTail(k ? k[2] : args, false);
+      inner = chipHTML('Kill', 'act') + ' ' +
+        npcLabel(k ? parseInt(k[1], 10) : null) + tailHTML(t2, zoneId);
+    } else if (cmd === 'collect') {
+      var cm = /^\s*(\d+)\s*(.*)$/.exec((args || '').trim());
+      var nm = /"([^"]+)"/.exec((cm && cm[2]) || '');
+      var cnt = null;
+      var rest = (cm && cm[2]) || '';
+      var xm = /\bx(\d+)\b/.exec(rest);
+      if (xm) { cnt = xm[1]; rest = rest.replace(xm[0], ' '); }
+      var t3 = cleanTail(rest, false);
+      inner = chipHTML('Collect', 'act') + ' ' +
+        (nm ? '<span class="br-qname">' + esc(nm[1]) + '</span> ' : '') +
+        '<span class="br-qid">item ' + (cm ? esc(cm[1]) : '?') + '</span>' +
+        (cnt ? ' <span class="br-qid">×' + esc(cnt) + '</span>' : '') +
+        tailHTML(t3, zoneId);
+    } else if (cmd === 'interact') {
+      var im = /^\s*(\d+)\s*(.*)$/.exec((args || '').trim());
+      var t4 = cleanTail(im ? im[2] : args, false);
+      inner = chipHTML('Interact', 'act') + ' ' +
+        '<span class="br-qid">object ' + (im ? esc(im[1]) : '?') + '</span>' +
+        tailHTML(t4, zoneId);
+    } else if (cmd === 'use') {
+      var um = /^\s*(\d+)\s*(.*)$/.exec((args || '').trim());
+      var t5 = cleanTail(um ? um[2] : args, false);
+      inner = chipHTML('Use', 'act') + ' ' +
+        '<span class="br-qid">item ' + (um ? esc(um[1]) : '?') + '</span>' +
+        tailHTML(t5, zoneId);
+    } else if (cmd === 'task') {
+      var tm = /"([^"]+)"/.exec(args || '');
+      var t6 = cleanTail((args || '').replace(/"[^"]*"/, ' '), false);
+      inner = chipHTML('Task', 'act') + ' ' +
+        (tm ? '<span class="br-tasktext">' + esc(tm[1]) + '</span>' : '') +
+        tailHTML(t6, zoneId);
+    } else if (cmd === 'train') {
+      var t7 = cleanTail(args, false);
+      inner = chipHTML('Train', 'meta') + ' ' +
+        (t7.text ? '<span class="br-qname">' + esc(t7.text) + '</span>' : '') +
+        (t7.optional ? ' ' + pillHTML('optional') : '');
+    } else if (cmd === 'buy') {
+      var bm = /^\s*(\d+)\s+"([^"]+)"/.exec((args || '').trim());
+      var t8 = cleanTail(bm ? (args || '').replace(bm[0], ' ') : args, false);
+      inner = chipHTML('Buy', 'act') + ' ' +
+        (bm ? '<span class="br-qname">' + esc(bm[2]) + '</span> ' +
+          '<span class="br-qid">item ' + esc(bm[1]) + '</span>' : esc(args)) +
+        tailHTML(t8, zoneId);
+    } else if (cmd === 'vendor') {
+      var v = vendorGoal(args || '');
+      if (!v) {
+        var t9 = cleanTail(args, false);
+        inner = chipHTML('Vendor', 'act') + tailHTML(t9, zoneId);
+      } else {
+        var t10 = cleanTail(v.extra, false);
+        inner = chipHTML('Vendor', 'act') + ' ' +
+          '<span class="br-qname">' + esc(v.name) + '</span> ' +
+          '<span class="br-qid">npc ' + esc(v.npc) + '</span> ' + ptHTML([v.x, v.y]) +
+          tailHTML(t10, zoneId);
+      }
+    } else if (cmd === 'when') {
+      var t11 = cleanTail(args, false);
+      inner = chipHTML('Requires', 'meta') + tailHTML(t11, zoneId);
+    } else if (cmd === 'level') {
+      var lm = /(\d+)/.exec(args || '');
+      inner = chipHTML('Requires', 'meta') +
+        (lm ? ' <span class="br-qname">level ' + esc(lm[1]) + '</span>' : ' ' + esc(args));
+    } else {
+      inner = '<span class="br-muted">' + esc(cmd) + ' ' + esc(args) + '</span>';
+    }
+    return '<li class="br-row" data-cmd="' + esc(cmd) + '"><span class="br-go">' + inner + '</span></li>';
+  }
+
+  function moveRowHTML(points) {
+    return '<li class="br-row br-move" data-cmd="goto"><span class="br-go">' +
+      chipHTML('Move', 'meta') + ' ' +
+      points.map(ptHTML).join(' ') + '</span></li>';
+  }
+
+  function patrolRowHTML(points) {
+    return '<li class="br-row br-patrol" data-cmd="loop"><span class="br-go">' +
+      chipHTML('Patrol loop', 'meta') +
+      (points.length ? ' ' + points.map(ptHTML).join(' ') :
+        ' <span class="br-rest">no placed points</span>') + '</span></li>';
+  }
+
+  function noteCalloutHTML(args, kind) {
+    return '<li class="br-row br-callout br-callout-' + kind + '" data-cmd="' + kind + '">' +
+      '<span class="br-go">' + esc(args) + '</span></li>';
+  }
+
+  function stepHTML(step, idx, zoneId, ctx) {
+    ctx = ctx || {};
+    var headGates = [];
+    var visible = [];
+    (step.goals || []).forEach(function (g) {
+      if (g.cmd === 'zone') return;
+      if (g.cmd === 'only') {
+        var om = /only\s+([A-Za-z,]+)/.exec(g.args || '');
+        headGates.push(om ? om[1] : (g.args || '').trim());
+        return;
+      }
+      visible.push(g);
+    });
+    var lead = null;
+    if (visible.length && visible[0].cmd === 'note') {
+      lead = visible.shift().args;
+    }
+    var hasLoop = visible.some(function (g) { return g.cmd === 'loop'; });
+    var rows = [];
+    var moveBuf = [];
+    function flushMove() {
+      if (moveBuf.length && !hasLoop) rows.push(moveRowHTML(moveBuf));
+      moveBuf = [];
+    }
+    visible.forEach(function (g) {
+      if (g.cmd === 'goto') {
+        var c = posIn(g.args);
+        if (c) moveBuf.push(c);
+        return;
+      }
+      if (g.cmd === 'loop') {
+        flushMove();
+        return;
+      }
+      flushMove();
+      if (g.cmd === 'note') rows.push(noteCalloutHTML(g.args, 'note'));
+      else if (g.cmd === 'tip') rows.push(noteCalloutHTML(g.args, 'tip'));
+      else rows.push(goalRowHTML(g.cmd, g.args, zoneId));
+    });
+    flushMove();
+    if (hasLoop) {
+      var pts = [];
+      (step.goals || []).forEach(function (g) {
+        if (g.cmd !== 'goto') return;
+        var pc = posIn(g.args);
+        if (pc) pts.push(pc);
+      });
+      rows.push(patrolRowHTML(pts));
+    }
+    var gates = headGates.length ?
+    '<span class="br-headgates">' + headGates.map(function (g) { return pillHTML('only ' + g); }).join(' ') + '</span>' : '';
+    var perma = '#/zone/' + esc(zoneId) + '/step/' + idx;
+    var report = '';
+    if (ctx.guide && ctx.zone) {
+      report = ' <a class="br-stepreport" target="_blank" rel="noopener" href="' +
+        reportURL(ctx.guide, ctx.zone, step.title) + '">Report this step &#x2197;</a>';
+    }
     return '<article class="br-step" id="br-step-' + idx + '">' +
       '<div class="br-step-head"><span class="br-step-num">' + (idx + 1) + '</span>' +
-      '<h4 class="br-step-title">' + esc(step.title) + '</h4></div>' +
-      (goals.length ? '<ul class="br-goals">' + goals.join('') + '</ul>' : '') +
+      '<h4 class="br-step-title">' + esc(step.title) + '</h4>' +
+      (gates ? ' ' + gates : '') +
+      ' <a class="br-perma" href="' + perma + '" title="Permalink to this step">#</a>' + report + '</div>' +
+      (lead != null ? '<p class="br-lead">' + esc(lead) + '</p>' : '') +
+      (rows.length ? '<ul class="br-goals">' + rows.join('') + '</ul>' : '') +
       '</article>';
   }
 
@@ -315,9 +491,10 @@ var DATA_URL = 'data/pack-data.json';
     var drops = (r.signatureDrops || []).map(function (d) {
       return '<span class="br-drop">' + esc(d.name || ('item ' + d.itemId)) + '</span>';
     }).join(', ');
+    var kindLabel = r.kind === 'treasure' ? 'treasure' : 'rare';
     return '<div class="card br-small"><h4 class="card__title">' + esc(r.name || ('NPC ' + r.npcId)) + '</h4>' +
       '<p class="card__desc">' +
-      (r.level ? 'Level ' + r.level + ' rare · ' : '') +
+      (r.level ? 'Level ' + r.level + ' ' + kindLabel + ' · ' : kindLabel + ' · ') +
       (r.loop ? 'patrol loop · ' : '') +
       (pts || 'no placed point') + '</p>' +
       (drops ? '<p class="card__desc">Signature drop: ' + drops + '</p>' : '') +
@@ -350,11 +527,15 @@ var DATA_URL = 'data/pack-data.json';
     var z = zoneById[zoneId];
     if (!z) return '<section><h2>Unknown zone</h2><p>No contract with id “' + esc(zoneId) + '”.</p></section>';
     var guideName = z.name + ' - Completionist';
-    var coreSteps = (z.steps || []).map(function (s, i) { return stepHTML(s, i, zoneId); }).join('');
+    var coreCtx = { guide: guideName, zone: z.name };
+    var compCtx = { guide: z.name + ' - Rares & Treasures', zone: z.name };
+    var recCtx = { guide: z.name + ' - Recipes & Patterns', zone: z.name };
+    var coreSteps = (z.steps || []).map(function (s, i) { return stepHTML(s, i, zoneId, coreCtx); }).join('');
     var rares = PACK.rares.filter(function (r) { return r.zone === zoneId; });
+    var treasures = (PACK.treasures || []).filter(function (r) { return r.zone === zoneId; });
     var recipes = PACK.recipes.filter(function (r) { return r.zone === zoneId; });
-    var raresComp = ((z.companionSteps || {}).rares || []).map(function (s, i) { return stepHTML(s, i, zoneId); }).join('');
-    var recipesComp = ((z.companionSteps || {}).recipes || []).map(function (s, i) { return stepHTML(s, i, zoneId); }).join('');
+    var raresComp = ((z.companionSteps || {}).rares || []).map(function (s, i) { return stepHTML(s, i, zoneId, compCtx); }).join('');
+    var recipesComp = ((z.companionSteps || {}).recipes || []).map(function (s, i) { return stepHTML(s, i, zoneId, recCtx); }).join('');
 
     var html = '<p class="br-crumb"><a href="#/zones">&larr; Zone directory</a></p>' +
       '<section class="card br-hero br-zonehead">' +
@@ -371,13 +552,19 @@ var DATA_URL = 'data/pack-data.json';
       '<p class="section-desc">The pack\u2019s own order, exactly as Polestar walks it. Never re-sorted.</p></div>' +
       '<div class="br-path">' + coreSteps + '</div></section>';
 
-    if (rares.length || raresComp) {
+    if (rares.length) {
       html += '<section><div class="section-header"><p class="section-label">Companion</p>' +
-        '<h2 class="section-title">Rares &amp; Treasures (' + rares.length + ')</h2></div>' +
-        '<div class="grid-3">' + rares.map(rareCardHTML).join('') + '</div>' +
-        (raresComp ? '<details class="br-details"><summary>Full companion steps (' +
-          ((z.companionSteps.rares || []).length) + ')</summary><div class="br-path">' + raresComp + '</div></details>' : '') +
-        '</section>';
+        '<h2 class="section-title">Rares (' + rares.length + ')</h2></div>' +
+        '<div class="grid-3">' + rares.map(rareCardHTML).join('') + '</div></section>';
+    }
+    if (treasures.length) {
+      html += '<section><div class="section-header"><p class="section-label">Companion</p>' +
+        '<h2 class="section-title">Treasures (' + treasures.length + ')</h2></div>' +
+        '<div class="grid-3">' + treasures.map(rareCardHTML).join('') + '</div></section>';
+    }
+    if (raresComp) {
+      html += '<section><details class="br-details"><summary>Rares &amp; Treasures companion steps (' +
+        ((z.companionSteps.rares || []).length) + ')</summary><div class="br-path">' + raresComp + '</div></details></section>';
     }
     if (recipes.length || recipesComp) {
       html += '<section><div class="section-header"><p class="section-label">Companion</p>' +
@@ -427,9 +614,16 @@ var DATA_URL = 'data/pack-data.json';
         (q.accept.rest ? '<br><span class="br-rest">' + esc(q.accept.rest) + '</span>' : '') + '</li>';
     }
     (q.objectives || []).forEach(function (o) {
+      var detail = '';
+      if (o.kind === 'kill') {
+        var km = /^\s*(\d+)/.exec(o.rest || '');
+        var t = cleanTail(km ? o.rest.replace(km[0], ' ') : o.rest, false);
+        detail = '<br>' + npcLabel(km ? parseInt(km[1], 10) : null) + tailHTML(t, zoneId);
+      } else if (o.rest) {
+        detail = '<br><span class="br-rest">' + esc(o.rest) + '</span>';
+      }
       html += '<li class="br-tl"><span class="br-tl-kind">' + esc(o.kind) + '</span>' +
-        journeyStepLink(zoneId, steps, o.step) + ' ' + xyHTML(o.xy) +
-        (o.rest ? '<br><span class="br-rest">' + esc(o.rest) + '</span>' : '') + '</li>';
+        journeyStepLink(zoneId, steps, o.step) + ' ' + xyHTML(o.xy) + detail + '</li>';
     });
     if (q.turnin) {
       html += '<li class="br-tl"><span class="br-tl-kind">Turn in</span>' +
@@ -450,7 +644,7 @@ var DATA_URL = 'data/pack-data.json';
 
   function searchAll(query) {
     var q = query.trim().toLowerCase();
-    var out = { quests: [], rares: [], recipes: [], zones: [] };
+    var out = { quests: [], rares: [], treasures: [], recipes: [], zones: [] };
     if (!q) return out;
     var isNum = /^\d+$/.test(q);
     PACK.zones.forEach(function (z) {
@@ -466,6 +660,12 @@ var DATA_URL = 'data/pack-data.json';
       var name = (r.name || '') + ' ' + (r.npcId || '');
       if (name.toLowerCase().indexOf(q) !== -1 || (isNum && r.npcId === parseInt(q, 10))) {
         if (out.rares.length < 40) out.rares.push(r);
+      }
+    });
+    (PACK.treasures || []).forEach(function (r) {
+      var name = (r.name || '') + ' ' + (r.step || '');
+      if (name.toLowerCase().indexOf(q) !== -1) {
+        if (out.treasures.length < 40) out.treasures.push(r);
       }
     });
     PACK.recipes.forEach(function (r) {
@@ -515,10 +715,10 @@ var DATA_URL = 'data/pack-data.json';
 
   function renderSearch(query) {
     var res = searchAll(query || '');
-    var total = res.quests.length + res.rares.length + res.recipes.length + res.zones.length;
+    var total = res.quests.length + res.rares.length + res.treasures.length + res.recipes.length + res.zones.length;
     var html = '<section><div class="section-header"><p class="section-label">Search</p>' +
       '<h2 class="section-title">Results' + (query ? ' for “' + esc(query) + '”' : '') + '</h2>' +
-      '<p class="section-desc">' + (query ? total + ' matches across quests, rares, recipes, and zones.' : 'Type above to search every quest, rare, recipe, and zone in the pack.') + '</p></div>';
+      '<p class="section-desc">' + (query ? total + ' matches across quests, rares, treasures, recipes, and zones.' : 'Type above to search every quest, rare, treasure, recipe, and zone in the pack.') + '</p></div>';
     function group(title, items, fn) {
       if (!items.length) return '';
       return '<h3 class="br-group">' + title + ' (' + items.length + ')</h3>' +
@@ -526,6 +726,7 @@ var DATA_URL = 'data/pack-data.json';
     }
     html += group('Quests', res.quests, questResultHTML) +
       group('Rares', res.rares, rareResultHTML) +
+      group('Treasures', res.treasures, rareResultHTML) +
       group('Recipes', res.recipes, recipeResultHTML) +
       group('Zones', res.zones, zoneCardHTML);
     if (query && !total) html += '<p>No matches. Try a quest name, an NPC or item id, or a zone.</p>';
@@ -638,6 +839,9 @@ var DATA_URL = 'data/pack-data.json';
         if (quest.name && questNameById[quest.id] == null) {
           questNameById[quest.id] = quest.name;
         }
+      });
+      Object.keys(PACK.npcNames || {}).forEach(function (k) {
+        npcNameById[parseInt(k, 10)] = PACK.npcNames[k];
       });
       window.addEventListener('hashchange', route);
       route();

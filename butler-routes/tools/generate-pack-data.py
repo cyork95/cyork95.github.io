@@ -2,9 +2,12 @@
 """Generate butler-routes/data/pack-data.json from the pack repo.
 
 Reads ONLY the pack repo's own files (pack.json, docs/quest-contracts.json,
-docs/*-census.md, docs/guide-status.md, *.guide). Never hand-types quest
-names, levels, or coordinates: where a field cannot be extracted the record
-ships without it.
+docs/*-census.md, docs/*-companions-inventory.md, docs/guide-status.md,
+*.guide). Never hand-types quest, rare, or NPC names, levels, or
+coordinates: where a field cannot be extracted the record ships without it.
+Rares-guide steps each yield exactly one record, kind 'rare' (kill line
+present) or 'treasure'; rare names resolve against the inventory docs by
+NPC id, then the step-title tail, then the full title.
 
 How to re-run (regenerating the site's data after a pack release is exactly):
     python tools/generate-pack-data.py
@@ -111,11 +114,15 @@ def parse_guide_file(path):
 
 
 COORD_RE = re.compile(r"@?(\d{1,3}\.\d+)\s*,\s*(\d{1,3}\.\d+)")
+POS_RE = re.compile(r"@?(\d{1,3}(?:\.\d+)?)\s*,\s*"
+                    r"(\d{1,3}(?:\.\d+)?)")
+POS_IN_PARENS_RE = re.compile(r"\(\s*(\d{1,3}(?:\.\d+)?)\s*,\s*"
+                              r"(\d{1,3}(?:\.\d+)?)\s*\)")
 QUEST_REF_RE = re.compile(r"quest\s+(\d+)(?:\.\d+)?")
 QID_LEAD_RE = re.compile(r"^(\d+)\b\s*(.*)$")
 GATES_RE = re.compile(r"^only\s+([A-Za-z,]+)\s*(.*)$")
-VENDOR_RE = re.compile(r"^(\d+)\s*--\s*(.*?)\(\s*(\d{1,3}\.\d+)\s*,\s*"
-                       r"(\d{1,3}\.\d+)\s*\)\s*(.*)$")
+VENDOR_RE = re.compile(r"^(\d+)\s*--\s*(.*?)\(\s*(\d{1,3}(?:\.\d+)?)\s*,\s*"
+                       r"(\d{1,3}(?:\.\d+)?)\s*\)\s*(.*)$")
 BUY_RE = re.compile(r"^(\d+)\s+\"([^\"]+)\"")
 COLLECT_RE = re.compile(r"^(\d+)\s*(.*)$")
 BULLET_RE = re.compile(r"^-\s+(\d+)\s+(.+?)\s+\(lvl(\d+)/min(\d+)\)")
@@ -123,6 +130,23 @@ BULLET_RE = re.compile(r"^-\s+(\d+)\s+(.+?)\s+\(lvl(\d+)/min(\d+)\)")
 
 def coords_in(text):
     m = COORD_RE.search(text or "")
+    if m:
+        return [float(m.group(1)), float(m.group(2))]
+    return None
+
+
+def pos_in(text):
+    """Liberal position parse for `goto` lines (integer parts allowed)."""
+    m = POS_RE.search(text or "")
+    if m:
+        return [float(m.group(1)), float(m.group(2))]
+    return None
+
+
+def apos_in(text):
+    """Liberal `@x,y` parse for inline args (`@` marks a coordinate)."""
+    m = re.search(r"@(\d{1,3}(?:\.\d+)?)\s*,\s*"
+                  r"(\d{1,3}(?:\.\d+)?)", text or "")
     if m:
         return [float(m.group(1)), float(m.group(2))]
     return None
@@ -197,7 +221,7 @@ def build_quest_journeys(core):
         for g in step["goals"]:
             cmd, args = g["cmd"], g["args"]
             if cmd == "goto":
-                c = coords_in(args)
+                c = pos_in(args)
                 if c:
                     last_xy = c
                 continue
@@ -208,7 +232,7 @@ def build_quest_journeys(core):
                 j = journeys.setdefault(
                     qid, {"accept": None, "objectives": [],
                           "turnin": None, "gates": []})
-                xy = coords_in(args) or last_xy
+                xy = coords_in(args) or apos_in(args) or last_xy
                 if gates and gates not in j["gates"]:
                     j["gates"].append(gates)
                 if cmd == "accept":
@@ -228,7 +252,8 @@ def build_quest_journeys(core):
                     j = journeys.setdefault(
                         qid, {"accept": None, "objectives": [],
                               "turnin": None, "gates": []})
-                    xy = coords_in(args) or last_xy
+                    xy = (coords_in(args) or apos_in(args)
+                          or last_xy)
                     j["objectives"].append(
                         {"step": step["title"], "xy": xy, "kind": cmd,
                          "rest": args.strip(), "gates": None})
@@ -291,11 +316,94 @@ def parse_census_names(docs_dir, contract_id):
     return found, fname
 
 
-def parse_rares(rares_guide, zone_id):
-    """Rare records from a rares companion guide."""
+TITLE_SPLIT_RES = [re.compile(r"\s+-\s+"), re.compile(r"\s+—\s+"),
+                   re.compile(r"\s+–\s+")]
+
+
+def split_title_tail(title):
+    """Segment after the LAST dash of any kind ('<place> - <Name>')."""
+    best = None
+    for rx in TITLE_SPLIT_RES:
+        parts = rx.split(title.strip())
+        if len(parts) > 1:
+            best = parts[-1].strip()
+    return best
+
+
+def parse_inventory_npc_names(docs_dir):
+    """Shared npcId -> name map from the companions inventory docs.
+
+    Handles the pack's three line shapes:
+      pipe   `- <Name> | npc<id> | ...`            (rare rows)
+      buy    `... buy from <Vendor>, npc<id> ...`  (vendor rows)
+      paren  `- <Name> (<id>, lvl ...)`            (rare rows)
+      dash   `- <Name> <id>, lvl ...`              (rare rows)
+    First mention wins; conflicts are counted, never overwritten.
+    """
+    npc_names = {}
+    stats = {"pipe": 0, "buy": 0, "paren": 0, "dash": 0, "conflicts": 0}
+    if not os.path.isdir(docs_dir):
+        return npc_names, stats
+    for fn in sorted(os.listdir(docs_dir)):
+        if not fn.endswith("-inventory.md"):
+            continue
+        with open(os.path.join(docs_dir, fn), encoding="utf-8",
+                  errors="replace") as fh:
+            for raw in fh:
+                line = raw.strip()
+                pairs = []
+                m = re.match(r"^-\s*([^|]+?)\s*\|\s*npc(\d+)\b", line)
+                if m:
+                    pairs.append((int(m.group(2)), m.group(1).strip(),
+                                  "pipe"))
+                for m in re.finditer(r"buy from ([^,]+?),\s*npc(\d+)\b",
+                                     line):
+                    pairs.append((int(m.group(2)), m.group(1).strip(),
+                                  "buy"))
+                m = re.match(r"^-\s*(.+?)\s*\(\s*(\d{3,6})\s*,\s*lvl\b",
+                             line)
+                if m:
+                    pairs.append((int(m.group(2)), m.group(1).strip(),
+                                  "paren"))
+                m = re.match(r"^-\s*([^()]+?)\s+(\d{3,6})\s*,\s*lvl\b",
+                             line)
+                if m:
+                    pairs.append((int(m.group(2)), m.group(1).strip(),
+                                  "dash"))
+                for nid, name, src in pairs:
+                    if not name:
+                        continue
+                    if nid not in npc_names:
+                        npc_names[nid] = name
+                        stats[src] += 1
+                    elif npc_names[nid] != name:
+                        stats["conflicts"] += 1
+    return npc_names, stats
+
+
+def resolve_step_name(step_title, npc_id, npc_names):
+    """(name, source): inventory hit, title tail, or full title."""
+    if npc_id is not None and npc_id in npc_names:
+        return npc_names[npc_id], "inventory"
+    tail = split_title_tail(step_title)
+    if tail:
+        return tail, "title"
+    return step_title.strip() or None, "full"
+
+
+def parse_rares(rares_guide, zone_id, npc_names):
+    """One record per rares-guide step: kind 'rare' (npcId) or 'treasure'.
+
+    Returns (rares, treasures, name_sources, skipped) where skipped lists
+    steps that yielded no record, with reasons (expected to be empty:
+    every step carries at least its title).
+    """
     rares = []
+    treasures = []
+    name_sources = {"inventory": 0, "title": 0, "full": 0}
+    skipped = []
     if rares_guide is None:
-        return rares
+        return rares, treasures, name_sources, skipped
     for step in rares_guide["steps"]:
         npc_id = None
         points = []
@@ -307,7 +415,7 @@ def parse_rares(rares_guide, zone_id):
             if cmd == "loop":
                 loop = True
             elif cmd == "goto":
-                c = coords_in(args)
+                c = pos_in(args)
                 if c:
                     points.append(c)
             elif cmd == "kill":
@@ -325,14 +433,19 @@ def parse_rares(rares_guide, zone_id):
                 m = re.search(r"[Ll]evel\s+(\d+)\s+rare", args)
                 if m and level is None:
                     level = int(m.group(1))
-        if npc_id is None and not drops and not points:
+        name, source = resolve_step_name(step["title"], npc_id, npc_names)
+        if name is None:
+            skipped.append({"step": step["title"], "zone": zone_id,
+                            "reason": "empty title and no npc id"})
             continue
-        name = re.split(r"\s+[—–-]\s+", step["title"], maxsplit=1)[0].strip()
-        rares.append({"name": name or None, "npcId": npc_id,
-                      "zone": zone_id, "level": level, "points": points,
-                      "loop": loop, "signatureDrops": drops,
-                      "step": step["title"]})
-    return rares
+        name_sources[source] += 1
+        rec = {"kind": "rare" if npc_id is not None else "treasure",
+               "name": name, "nameSource": source, "npcId": npc_id,
+               "zone": zone_id, "level": level, "points": points,
+               "loop": loop, "signatureDrops": drops,
+               "step": step["title"]}
+        (rares if npc_id is not None else treasures).append(rec)
+    return rares, treasures, name_sources, skipped
 
 
 def parse_recipes(recipes_guide, zone_id):
@@ -479,13 +592,19 @@ def main():
 
     status = parse_guide_status(docs_dir, contracts)
 
+    npc_names, npc_name_stats = parse_inventory_npc_names(docs_dir)
+
     zones = []
     quests = []
     all_rares = []
+    all_treasures = []
     all_recipes = []
     names_from_census = 0
     names_from_contracts = 0
     names_from_guide = 0
+    step_name_sources = {"inventory": 0, "title": 0, "full": 0}
+    skipped_steps = []
+    rares_guide_steps = 0
     for c in contracts:
         cid = c["id"]
         gz = extract_zone_guides(pack_dir, cid)
@@ -551,8 +670,30 @@ def main():
                 "acceptOnly": j["accept"] is not None and
                 j["turnin"] is None,
             })
-        all_rares.extend(parse_rares(gz["rares"], cid))
+        rr, tt, nsrc, skip = parse_rares(gz["rares"], cid, npc_names)
+        all_rares.extend(rr)
+        all_treasures.extend(tt)
+        for k in step_name_sources:
+            step_name_sources[k] += nsrc[k]
+        skipped_steps.extend(skip)
+        if gz["rares"]:
+            rares_guide_steps += len(gz["rares"]["steps"])
         all_recipes.extend(parse_recipes(gz["recipes"], cid))
+
+    kill_ids = set()
+    kill_goals = 0
+    for z in zones:
+        step_lists = [z["steps"], z["companionSteps"].get("rares", []),
+                      z["companionSteps"].get("recipes", [])]
+        for steps in step_lists:
+            for s in steps:
+                for g in s["goals"]:
+                    if g["cmd"] != "kill":
+                        continue
+                    m = re.match(r"(\d+)", g["args"].strip())
+                    if m:
+                        kill_ids.add(int(m.group(1)))
+                        kill_goals += 1
 
     contracted_ids = {q["id"] for c in contracts for q in c["quests"]}
     data = {
@@ -572,6 +713,8 @@ def main():
         "zones": zones,
         "quests": quests,
         "rares": all_rares,
+        "treasures": all_treasures,
+        "npcNames": {str(k): v for k, v in npc_names.items()},
         "recipes": all_recipes,
         "coverage": {
             "contractedQuests": len(contracted_ids),
@@ -581,6 +724,17 @@ def main():
             "questNamesMissing": len(
                 {q["id"] for q in quests if not q["name"]}),
             "raresParsed": len(all_rares),
+            "treasuresParsed": len(all_treasures),
+            "stepNamesFromInventory": step_name_sources["inventory"],
+            "stepNamesFromTitle": step_name_sources["title"],
+            "stepNamesFromFull": step_name_sources["full"],
+            "raresGuideSteps": rares_guide_steps,
+            "stepsWithoutRecord": skipped_steps,
+            "npcNameMapSize": len(npc_names),
+            "npcNameMapStats": npc_name_stats,
+            "killGoals": kill_goals,
+            "killNpcDistinct": len(kill_ids),
+            "killNpcNamed": sum(1 for k in kill_ids if k in npc_names),
             "recipesParsed": len(all_recipes),
             "raresWithSignatureDrop": sum(
                 1 for r in all_rares if r["signatureDrops"]),
