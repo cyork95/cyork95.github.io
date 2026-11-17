@@ -9,9 +9,10 @@ Rares-guide steps each yield exactly one record, kind 'rare' (kill line
 present) or 'treasure'; rare names resolve against the inventory docs by
 NPC id, then the step-title tail, then the full title.
 
-How to re-run (regenerating the site's data after a pack release is exactly):
+How to re-run (regenerating the site's data AND docs after a pack release is
+exactly one command):
     python tools/generate-pack-data.py
-    # then commit butler-routes/data/pack-data.json
+    # then commit butler-routes/data/pack-data.json and butler-routes/docs/
 
 Options:
     --pack-url URL   pack repo to clone (default: the public pack repo)
@@ -554,6 +555,386 @@ def parse_guide_status(docs_dir, contracts):
     return status
 
 
+DOCS_EXCLUDED = {"guide-status.md", "ZEPHRAS-5-CHECK.md",
+                   "AUTHORING-NOTES-elwynn.md"}
+GITHUB_BLOB = ("https://github.com/cyork95/butler-routes-completionist"
+               "/blob/master/")
+SITE_DOCS_BASE = "/butler-routes/docs/"
+
+EXTRA_ZONE_STEMS = {"zephras": "zephras-isle", "barrens": "the-barrens",
+                    "silverpine": "silverpine-forest-alliance"}
+
+
+def md_escape(text):
+    return (text.replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;"))
+
+
+def md_inline(text, slug_set):
+    """Inline markdown: code, bold, italic, links, bare doc/guide refs."""
+    parts = []
+    out = []
+    idx = 0
+    for m in re.finditer(r"(`+)(.+?)\1", text):
+        out.append(text[idx:m.start()])
+        code = md_escape(m.group(2))
+        code = linkify_bare_refs(code, slug_set)
+        out.append("\x00" + str(len(parts)) + "\x00")
+        parts.append("<code>" + code + "</code>")
+        idx = m.end()
+    out.append(text[idx:])
+    text = "".join(out)
+
+    def restore(s):
+        def sub(m):
+            return parts[int(m.group(1))]
+        return re.sub("\x00(\\d+)\x00", sub, s)
+
+    text = md_escape(text)
+    # placeholders survive escaping (\x00 stays); code content is escaped
+    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+    text = re.sub(r"\*([^*\n]+)\*", r"<em>\1</em>", text)
+    text = re.sub(r"\\([*_`\[\]#.!-])", r"\1", text)
+    text = md_linkify(text, slug_set)
+    text = restore(text)
+    return text
+
+
+def md_linkify(text, slug_set):
+    """[text](url) links, autolinked URLs, and bare doc/guide references."""
+    def repl_link(m):
+        label, url = m.group(1), m.group(2).strip()
+        if url.startswith("#"):
+            return '<a href="' + url + '">' + label + "</a>"
+        if re.match(r"https?://", url):
+            return ('<a href="' + url + '" target="_blank" rel="noopener">'
+                    + label + "</a>")
+        if url.endswith(".md"):
+            stem = url.split("/")[-1][:-3].lower()
+            if stem in slug_set:
+                return ('<a href="' + SITE_DOCS_BASE + stem + '/">' + label
+                        + "</a>")
+            return ('<a href="' + GITHUB_BLOB + "docs/" + stem + '.md'
+                    + '" target="_blank" rel="noopener">' + label + "</a>")
+        return '<a href="' + url + '">' + label + "</a>"
+
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl_link, text)
+    text = re.sub(r"(https?://[^\s<>\)\]]+)",
+                  r'<a href="\1" target="_blank" rel="noopener">\1</a>',
+                  text)
+    return linkify_bare_refs(text, slug_set)
+
+
+def linkify_bare_refs(text, slug_set):
+    def repl_docs(m):
+        fname = m.group(1)
+        stem = fname[:-3].lower()
+        if stem in slug_set:
+            return ('<a href="' + SITE_DOCS_BASE + stem + '/">docs/'
+                    + fname + "</a>")
+        return ('<a href="' + GITHUB_BLOB + "docs/" + fname
+                + '" target="_blank" rel="noopener">docs/' + fname + "</a>")
+
+    text = re.sub(r"docs/([\w.,-]+\.md)", repl_docs, text)
+
+    def repl_guide(m):
+        return ('<a href="' + GITHUB_BLOB + m.group(1)
+                + '" target="_blank" rel="noopener">' + m.group(1) + "</a>")
+
+    text = re.sub(r"\b([\w.,-]+\.guide)\b", repl_guide, text)
+    return text
+
+
+def md_render_blocks(lines, slug_set):
+    """Compact block renderer. Returns (html, fallback_count).
+
+    Handles: fenced code, ATX headings, hr, blockquotes, tables,
+    ordered/unordered (nested) lists with lazy continuation, paragraphs.
+    Anything else (raw HTML lines, footnotes) renders escaped in <pre>
+    so content never drops.
+    """
+    html = []
+    fallbacks = 0
+    i = 0
+    n = len(lines)
+
+    def is_hr(s):
+        return re.match(r"^\s*([-*_]\s*){3,}$", s) is not None
+
+    def is_table_delim(s):
+        cells = [c.strip() for c in s.strip().strip("|").split("|")]
+        return (len(cells) > 0 and
+                all(re.match(r"^:?-+:?$", c) for c in cells))
+
+    def is_list_item(s):
+        return re.match(r"^(\s*)([-+*]|\d+[.)])(?:\s+\S|\s*$)", s)
+
+    while i < n:
+        line = lines[i].rstrip("\n")
+        s = line.strip()
+        if not s:
+            i += 1
+            continue
+        if s.startswith("```"):
+            buf = []
+            i += 1
+            while i < n and not lines[i].strip().startswith("```"):
+                buf.append(lines[i].rstrip("\n"))
+                i += 1
+            i += 1
+            html.append("<pre><code>" + md_escape("\n".join(buf))
+                        + "</code></pre>")
+            continue
+        m = re.match(r"^(#{1,6})\s+(.*)$", s)
+        if m:
+            html.append("<h" + str(len(m.group(1))) + ">"
+                        + md_inline(m.group(2).strip(), slug_set)
+                        + "</h" + str(len(m.group(1))) + ">")
+            i += 1
+            continue
+        if is_hr(s):
+            html.append("<hr>")
+            i += 1
+            continue
+        if s.startswith(">"):
+            buf = []
+            while i < n and lines[i].strip().startswith(">"):
+                buf.append(lines[i].strip()[1:].lstrip())
+                i += 1
+            html.append("<blockquote><p>"
+                        + "<br>".join(md_inline(b, slug_set) for b in buf)
+                        + "</p></blockquote>")
+            continue
+        if "|" in s and i + 1 < n and is_table_delim(lines[i + 1]):
+            header = [c.strip() for c in s.strip().strip("|").split("|")]
+            aligns = []
+            for c in [c.strip() for c in lines[i + 1].strip()
+                      .strip("|").split("|")]:
+                if c.startswith(":") and c.endswith(":"):
+                    aligns.append(' style="text-align:center"')
+                elif c.endswith(":"):
+                    aligns.append(' style="text-align:right"')
+                else:
+                    aligns.append("")
+            rows = []
+            i += 2
+            while i < n and "|" in lines[i] and lines[i].strip():
+                rows.append([c.strip() for c in lines[i].strip()
+                             .strip("|").split("|")])
+                i += 1
+            t = ["<table><thead><tr>"]
+            for j, cell in enumerate(header):
+                t.append("<th" + (aligns[j] if j < len(aligns) else "")
+                         + ">" + md_inline(cell, slug_set) + "</th>")
+            t.append("</tr></thead><tbody>")
+            for row in rows:
+                t.append("<tr>")
+                for j in range(len(header)):
+                    cell = row[j] if j < len(row) else ""
+                    t.append("<td" + (aligns[j] if j < len(aligns) else "")
+                             + ">" + md_inline(cell, slug_set) + "</td>")
+                t.append("</tr>")
+            t.append("</tbody></table>")
+            html.append("".join(t))
+            continue
+        if is_list_item(line):
+            items = []
+            while i < n:
+                lm = re.match(r"^(\s*)([-+*]|\d+[.)])(?:\s+(.*))?$",
+                              lines[i].rstrip("\n"))
+                if not lm:
+                    if lines[i].strip() and items:
+                        # lazy continuation of the open item
+                        items[-1][2].append(lines[i].strip())
+                        i += 1
+                        continue
+                    break
+                indent = len(lm.group(1).replace("\t", "    "))
+                first = (lm.group(3) or "").strip()
+                items.append([indent, lm.group(2), [first] if first
+                              else []])
+                i += 1
+                while i < n and lines[i].strip() and not \
+                        is_list_item(lines[i].rstrip("\n")) and not \
+                        lines[i].strip().startswith(("```", "#", ">")) \
+                        and "|" not in lines[i] and not \
+                        is_hr(lines[i].strip()):
+                    items[-1][2].append(lines[i].strip())
+                    i += 1
+            html.append(render_md_list(items, slug_set))
+            continue
+        if s.startswith("<") or s.startswith("[^"):
+            html.append("<pre>" + md_escape(s) + "</pre>")
+            fallbacks += 1
+            i += 1
+            continue
+        buf = [s]
+        i += 1
+        while i < n and lines[i].strip() and not \
+                is_list_item(lines[i].rstrip("\n")) and not \
+                lines[i].strip().startswith(("```", "#", ">")) \
+                and "|" not in lines[i] and not \
+                is_hr(lines[i].strip()):
+            buf.append(lines[i].strip())
+            i += 1
+        html.append("<p>" + md_inline(" ".join(buf), slug_set) + "</p>")
+    return "".join(html), fallbacks
+
+
+def render_md_list(items, slug_set):
+    """Nested (un)ordered list from [indent, marker, text-lines] items."""
+    out = []
+    stack = []  # (indent, ordered); the innermost <li> stays open
+    for indent, marker, textlines in items:
+        ordered = re.match(r"\d+[.)]", marker) is not None
+        tag = "ol" if ordered else "ul"
+        while stack and indent < stack[-1][0]:
+            top = stack.pop()
+            out.append("</li></" + ("ol" if top[1] else "ul") + ">")
+        if not stack or indent > stack[-1][0]:
+            stack.append((indent, ordered))
+            out.append("<" + tag + "><li>")
+        elif ordered != stack[-1][1]:
+            top = stack.pop()
+            out.append("</li></" + ("ol" if top[1] else "ul") + ">")
+            stack.append((indent, ordered))
+            out.append("<" + tag + "><li>")
+        else:
+            out.append("</li><li>")
+        out.append(md_inline(" ".join(textlines), slug_set))
+    while stack:
+        top = stack.pop()
+        out.append("</li></" + ("ol" if top[1] else "ul") + ">")
+    return "".join(out)
+
+
+def doc_zone_and_kind(fname, contracts):
+    """(zone_id|None, kind) for a published docs/*.md file."""
+    if fname in ("AUTHORING-NOTES.md", "companion-unverified.md"):
+        return None, "method"
+    if fname == "city-recipes-inventory.md":
+        return None, "inventory"
+    stem = fname[:-3]
+    if stem.endswith("-census"):
+        base = stem[:-len("-census")]
+        kind = "census"
+    elif stem.endswith("-companions-inventory"):
+        base = stem[:-len("-companions-inventory")]
+        kind = "inventory"
+    else:
+        return None, "method"
+    ids = [c["id"] for c in contracts]
+    for cid in ids:
+        if cid == base or short_stem(cid) == base:
+            return cid, kind
+    if base in EXTRA_ZONE_STEMS:
+        return EXTRA_ZONE_STEMS[base], kind
+    for cid in ids:
+        cands = [c[:-3] if c.endswith(".md") else c
+                 for c in census_candidates(cid)]
+        if base in cands:
+            return cid, kind
+    return None, kind
+
+
+def publish_docs(pack_dir, app_dir, contracts, stamp_txt):
+    """Render the curated docs set to static HTML pages.
+
+    Returns (docs_meta, published_count, fallback_count).
+    """
+    docs_dir = os.path.join(pack_dir, "docs")
+    out_base = os.path.join(app_dir, "docs")
+    names = sorted(f for f in os.listdir(docs_dir)
+                   if f.endswith(".md") and f not in DOCS_EXCLUDED)
+    slug_set = {f[:-3].lower() for f in names}
+    metas = []
+    for fname in names:
+        with open(os.path.join(docs_dir, fname), encoding="utf-8",
+                  errors="replace") as fh:
+            text = fh.read()
+        body, fb = md_render_blocks(text.splitlines(), slug_set)
+        m = re.search(r"^#\s+(.+)$", text, re.M)
+        title = m.group(1).strip() if m else fname[:-3]
+        zone, kind = doc_zone_and_kind(fname, contracts)
+        slug = fname[:-3].lower()
+        metas.append({"slug": slug, "title": title, "file": fname,
+                      "kind": kind, "zone": zone, "fallbacks": fb,
+                      "body": body})
+    total_fallbacks = sum(m["fallbacks"] for m in metas)
+    for meta in metas:
+        zone = meta["zone"]
+        zone_name = None
+        zone_link = ""
+        if zone:
+            znames = {c["id"]: c.get("name") for c in contracts}
+            zone_name = znames.get(zone)
+            zone_link = ('<p class="br-crumb"><a href="/butler-routes/#/zone/'
+                         + zone + '">&larr; ' + zone_name + "</a></p>")
+        else:
+            zone_link = ('<p class="br-crumb"><a href="/butler-routes/#/docs">'
+                         '&larr; Documentation index</a></p>')
+        page = DOC_PAGE_TEMPLATE.replace("{{TITLE}}",
+                                                 md_escape(meta["title"])) \
+            .replace("{{ZONE_LINK}}", zone_link) \
+            .replace("{{BODY}}", meta["body"]) \
+            .replace("{{STAMP}}", stamp_txt) \
+            .replace("{{SOURCE}}", GITHUB_BLOB + "docs/" + meta["file"]) \
+            .replace("{{CRUMB}}", ("Zone: " + zone_name) if zone_name
+                     else "Pack document")
+        dest = os.path.join(out_base, meta["slug"], "index.html")
+        os.makedirs(os.path.dirname(dest), exist_ok=True)
+        with open(dest, "w", encoding="utf-8") as fh:
+            fh.write(page)
+    for meta in metas:
+        del meta["body"]
+    return metas, len(metas), total_fallbacks
+
+
+DOC_PAGE_TEMPLATE = """<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} — Butler Routes docs — York Develops</title>
+  <meta name="description" content="{{TITLE}}: pack paperwork for the Butler Routes - Completionist guide pack.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/butler-routes/styles.css">
+  <script src="/js/site-chrome.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="site-nav"></div>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <p class="page-header__eyebrow">// docs / {{CRUMB}}</p>
+          <h1 class="page-header__title">{{TITLE}}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      {{ZONE_LINK}}
+      <div class="card br-doc">
+      {{BODY}}
+      </div>
+      <p class="br-stamp">{{STAMP}} &middot; <a href="{{SOURCE}}" target="_blank" rel="noopener">Source on GitHub &#x2197;</a></p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
+"""
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--pack-url", default=PACK_URL)
@@ -696,6 +1077,13 @@ def main():
                         kill_goals += 1
 
     contracted_ids = {q["id"] for c in contracts for q in c["quests"]}
+
+    app_dir = os.path.dirname(os.path.dirname(os.path.abspath(args.out)))
+    stamp_txt = ("Pack data: v" + str(pack.get("version")) + " \u00b7 "
+                 + commit)
+    docs_meta, docs_published, docs_fallbacks = publish_docs(
+        pack_dir, app_dir, contracts, stamp_txt)
+
     data = {
         "generatedFrom": {"packVersion": pack.get("version"),
                           "commit": commit, "fullCommit": full_commit,
@@ -716,6 +1104,7 @@ def main():
         "treasures": all_treasures,
         "npcNames": {str(k): v for k, v in npc_names.items()},
         "recipes": all_recipes,
+        "docs": docs_meta,
         "coverage": {
             "contractedQuests": len(contracted_ids),
             "questNamesFromCensus": names_from_census,
@@ -760,6 +1149,12 @@ def main():
     print("pack v%s @ %s (%s)" % (pack.get("version"), commit, pack_date))
     print(json.dumps(data["totals"], indent=1))
     print(json.dumps(data["coverage"], indent=1))
+    print("docs published: %d, renderer fallbacks: %d"
+          % (docs_published, docs_fallbacks))
+    for meta in docs_meta:
+        if meta["fallbacks"]:
+            print("  fallback in %s: %d" % (meta["file"],
+                                            meta["fallbacks"]))
 
 
 if __name__ == "__main__":

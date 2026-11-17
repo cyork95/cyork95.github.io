@@ -28,7 +28,7 @@ function check(label, ok, extra) {
 check('totals: 48 contracts', DATA.totals.contracts === 48, JSON.stringify(DATA.totals));
 check('totals: 3245 contracted quests', DATA.totals.contractedQuests === 3245);
 check('totals: 138 guides', DATA.totals.guides === 138);
-check('stamp: pack v0.95.0', DATA.generatedFrom.packVersion === '0.95.0');
+check('stamp: pack v0.96.0', DATA.generatedFrom.packVersion === '0.96.0');
 check('zones == contracts', DATA.zones.length === DATA.totals.contracts);
 check('questCount sums to contractedQuests',
   DATA.zones.reduce((n, z) => n + z.questCount, 0) === DATA.totals.contractedQuests);
@@ -53,6 +53,17 @@ check('tirisfal buried treasure has its point', DATA.treasures.some(
   (r) => r.zone === 'tirisfal-glades' && r.name === 'Buried Treasure' && r.points.length === 1));
 check('durotar first rare is Warlord Kolkanis',
   DATA.rares.filter((r) => r.zone === 'durotar')[0].name === 'Warlord Kolkanis');
+check('docs: curated set published', DATA.docs.length === 91, String(DATA.docs.length));
+check('docs: no excluded files published',
+  !DATA.docs.some((d) => ['guide-status.md', 'ZEPHRAS-5-CHECK.md', 'AUTHORING-NOTES-elwynn.md'].includes(d.file)));
+check('docs: kind split sane',
+  DATA.docs.filter((d) => d.kind === 'census').length === 45 &&
+  DATA.docs.filter((d) => d.kind === 'inventory').length === 44 &&
+  DATA.docs.filter((d) => d.kind === 'method').length === 2);
+check('docs: every zone doc maps to a real zone',
+  DATA.docs.filter((d) => d.zone).every((d) => DATA.zones.some((z) => z.id === d.zone)));
+check('docs: pages exist on disk',
+  DATA.docs.every((d) => fs.existsSync(path.join(ROOT, 'docs', d.slug, 'index.html'))));
 
 /* ---------- stub-DOM render harness ---------- */
 
@@ -145,6 +156,20 @@ function count(html, sub) { return html.split(sub).length - 1; }
   check('search: recipes group', html.includes('Recipes ('));
   html = go('#/search?q=Ansirem');
   check('search: quests group', html.includes('Quests ('));
+  html = go('#/search?q=census');
+  check('search: docs group', html.includes('Docs ('));
+  html = go('#/docs');
+  check('docs index: method group', html.includes('Method &amp; contributor notes'));
+  check('docs index: display titles',
+    html.includes('Authoring Notes') && html.includes('Unverified &amp; open questions'));
+  check('docs index: zone groups', html.includes('By zone'));
+  check('docs index: static page links', html.includes('/butler-routes/docs/teldrassil-census/'));
+  html = go('#/zone/teldrassil');
+  check('zone: paperwork card', html.includes('The paperwork'));
+  check('zone: paperwork links resolve to docs',
+    html.includes('/butler-routes/docs/teldrassil-census/') &&
+    html.includes('/butler-routes/docs/teldrassil-companions-inventory/'));
+  check('overview: docs teaser', go('#/').includes('#/docs'));
 
   /* goal-count acceptance: every non-plumbing goal renders */
   const excl = new Set(['zone', 'only', 'goto', 'loop']);

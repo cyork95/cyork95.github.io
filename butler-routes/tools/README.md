@@ -20,13 +20,25 @@ inventory docs by NPC id first, then the step-title segment after the last
 
 ## Re-running after a pack release
 
-Regenerating the site's data is exactly this:
+Regenerating the site's data AND rendered docs is exactly one command:
 
 ```bash
 python butler-routes/tools/generate-pack-data.py
-git add butler-routes/data/pack-data.json
+git add butler-routes/data/pack-data.json butler-routes/docs
 git commit -m "Update Butler Routes pack data to vX.Y.Z"
 ```
+
+The run also renders the curated docs set (`docs/*-census.md`,
+`docs/*-companions-inventory.md`, `city-recipes-inventory.md`,
+`companion-unverified.md`, `AUTHORING-NOTES.md`) to static pages under
+`butler-routes/docs/<slug>/`, using the compact stdlib markdown renderer
+in the generator (headings, paragraphs, bold/italic, inline code and
+code blocks, lists incl. nesting, tables, links, blockquotes, hr). Links
+between published docs point at their site URLs; links to files outside
+the published set point at the file on GitHub. `guide-status.md`,
+`ZEPHRAS-5-CHECK.md`, `AUTHORING-NOTES-elwynn.md`, the build-report CSV,
+and `quest-contracts.json` are never published. The run prints a
+`docs published: N, renderer fallbacks: M` line — M must stay 0.
 
 The script clones the pack repo fresh to a temp dir by default. To reuse a
 local clone instead:

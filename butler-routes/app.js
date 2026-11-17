@@ -438,7 +438,62 @@ var DATA_URL = 'data/pack-data.json';
       '<p class="section-label">Browse</p><h2 class="section-title">Start with a zone</h2>' +
       '<p class="section-desc">The full directory holds every contracted zone with faction, level band, and build status.</p></div>' +
       '<p><a class="btn btn--primary" href="#/zones">Open the zone directory &rarr;</a></p></section>' +
+      '<section data-reveal><div class="section-header">' +
+      '<p class="section-label">Paperwork</p><h2 class="section-title">Read the pack documents</h2>' +
+      '<p class="section-desc">Census and companions inventory for every zone, plus the method notes: how the pack is authored and which questions are still open.</p></div>' +
+      '<p><a class="btn btn--outline" href="#/docs">Open the documentation index &rarr;</a></p></section>' +
       reportCardHTML('Butler Routes - Completionist', 'general');
+  }
+
+  var DOC_DISPLAY = {
+    'authoring-notes': { title: 'Authoring Notes',
+      blurb: 'How the pack is written: the authoring method, step by step.' },
+    'companion-unverified': { title: 'Unverified & open questions',
+      blurb: 'Candidates the game data could not confirm, and what would settle them.' }
+  };
+
+  function docTitle(d) {
+    return (DOC_DISPLAY[d.slug] && DOC_DISPLAY[d.slug].title) || d.title;
+  }
+
+  function docCardHTML(d) {
+    var disp = DOC_DISPLAY[d.slug];
+    return '<a class="card br-small" href="/butler-routes/docs/' + esc(d.slug) + '/">' +
+      '<h4 class="card__title">' + esc(docTitle(d)) + '</h4>' +
+      '<p class="card__desc">' + esc(disp ? disp.blurb : d.file) + '</p>' +
+      (d.zone ? '<p class="card__desc br-muted">' + esc(zoneName(d.zone)) + '</p>' : '') +
+      '</a>';
+  }
+
+  function renderDocsIndex() {
+    var docs = PACK.docs || [];
+    var methods = docs.filter(function (d) { return d.kind === 'method'; });
+    var packwide = docs.filter(function (d) { return d.kind === 'inventory' && !d.zone; });
+    var zoned = docs.filter(function (d) { return d.zone; });
+    var byZone = {};
+    zoned.forEach(function (d) {
+      (byZone[d.zone] = byZone[d.zone] || []).push(d);
+    });
+    var html = '<section><div class="section-header">' +
+      '<p class="section-label">Paperwork</p><h2 class="section-title">Documentation</h2>' +
+      '<p class="section-desc">The pack\u2019s own project documents, rendered from the repo: ' +
+      'method notes plus every zone\u2019s census and companions inventory.</p></div>';
+    html += '<h3 class="br-group">Method &amp; contributor notes</h3>' +
+      '<div class="grid-3">' + methods.map(docCardHTML).join('') + '</div>';
+    if (packwide.length) {
+      html += '<h3 class="br-group">Pack-wide inventory</h3>' +
+        '<div class="grid-3">' + packwide.map(docCardHTML).join('') + '</div>';
+    }
+    html += '<h3 class="br-group">By zone</h3>';
+    PACK.zones.forEach(function (z) {
+      var zd = (byZone[z.id] || []).slice().sort(function (a, b) {
+        return (a.kind < b.kind ? -1 : 1);
+      });
+      if (!zd.length) return;
+      html += '<h4 class="br-zone">' + esc(z.name) + '</h4>' +
+        '<div class="grid-3">' + zd.map(docCardHTML).join('') + '</div>';
+    });
+    return html + '</section>';
   }
 
   function guideTicks(z) {
@@ -566,6 +621,13 @@ var DATA_URL = 'data/pack-data.json';
       html += '<section><details class="br-details"><summary>Rares &amp; Treasures companion steps (' +
         ((z.companionSteps.rares || []).length) + ')</summary><div class="br-path">' + raresComp + '</div></details></section>';
     }
+    var paperwork = (PACK.docs || []).filter(function (d) { return d.zone === zoneId; });
+    if (paperwork.length) {
+      html += '<section><div class="section-header"><p class="section-label">Paperwork</p>' +
+        '<h2 class="section-title">The paperwork</h2>' +
+        '<p class="section-desc">The zone\u2019s census and companions inventory, as published in the pack repo.</p></div>' +
+        '<div class="grid-3">' + paperwork.map(docCardHTML).join('') + '</div></section>';
+    }
     if (recipes.length || recipesComp) {
       html += '<section><div class="section-header"><p class="section-label">Companion</p>' +
         '<h2 class="section-title">Recipes &amp; Patterns (' + recipes.length + ')</h2></div>' +
@@ -644,7 +706,7 @@ var DATA_URL = 'data/pack-data.json';
 
   function searchAll(query) {
     var q = query.trim().toLowerCase();
-    var out = { quests: [], rares: [], treasures: [], recipes: [], zones: [] };
+    var out = { quests: [], rares: [], treasures: [], recipes: [], zones: [], docs: [] };
     if (!q) return out;
     var isNum = /^\d+$/.test(q);
     PACK.zones.forEach(function (z) {
@@ -666,6 +728,12 @@ var DATA_URL = 'data/pack-data.json';
       var name = (r.name || '') + ' ' + (r.step || '');
       if (name.toLowerCase().indexOf(q) !== -1) {
         if (out.treasures.length < 40) out.treasures.push(r);
+      }
+    });
+    (PACK.docs || []).forEach(function (d) {
+      var name = docTitle(d) + ' ' + d.file;
+      if (name.toLowerCase().indexOf(q) !== -1) {
+        if (out.docs.length < 20) out.docs.push(d);
       }
     });
     PACK.recipes.forEach(function (r) {
@@ -713,12 +781,18 @@ var DATA_URL = 'data/pack-data.json';
       '<p class="card__desc">' + esc(r.profession || '') + ' · ' + esc(zoneName(r.zone)) + ' · ' + esc(where) + '</p></a>';
   }
 
+  function docResultHTML(d) {
+    return '<a class="card br-result" href="/butler-routes/docs/' + esc(d.slug) + '/">' +
+      '<h4 class="card__title">' + esc(docTitle(d)) + '</h4>' +
+      '<p class="card__desc">' + esc(d.kind) + (d.zone ? ' · ' + esc(zoneName(d.zone)) : ' · pack document') + '</p></a>';
+  }
+
   function renderSearch(query) {
     var res = searchAll(query || '');
-    var total = res.quests.length + res.rares.length + res.treasures.length + res.recipes.length + res.zones.length;
+    var total = res.quests.length + res.rares.length + res.treasures.length + res.recipes.length + res.zones.length + res.docs.length;
     var html = '<section><div class="section-header"><p class="section-label">Search</p>' +
       '<h2 class="section-title">Results' + (query ? ' for “' + esc(query) + '”' : '') + '</h2>' +
-      '<p class="section-desc">' + (query ? total + ' matches across quests, rares, treasures, recipes, and zones.' : 'Type above to search every quest, rare, treasure, recipe, and zone in the pack.') + '</p></div>';
+      '<p class="section-desc">' + (query ? total + ' matches across quests, rares, treasures, recipes, zones, and docs.' : 'Type above to search every quest, rare, treasure, recipe, zone, and document in the pack.') + '</p></div>';
     function group(title, items, fn) {
       if (!items.length) return '';
       return '<h3 class="br-group">' + title + ' (' + items.length + ')</h3>' +
@@ -728,7 +802,8 @@ var DATA_URL = 'data/pack-data.json';
       group('Rares', res.rares, rareResultHTML) +
       group('Treasures', res.treasures, rareResultHTML) +
       group('Recipes', res.recipes, recipeResultHTML) +
-      group('Zones', res.zones, zoneCardHTML);
+      group('Zones', res.zones, zoneCardHTML) +
+      group('Docs', res.docs, docResultHTML);
     if (query && !total) html += '<p>No matches. Try a quest name, an NPC or item id, or a zone.</p>';
     return html + '</section>';
   }
@@ -753,6 +828,10 @@ var DATA_URL = 'data/pack-data.json';
       setTab('zones');
       app.innerHTML = renderZones();
       wireZoneFilters();
+      window.scrollTo(0, 0);
+    } else if (view === 'docs') {
+      setTab('docs');
+      app.innerHTML = renderDocsIndex();
       window.scrollTo(0, 0);
     } else if (view === 'zone' && parts[2]) {
       setTab('zones');
